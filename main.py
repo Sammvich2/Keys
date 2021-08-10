@@ -4,10 +4,10 @@
 # ENJOY!
 
 
-from tkinter import *
+from Tkinter import *
 import sqlite3
 import time
-import tkinter.font as tkFont
+import Tkinter.font as tkFont
 localtime = time.asctime(time.localtime(time.time()))
 
 # set up the GPIO
