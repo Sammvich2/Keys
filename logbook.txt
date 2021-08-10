@@ -1,0 +1,112 @@
+
+system running at Tue Sep  1 17:52:20 2020
+David logged in at Tue Sep  1 17:52:20 2020
+David Has signed IN keyset 1000 at Tue Sep  1 17:52:20 2020
+The door was opened at Tue Sep  1 17:52:20 2020
+The door was closed at Tue Sep  1 17:52:20 2020
+system running at Tue Sep  1 19:15:52 2020
+David logged in at Tue Sep  1 19:15:52 2020
+David has logged out at Tue Sep  1 19:15:52 2020
+David has logged out at Tue Sep  1 19:15:52 2020
+David has logged out at Tue Sep  1 19:15:52 2020
+system running at Wed Dec 16 19:08:45 2020
+system running at Sat Jun  5 19:39:59 2021
+Duc logged in at Sat Jun  5 19:39:59 2021
+Duc has logged out at Sat Jun  5 19:39:59 2021
+admin logged in  at Sat Jun  5 19:39:59 2021
+Duc logged in at Sat Jun  5 19:39:59 2021
+Duc Has signed IN keyset 1000 at Sat Jun  5 19:39:59 2021
+Duc has logged out at Sat Jun  5 19:39:59 2021
+system running at Sat Jun 19 17:15:34 2021
+system running at Sat Jun 19 23:47:42 2021
+admin logged in  at Sat Jun 19 23:47:42 2021
+system running at Sat Jun 19 23:48:07 2021
+system running at Sat Jun 19 23:48:14 2021
+system running at Thu Jun 24 18:17:09 2021
+system running at Thu Jun 24 18:21:40 2021
+Sam logged in at Thu Jun 24 18:21:40 2021
+Sam Has signed OUT keyset 1001 at Thu Jun 24 18:21:40 2021
+Sam has logged out at Thu Jun 24 18:21:40 2021
+system running at Thu Jun 24 18:32:32 2021
+Sam logged in at Thu Jun 24 18:32:32 2021
+Sam Has signed IN keyset 1000 at Thu Jun 24 18:32:32 2021
+system running at Thu Jun 24 18:36:57 2021
+Sam logged in at Thu Jun 24 18:36:57 2021
+Sam Has signed IN keyset 1000 at Thu Jun 24 18:36:57 2021
+system running at Thu Jun 24 18:41:19 2021
+Sam logged in at Thu Jun 24 18:41:19 2021
+Sam Has signed OUT keyset 1001 at Thu Jun 24 18:41:19 2021
+Sam has logged out at Thu Jun 24 18:41:19 2021
+Sam logged in at Thu Jun 24 18:41:19 2021
+system running at Thu Jun 24 18:52:54 2021
+Sam logged in at Thu Jun 24 18:52:54 2021
+system running at Thu Jun 24 18:54:48 2021
+Duc logged in at Thu Jun 24 18:54:48 2021
+Duc has logged out at Thu Jun 24 18:54:48 2021
+Sam logged in at Thu Jun 24 18:54:48 2021
+system running at Thu Jun 24 19:06:31 2021
+Sam logged in at Thu Jun 24 19:06:31 2021
+system running at Thu Jun 24 19:10:29 2021
+Sam logged in at Thu Jun 24 19:10:29 2021
+Sam Has signed OUT keyset 1000 at Thu Jun 24 19:10:29 2021
+system running at Thu Jun 24 19:12:52 2021
+Sam logged in at Thu Jun 24 19:12:52 2021
+Sam Has signed OUT keyset 1000 at Thu Jun 24 19:12:52 2021
+system running at Thu Jun 24 19:15:19 2021
+Sam logged in at Thu Jun 24 19:15:19 2021
+Sam Has signed OUT keyset 1001 at Thu Jun 24 19:15:19 2021
+Sam Has signed OUT keyset 1001 at Thu Jun 24 19:15:19 2021
+system running at Thu Jun 24 19:18:58 2021
+Sam logged in at Thu Jun 24 19:18:58 2021
+system running at Thu Jun 24 19:23:07 2021
+Sam logged in at Thu Jun 24 19:23:07 2021
+system running at Thu Jun 24 21:00:41 2021
+Sam logged in at Thu Jun 24 21:00:41 2021
+system running at Thu Jun 24 21:01:38 2021
+Sam logged in at Thu Jun 24 21:01:38 2021
+system running at Thu Jun 24 21:02:29 2021
+system running at Thu Jun 24 21:03:31 2021
+Sam logged in at Thu Jun 24 21:03:31 2021
+system running at Thu Jun 24 21:03:53 2021
+Sam logged in at Thu Jun 24 21:03:53 2021
+system running at Thu Jun 24 21:04:13 2021
+Sam logged in at Thu Jun 24 21:04:13 2021
+system running at Thu Jun 24 21:04:54 2021
+Sam logged in at Thu Jun 24 21:04:54 2021
+system running at Thu Jun 24 21:05:49 2021
+Duc logged in at Thu Jun 24 21:05:49 2021
+system running at Thu Jun 24 21:10:21 2021
+system running at Thu Jun 24 21:10:53 2021
+Sam logged in at Thu Jun 24 21:10:53 2021
+system running at Thu Jun 24 21:11:25 2021
+Sam logged in at Thu Jun 24 21:11:25 2021
+system running at Thu Jun 24 21:32:34 2021
+Sam logged in at Thu Jun 24 21:32:34 2021
+system running at Thu Jun 24 21:33:39 2021
+Sam logged in at Thu Jun 24 21:33:39 2021
+Sam Has signed IN keyset 1001 at Thu Jun 24 21:33:39 2021
+Sam Has signed OUT keyset 1000 at Thu Jun 24 21:33:39 2021
+Sam has logged out at Thu Jun 24 21:33:39 2021
+system running at Thu Jun 24 21:35:56 2021
+Sam logged in at Thu Jun 24 21:35:56 2021
+system running at Thu Jun 24 21:37:25 2021
+Sam logged in at Thu Jun 24 21:37:25 2021
+system running at Thu Jun 24 21:37:39 2021
+Sam logged in at Thu Jun 24 21:37:39 2021
+system running at Thu Jun 24 21:39:05 2021
+system running at Thu Jun 24 21:40:37 2021
+system running at Thu Jun 24 21:40:45 2021
+system running at Thu Jun 24 21:41:01 2021
+admin logged in  at Thu Jun 24 21:41:01 2021
+admin logged in  at Thu Jun 24 21:41:01 2021
+system running at Thu Jun 24 21:42:22 2021
+admin logged in  at Thu Jun 24 21:42:22 2021
+system running at Mon Jun 28 10:47:30 2021
+admin logged in  at Mon Jun 28 10:47:30 2021
+Sam logged in at Mon Jun 28 10:47:30 2021
+Sam Has signed IN keyset 1001 at Mon Jun 28 10:47:30 2021
+Sam Has signed OUT keyset 1001 at Mon Jun 28 10:47:30 2021
+Sam has logged out at Mon Jun 28 10:47:30 2021
+admin logged in  at Mon Jun 28 10:47:30 2021
+system running at Mon Jun 28 11:13:54 2021
+admin logged in  at Mon Jun 28 11:13:54 2021
