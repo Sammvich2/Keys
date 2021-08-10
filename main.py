@@ -27,8 +27,8 @@ customFont = tkFont.Font(family="Courier New CE", size=12, weight="bold")
 titleFont = tkFont.Font(family="Courier New CE", size=18, weight="bold")
 
 # when working on desktop set the geometry to "800x480" for scale, when deployed put in fulllscreen
-# root.attributes('-fullscreen', True)
-root.geometry("800x480")
+root.attributes('-fullscreen', True)
+# root.geometry("800x480")
 
 
 # this logs when the program starts and handles logs further on
