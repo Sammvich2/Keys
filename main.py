@@ -1,7 +1,4 @@
-# If you are reading this, you're probably here to fix something. Just give up. This programm is simple enough for anyone
-# experienced to create in a day or two. This was my first ever python program, it is a total mess and so many things
-# could be done better. This program is a glorified logbook. It could be replace with a exercise book from officeworks
-# ENJOY!
+#Dont use this lol
 
 
 from Tkinter import *
