@@ -1,7 +1,7 @@
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from id_number");
+    $statement = $pdo->query("SELECT * from keys");
     $keys = $statement->fetchAll(PDO::FETCHASSOC);
 
     echo "<stable border=1>";
