@@ -7,7 +7,7 @@
     echo "<table border=1>";
 
     echo "<tr>";
-        echo "<td>ID Number</td>";
+        echo "<td>Key Number</td>";
     echo "</tr>";
 
 
