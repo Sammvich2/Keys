@@ -17,6 +17,7 @@
         echo "<tr>";
             echo "<td>" .  $key['id_number']  .  "</td>";
             echo "<td>" .  $key['site_address']  .  "</td>";
+            echo "<td>" .  $key['key_holder']  .  "</td>";
         echo "</tr>";
     }
 
