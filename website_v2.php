@@ -2,11 +2,11 @@
 
     $pdo = new PDO('sqlite:keys.db');
     $statement = $pdo->query("SELECT * from keys");
-    $keys = $statement->fetchAll(PDO::FETCHASSOC);
+    $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     echo "<stable border=1>";
 
-    echo "<tr>"
+    echo "<tr>";
         echo "<td>ID Number</td>";
     echo "</tr>";
 
