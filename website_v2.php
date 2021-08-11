@@ -8,7 +8,7 @@
 
     echo "<tr>";
         echo "<td>Key Number</td>";
-        echo "<td>Address</td>td>";
+        echo "<td>Address</td>";
     echo "</tr>";
 
 
