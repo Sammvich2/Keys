@@ -4,7 +4,7 @@
     $statement = $pdo->query("SELECT * from keys");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<stable border=1>";
+    echo "<table border=1>";
 
     echo "<tr>";
         echo "<td>ID Number</td>";
