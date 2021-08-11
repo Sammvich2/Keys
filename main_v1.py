@@ -1,18 +1,18 @@
-#Dont use this lol
+# Dont use this lol
 
 
-from Tkinter import *
+from tkinter import *
 import sqlite3
 import time
-import Tkinter.font as tkFont
+import tkinter.font as tkFont
 localtime = time.asctime(time.localtime(time.time()))
 
 # set up the GPIO
 # the actual control is done at the function "door control"
-#import RPi.GPIO as GPIO
-#GPIO.setmode(GPIO.BCM)
-#GPIO.setup(18, GPIO.OUT)
-#GPIO.setup(23, GPIO.OUT)
+# import RPi.GPIO as GPIO
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(18, GPIO.OUT)
+# GPIO.setup(23, GPIO.OUT)
 
 
 # setup the tkinter window and fonts
@@ -23,9 +23,9 @@ root.configure(bg="#1e2022")
 customFont = tkFont.Font(family="Courier New CE", size=12, weight="bold")
 titleFont = tkFont.Font(family="Courier New CE", size=18, weight="bold")
 
-# when working on desktop set the geometry to "800x480" for scale, when deployed put in fulllscreen
-root.attributes('-fullscreen', True)
-# root.geometry("800x480")
+# when working on desktop set the geometry to "800x480" for scale, when deployed put in fullscreen
+# root.attributes('-fullscreen', True)
+root.geometry("800x480")
 
 
 # this logs when the program starts and handles logs further on
