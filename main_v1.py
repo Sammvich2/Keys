@@ -18,7 +18,7 @@ localtime = time.asctime(time.localtime(time.time()))
 # setup the tkinter window and fonts
 root = Tk()
 root.title("APlus Fire Key System")
-root.iconbitmap('icon.ico')
+# root.iconbitmap('icon.ico')
 root.configure(bg="#1e2022")
 customFont = tkFont.Font(family="Courier New CE", size=12, weight="bold")
 titleFont = tkFont.Font(family="Courier New CE", size=18, weight="bold")
