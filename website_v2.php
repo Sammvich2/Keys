@@ -14,8 +14,8 @@
 
     foreach($keys as $row => $key){
         echo "<tr>";
-            echo "<td>" .  $key['id_number']
-
-
-
+            echo "<td>" .  $key['id_number']  .  "</td>";
+        echo "</tr>";
     }
+
+    echo "</table>";
