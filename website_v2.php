@@ -16,7 +16,7 @@
     foreach($keys as $row => $key){
         echo "<tr>";
             echo "<td>" .  $key['id_number']  .  "</td>";
-            echo "<td>" .  $key['address']  .  "</td>";
+            echo "<td>" .  $key['site_address']  .  "</td>";
         echo "</tr>";
     }
 
