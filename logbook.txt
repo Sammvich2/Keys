@@ -119,3 +119,5 @@ Scott has logged out at Wed Aug 11 20:16:15 2021
 system running at Wed Aug 11 20:31:11 2021
 system running at Wed Aug 11 20:31:25 2021
 David logged in at Wed Aug 11 20:31:25 2021
+David Has signed OUT keyset 1000 at Wed Aug 11 20:31:25 2021
+David has logged out at Wed Aug 11 20:31:25 2021
