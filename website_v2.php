@@ -8,7 +8,7 @@
 
     echo "<tr>";
         echo "<td>Key Number</td>";
-        echo 
+        echo "<td>Address</td>td>";
     echo "</tr>";
 
 
@@ -16,6 +16,7 @@
     foreach($keys as $row => $key){
         echo "<tr>";
             echo "<td>" .  $key['id_number']  .  "</td>";
+            echo "<td>" .  $key['address']  .  "</td>";
         echo "</tr>";
     }
 
