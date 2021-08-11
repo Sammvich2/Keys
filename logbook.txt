@@ -114,3 +114,4 @@ system running at Wed Aug 11 17:25:50 2021
 system running at Wed Aug 11 20:16:15 2021
 Scott logged in at Wed Aug 11 20:16:15 2021
 Scott Has signed IN keyset 1000 at Wed Aug 11 20:16:15 2021
+Scott Has signed OUT keyset 1001 at Wed Aug 11 20:16:15 2021
