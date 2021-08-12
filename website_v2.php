@@ -9,7 +9,7 @@
         }
         table {
             width: 50%;
-            margin: 50% auto;
+            margin: 400px auto;
         }
 
         tr {
