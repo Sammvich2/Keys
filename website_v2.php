@@ -52,7 +52,7 @@
     echo "<table>";
 
     echo "<tr><h2>";
-        echo "<td>Key Number</td>";
+        echo "<td><h2>Key Number</h2></td>";
         echo "<td>Address</td>";
         echo "<td>Who Has It?</td>";
     echo "</h2></tr>";
