@@ -3,8 +3,8 @@
     <title>Title</title>
     <style>
         table, tr, td {
-            margin: 8px;
             border: 2px solid black;
+            border-collapse: collapse;
         }
     </style>
 </head>
