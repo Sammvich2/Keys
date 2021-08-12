@@ -24,6 +24,7 @@
         h1 {
             font-size: 300px;
             text-align: center;
+            Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif.
 
         }
     </style>
