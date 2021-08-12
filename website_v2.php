@@ -2,6 +2,10 @@
 <head>
     <title>Da keys</title>
     <style>
+        body {
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        }
+
         table, tr, td {
             border: 2px solid black;
             border-collapse: collapse;
@@ -24,7 +28,7 @@
         h1 {
             font-size: 300px;
             text-align: center;
-            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
 
         }
     </style>
