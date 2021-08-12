@@ -51,11 +51,11 @@
 
     echo "<table>";
 
-    echo "<tr><h2>";
+    echo "<tr>";
         echo "<td><h2>Key Number</h2></td>";
-        echo "<td>Address</td>";
-        echo "<td>Who Has It?</td>";
-    echo "</h2></tr>";
+        echo "<td><h2>Address</h2></td>";
+        echo "<td><h2>Who Has It?</h2></td>";
+    echo "</tr>";
 
 
 
