@@ -12,7 +12,7 @@
         }
 
         tr {
-            height: 70px;
+            height: 30px;
             font-size: 20px;
         }
 
