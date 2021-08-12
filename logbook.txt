@@ -12,3 +12,4 @@ Theodore logged in at Thu Aug 12 21:31:10 2021
 system running at 12:08:2021:21:49:49
 David logged in at 12:08:2021:21:50:04
 David Has signed IN keyset 1000 at 12:08:2021:21:50:16
+David has logged out at 12:08:2021:21:50:19
