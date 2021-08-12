@@ -22,7 +22,7 @@
         }
 
         h1 {
-            font-size: 100px;
+            font-size: 300px;
             text-align: center;
 
         }
