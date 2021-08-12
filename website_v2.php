@@ -20,9 +20,21 @@
         td {
             font-size: 18px;
         }
+
+        h1 {
+            font-size: 100px;
+            text-align: center;
+
+        }
     </style>
 </head>
 <body>
+<h1>
+
+
+
+
+</h1>
 
 <?php
 
