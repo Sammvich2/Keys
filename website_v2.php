@@ -4,7 +4,7 @@
     <style>
         table {
             margin: 8px;
-            border: 100px;
+            border: 15px solid black;
         }
     </style>
 </head>
