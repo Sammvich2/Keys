@@ -4,6 +4,7 @@
     <style>
         body {
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            background: dimgray;
         }
 
         table, tr, td {
