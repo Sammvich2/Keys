@@ -1,4 +1,4 @@
-<html lang="">
+<html>
 <head>
     <title>Title</title>
     <style>
