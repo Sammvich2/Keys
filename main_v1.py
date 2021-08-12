@@ -6,7 +6,7 @@ import sqlite3
 import time
 import tkinter.font as tkFont
 # localtime = time.asctime(time.localtime(time.time()))
-localtime = time.ctime(time.time())
+
 
 # set up the GPIO
 # the actual control is done at the function "door control"
@@ -31,6 +31,7 @@ root.geometry("800x480")
 
 # this logs when the program starts and handles logs further on
 def logger(input):
+    localtime = time.ctime(time.time())
     writeLog = open("logbook.txt", "a")
     writeLog.write("\n" + input + " at " + localtime)
     writeLog.close()
