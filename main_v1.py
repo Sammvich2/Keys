@@ -34,7 +34,7 @@ root.geometry("800x480")
 def logger(input):
 
     writeLog = open("logbook.txt", "a")
-    writeLog.write("\n" + input + " at " + datetime.now().strftime("%d:%m:%Y:%H:%M:%S"))
+    writeLog.write("\n" + input + " at " + datetime.now().strftime("%d:%m:%Y-%H:%M:%S"))
     writeLog.close()
 
 
@@ -167,7 +167,7 @@ def newKeyEntry():
                   'newID': idEntry.get(),
                   'newAdd': addressEntry.get(),
                   'keyholder': keyholder,
-                  'time': datetime.now().strftime("%d:%m:%Y:%H:%M:%S")
+                  'time': datetime.now().strftime("%d:%m:%Y-%H:%M:%S")
               })
 
     conn.commit()
@@ -229,7 +229,7 @@ def signKeysIn():
     conn = sqlite3.connect('keys.db')
     c = conn.cursor()
     print(keyInSearchVar)
-    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y:%H:%M:%S"), "KeyBox", keyInSearchVar))
+    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y-%H:%M:%S"), "KeyBox", keyInSearchVar))
     logger(selectedUser + " Has signed IN keyset " + keyInSearchVar)
     conn.commit()
     conn.close()
@@ -274,7 +274,7 @@ def signKeysOut():
 
     print(keysOutSearchVar)
     print(selectedUser)
-    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y:%H:%M:%S"), selectedUser, keysOutSearchVar))
+    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y-%H:%M:%S"), selectedUser, keysOutSearchVar))
     logger(selectedUser + " Has signed OUT keyset " + keysOutSearchVar)
 
     conn.commit()
