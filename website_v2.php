@@ -8,17 +8,17 @@
 
         }
         table {
-            width: 50%;
+            width: 75%;
             margin: 200px auto;
         }
 
         tr {
             height: 30px;
-            font-size: 16px;
+            font-size: 23px;
         }
 
         td {
-            font-size: 18px;
+            font-size: 25px;
         }
 
         h1 {
