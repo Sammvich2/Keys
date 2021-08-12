@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
