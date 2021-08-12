@@ -1,9 +1,10 @@
 <html>
 <head>
     <title>Title</title>
-    <style type="text/css">
+    <style>
         table {
             margin: 8px;
+            border: 10px
         }
     </style>
 </head>
@@ -15,7 +16,7 @@
     $statement = $pdo->query("SELECT * from keys");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<table border=1>";
+    echo "<table>";
 
     echo "<tr>";
         echo "<td>Key Number</td>";
