@@ -2,7 +2,7 @@
 <head>
     <title>Title</title>
     <style>
-        table {
+        table, tr, td {
             margin: 8px;
             border: 2px solid black;
         }
