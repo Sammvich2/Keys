@@ -5,11 +5,11 @@
         table, tr, td {
             border: 2px solid black;
             border-collapse: collapse;
+            alignment: center;
 
         }
         table {
             width: 50%;
-            alignment: center;
         }
 
         tr {
