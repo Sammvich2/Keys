@@ -179,7 +179,6 @@ def showData():
 
     c.execute("SELECT *, oid FROM keys")
     data = c.fetchall()
-    print(c.fetchall())
     printData = ""
     for records in data:
         printData += str(records) + "\n"
@@ -203,11 +202,10 @@ def keyInSearch():
         searchFailedLabel.grid(row=4, column=1)
     else:
         c.execute("SELECT * FROM keys WHERE id_number = " + keysBarcodeEntry.get())
-        keys_in_data = c.fetchall()
-        print(c.fetchall())
-        format_data = str(keys_in_data).replace("'", "")
+        keys_in_data = c.fetchone()
+        # format_data = str(keys_in_data).replace("'", "")
         global keyInDataLabel
-        keyInDataLabel = Label(keysInFrame, text=format_data, bg="#1e2022", fg="white", font=customFont)
+        keyInDataLabel = Label(keysInFrame, text=keys_in_data[0, 1, 2], bg="#1e2022", fg="white", font=customFont)
         keyInDataLabel.grid(row=4, column=1, columnspan=2)
 
         if keys_in_data:
