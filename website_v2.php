@@ -5,7 +5,7 @@
         body {
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             background: #1f1f1f;
-            text-color
+            color: #fafafa;
         }
 
         table, tr, td {
