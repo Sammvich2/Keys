@@ -34,7 +34,7 @@ root.geometry("800x480")
 def logger(input):
 
     writeLog = open("logbook.txt", "a")
-    writeLog.write("\n" + input + " at " + datetime.now().strftime("%d:%m:%H:%M:%S"))
+    writeLog.write("\n" + input + " at " + datetime.now().strftime("%d:%m:%Y%H:%M:%S"))
     writeLog.close()
 
 
