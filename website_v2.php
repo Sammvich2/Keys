@@ -28,8 +28,13 @@
         h1 {
             font-size: 300px;
             text-align: center;
+        }
+        h2 {
+            font-size: 25px;
+        }
 
-
+        h3 {
+            font-size: 20px;
         }
     </style>
 </head>
@@ -46,11 +51,11 @@
 
     echo "<table>";
 
-    echo "<tr>";
+    echo "<tr><h2>";
         echo "<td>Key Number</td>";
         echo "<td>Address</td>";
         echo "<td>Who Has It?</td>";
-    echo "</tr>";
+    echo "</h2></tr>";
 
 
 
