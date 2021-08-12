@@ -30,7 +30,7 @@
             text-align: center;
         }
         h2 {
-            font-size: 25px;
+            font-size: 100px;
         }
 
         h3 {
