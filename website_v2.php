@@ -18,7 +18,7 @@
         }
 
         td {
-            font-size: 25px;
+            font-size: 28px;
         }
 
         h1 {
