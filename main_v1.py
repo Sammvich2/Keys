@@ -5,7 +5,8 @@ from tkinter import *
 import sqlite3
 import time
 import tkinter.font as tkFont
-localtime = time.asctime(time.localtime(time.time()))
+# localtime = time.asctime(time.localtime(time.time()))
+localtime = time.ctime(time.time)
 
 # set up the GPIO
 # the actual control is done at the function "door control"
