@@ -244,9 +244,9 @@ def keysOutSearch():
         searchOutFailedLabel.grid(row=4, column=1)
     else:
         c.execute("SELECT * FROM keys WHERE id_number = " + keysOutSearchVar)
-        keys_out_data = c.fetchall()
+        keys_out_data = c.fetchone()
         print(c.fetchall())
-        format_data = str(keys_out_data).replace("'", "")
+        format_data = keys_out_data[0] + " - " + keys_out_data[1] + " - " + keys_out_data[2]
         global keyOutDataLabel
         keyOutDataLabel = Label(keysOutFrame, text="Keys Found: " + format_data, bg="#1e2022", fg="white", font=customFont)
 
