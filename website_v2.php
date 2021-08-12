@@ -1,11 +1,13 @@
-
-
-
-
-
-
-
-
+<html>
+<head>
+    <title>Title</title>
+    <style type="text/css">
+        table {
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
 
 <?php
 
@@ -32,3 +34,6 @@
     }
 
     echo "</table>";
+?>
+</body>
+</html>
