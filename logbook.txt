@@ -127,3 +127,4 @@ Sam Has signed OUT keyset 1000 at Wed Aug 11 20:50:07 2021
 Sam has logged out at Wed Aug 11 20:50:07 2021
 system running at Thu Aug 12 21:16:51 2021
 Duc logged in at Thu Aug 12 21:16:51 2021
+Duc Has signed OUT keyset 1001 at Thu Aug 12 21:16:51 2021
