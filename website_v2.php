@@ -30,6 +30,7 @@
         h1 {
             font-size: 300px;
             text-align: center;
+            color: #ff0033
         }
         h2 {
             font-size: 30px;
