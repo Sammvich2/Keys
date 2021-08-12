@@ -14,11 +14,11 @@
 
         tr {
             height: 30px;
-            font-size: 20px;
+            font-size: 16px;
         }
 
         td {
-            font-size: 30px;
+            font-size: 18px;
         }
     </style>
 </head>
