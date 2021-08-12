@@ -13,7 +13,11 @@
 
         tr {
             height 70px;
-            font-size:20px;
+            font-size 20px;
+        }
+
+        td {
+            font-size 30px;
         }
     </style>
 </head>
