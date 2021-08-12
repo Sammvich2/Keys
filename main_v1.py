@@ -204,8 +204,9 @@ def keyInSearch():
         c.execute("SELECT * FROM keys WHERE id_number = " + keysBarcodeEntry.get())
         keys_in_data = c.fetchone()
         # format_data = str(keys_in_data).replace("'", "")
+        format_data = keys_in_data[0] + " " + keys_in_data[1] + " " + keys_in_data[2]
         global keyInDataLabel
-        keyInDataLabel = Label(keysInFrame, text=keys_in_data[0, 1, 2], bg="#1e2022", fg="white", font=customFont)
+        keyInDataLabel = Label(keysInFrame, text=format_data, bg="#1e2022", fg="white", font=customFont)
         keyInDataLabel.grid(row=4, column=1, columnspan=2)
 
         if keys_in_data:
