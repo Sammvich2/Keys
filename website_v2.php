@@ -4,7 +4,8 @@
     <style>
         body {
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            background: dimgray;
+            background: #1f1f1f;
+            text-color
         }
 
         table, tr, td {
