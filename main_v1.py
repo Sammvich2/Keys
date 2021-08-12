@@ -39,9 +39,6 @@ def logger(input):
 logger("system running")
 
 
-def badBoys(blah):
-    writeBad = open("badbois.txt", "a")
-
 
 # Create database, this is how the data base was created
 '''
