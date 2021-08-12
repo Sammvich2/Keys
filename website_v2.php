@@ -9,6 +9,7 @@
         }
         table {
             width: 50%;
+            alignment: center;
         }
 
         tr {
