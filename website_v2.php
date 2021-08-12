@@ -5,6 +5,14 @@
         table, tr, td {
             border: 2px solid black;
             border-collapse: collapse;
+
+        }
+        table {
+            width: 50%;
+        }
+
+        tr {
+            height 70px;
         }
     </style>
 </head>
