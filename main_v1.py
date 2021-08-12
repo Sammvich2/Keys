@@ -7,7 +7,7 @@ from datetime import datetime
 import time
 import tkinter.font as tkFont
 # localtime = time.asctime(time.localtime(time.time()))
-localtime = time.ctime(time.time())
+# localtime = time.ctime(time.time())
 
 # set up the GPIO
 # the actual control is done at the function "door control"
@@ -167,7 +167,7 @@ def newKeyEntry():
                   'newID': idEntry.get(),
                   'newAdd': addressEntry.get(),
                   'keyholder': keyholder,
-                  'time': localtime
+                  'time': datetime.now().strftime("%d:%m:%Y:%H:%M:%S")
               })
 
     conn.commit()
@@ -229,7 +229,7 @@ def signKeysIn():
     conn = sqlite3.connect('keys.db')
     c = conn.cursor()
     print(keyInSearchVar)
-    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (localtime, "KeyBox", keyInSearchVar))
+    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y:%H:%M:%S"), "KeyBox", keyInSearchVar))
     logger(selectedUser + " Has signed IN keyset " + keyInSearchVar)
     conn.commit()
     conn.close()
@@ -274,7 +274,7 @@ def signKeysOut():
 
     print(keysOutSearchVar)
     print(selectedUser)
-    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (localtime, selectedUser, keysOutSearchVar))
+    c.execute("UPDATE keys SET date_of_issue =?, key_holder =? WHERE id_number =?", (datetime.now().strftime("%d:%m:%Y:%H:%M:%S"), selectedUser, keysOutSearchVar))
     logger(selectedUser + " Has signed OUT keyset " + keysOutSearchVar)
 
     conn.commit()
