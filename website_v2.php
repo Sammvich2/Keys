@@ -60,11 +60,11 @@
 
 
     foreach($keys as $row => $key){
-        echo "<tr>";
+        echo "<tr><h3>";
             echo "<td>" .  $key['id_number']  .  "</td>";
             echo "<td>" .  $key['site_address']  .  "</td>";
             echo "<td>" .  $key['key_holder']  .  "</td>";
-        echo "</tr>";
+        echo "</h3></tr>";
     }
 
     echo "</table>";
