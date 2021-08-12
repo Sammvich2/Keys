@@ -12,12 +12,12 @@
         }
 
         tr {
-            height 70px;
-            font-size 20px;
+            height: 70px;
+            font-size: 20px;
         }
 
         td {
-            font-size 30px;
+            font-size: 30px;
         }
     </style>
 </head>
