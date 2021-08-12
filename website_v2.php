@@ -1,11 +1,10 @@
 <html>
 <head>
-    <title>Title</title>
+    <title>Da keys</title>
     <style>
         table, tr, td {
             border: 2px solid black;
             border-collapse: collapse;
-            alignment: center;
 
         }
         table {
