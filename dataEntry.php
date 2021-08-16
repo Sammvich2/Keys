@@ -44,14 +44,27 @@
 <body>
 
 <table>
-    
+
+    <tr>
+        <th><h2>Key Number</h2></th>
+        <th><h2>Address</h2></th>
+        <th><h2>Who Has It?</h2></th>
+        <th><h2>When?</h2></th>
+        <th><h2>Issuer</h2></th>
+        <th><h2>Large?</h2></th>
+        <th><h2>FIP Monthly</h2></th>
+        <th><h2>Pump Monthly</h2></th>
+        <th><h2>Access Details</h2></th>
+        <th><h2>Key?</h2></th>
+    </tr>
+    <tr>
+        <td><textarea</td>
 
 
 
-
+    </tr>
 
 </table>
-
 
 <?php
 
@@ -60,20 +73,7 @@ $pdo = new PDO('sqlite:keys.db');
 $statement = $pdo->query("SELECT * from keys");
 $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<table>";
 
-echo "<tr>";
-echo "<td><h2>Key Number</h2></td>";
-echo "<td><h2>Address</h2></td>";
-echo "<td><h2>Who Has It?</h2></td>";
-echo "<td><h2>When?</h2></td>";
-echo "<td><h2>Issuer</h2></td>";
-echo "<td><h2>Large?</h2></td>";
-echo "<td><h2>FIP Monthly</h2></td>";
-echo "<td><h2>Pump Monthly</h2></td>";
-echo "<td><h2>Access Details</h2></td>";
-echo "<td><h2>Key?</h2></td>";
-echo "</tr>";
 
 
 foreach ($keys as $row => $key) {
