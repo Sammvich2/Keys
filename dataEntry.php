@@ -74,7 +74,7 @@
         <td><input type="number" id="pump">Pump Monthly</input> </td>
         <td><input type="text" id="access">Access Details</input> </td>
         <td><input type="number" id="is_key">Has Key?</input> </td>
-        <td><input type="number" id="submit">Submit</input> </td>
+        <td><input type="button" id="submit">Submit</input> </td>
     </tr>
 
 </table>
