@@ -40,7 +40,7 @@
             font-size: 20px;
         }
         textarea {
-            font-size: 20px;
+            font-size: 30px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
