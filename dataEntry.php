@@ -75,7 +75,7 @@
     </tr>
         <form action="dataEntry.php" method="post"></form>
             <tr>
-                <td><input type="number" id="keyID"></td>
+                <td><input type="number" name="keyID"></td>
                 <td><input type="text" id="address"></td>
                 <td><input type="text" id="who"></td>
                 <td><input type="date" id="when"></td>
