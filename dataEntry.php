@@ -60,7 +60,12 @@ echo "<tr>";
 echo "<td><h2>Key Number</h2></td>";
 echo "<td><h2>Address</h2></td>";
 echo "<td><h2>Who Has It?</h2></td>";
-echo "<td><h2></h2></td>";
+echo "<td><h2>Issuer</h2></td>";
+echo "<td><h2>Large?</h2></td>";
+echo "<td><h2>FIP Monthly</h2></td>";
+echo "<td><h2>Pump Monthly</h2></td>";
+echo "<td><h2>Access Details</h2></td>";
+echo "<td><h2>Key?</h2></td>";
 echo "</tr>";
 
 
@@ -69,6 +74,7 @@ foreach ($keys as $row => $key) {
     echo "<td>" . $key['id_number'] . "</td>";
     echo "<td>" . $key['site_address'] . "</td>";
     echo "<td>" . $key['key_holder'] . "</td>";
+    echo "<td>" . $key[''] . "</td>";
     echo "</h3></tr>";
 }
 
