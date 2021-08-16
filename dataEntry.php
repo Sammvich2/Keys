@@ -64,7 +64,17 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
-        <td><input type="text" id="keyID" </td>
+        <td><input type="number" id="keyID">Key ID</input> </td>
+        <td><input type="text" id="address">Key ID</input> </td>
+        <td><input type="text" id="who">Key ID</input> </td>
+        <td><input type="number" id="when">Key ID</input> </td>
+        <td><input type="number" id="issuer">Key ID</input> </td>
+        <td><input type="number" id="large">Key ID</input> </td>
+        <td><input type="number" id="fip">Key ID</input> </td>
+        <td><input type="number" id="pump">Key ID</input> </td>
+        <td><input type="number" id="access">Key ID</input> </td>
+        <td><input type="number" id="is_key">Key ID</input> </td>
+        <td><input type="number" id="submit">Key ID</input> </td>
     </tr>
 
 </table>
