@@ -71,10 +71,10 @@
         <td><input type="text" id="issuer"></input> </td>
         <td><input type="number" id="large"></input> </td>
         <td><input type="checkbox" id="fip"></input> </td>
-        <td><input type="checkbox" id="pump">Pump Monthly</input> </td>
-        <td><input type="text" id="access">Access Details</input> </td>
-        <td><input type="checkbox" id="is_key">Has Key?</input> </td>
-        <td><input type="button" id="submit">Submit</input> </td>
+        <td><input type="checkbox" id="pump"></input> </td>
+        <td><input type="text" id="access"></input> </td>
+        <td><input type="checkbox" id="is_key"></input> </td>
+        <td><input type="button" id="submit"></input> </td>
     </tr>
 
 </table>
