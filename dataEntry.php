@@ -40,7 +40,7 @@
         h3 {
             font-size: 20px;
         }
-        textarea {
+        input {
             font-size: 30px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
