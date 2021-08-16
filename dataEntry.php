@@ -15,7 +15,7 @@
         }
         table {
             width: 75%;
-            margin: -100px auto;
+            margin: auto;
         }
 
         tr {
