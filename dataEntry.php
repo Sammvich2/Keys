@@ -67,7 +67,7 @@
         <td><input type="number" id="keyID">Key ID</input> </td>
         <td><input type="text" id="address">Address</input> </td>
         <td><input type="text" id="who">Who Has It?</input> </td>
-        <td><input type="number" id="when">When?</input> </td>
+        <td><input type="date" id="when">When?</input> </td>
         <td><input type="text" id="issuer">Issuer</input> </td>
         <td><input type="number" id="large">Large?</input> </td>
         <td><input type="checkbox" id="fip">FIP Monthly</input> </td>
