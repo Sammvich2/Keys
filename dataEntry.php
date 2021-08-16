@@ -42,6 +42,7 @@
         textarea {
             font-size: 20px;
             resize: none;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
         }
     </style>
