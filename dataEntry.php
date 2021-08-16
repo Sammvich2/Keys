@@ -79,7 +79,7 @@
         <td><input type="text" id="who"></td>
         <td><input type="date" id="when"></td>
         <td><input type="text" id="issuer"></td>
-        <td><input type="number" id="large"></td>
+        <td><input type="checkbox"  class="check" id="large"></td>
         <td><input type="checkbox" class="check" id="fip"></td>
         <td><input type="checkbox" class="check" id="pump"></td>
         <td><input type="text" id="access"></td>
