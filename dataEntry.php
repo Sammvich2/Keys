@@ -70,13 +70,13 @@
         <td><input type="text" id="address"></input> </td>
         <td><input type="text" id="who"></input> </td>
         <td><input type="date" id="when"></input> </td>
-        <td><input type="text" id="issuer"></input> </td>
-        <td><input type="number" id="large"></input> </td>
-        <td><input type="checkbox" id="fip"></input> </td>
-        <td><input type="checkbox" id="pump"></input> </td>
-        <td><input type="text" id="access"></input> </td>
-        <td><input type="checkbox" id="is_key"></input> </td>
-        <td><input type="button" id="submit" placeholder="Submit"></input> </td>
+        <td><input type="text" id="issuer"></td>
+        <td><input type="number" id="large"></td>
+        <td><input type="checkbox" id="fip"></td>
+        <td><input type="checkbox" id="pump"></td>
+        <td><input type="text" id="access"></td>
+        <td><input type="checkbox" id="is_key"></td>
+        <td><input type="button" id="submit" placeholder="Submit"></td>
     </tr>
 
 </table>
