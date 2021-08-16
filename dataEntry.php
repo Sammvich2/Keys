@@ -58,9 +58,9 @@
 <table>
 
     <tr>
-        <td><h2>Key Number</h2></td>
+        <td><h2>Key ID</h2></td>
         <td><h2>Address</h2></td>
-        <td><h2>Who Has It?</h2></td>
+        <td><h2>Who?</h2></td>
         <td><h2>When?</h2></td>
         <td><h2>Issuer</h2></td>
         <td><h2>Large?</h2></td>
