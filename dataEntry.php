@@ -49,7 +49,8 @@
         }
 
         input.check {
-            width 
+            width: 20%;
+            height: 80%;
         }
     </style>
 </head>
