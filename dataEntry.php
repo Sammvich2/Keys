@@ -64,7 +64,7 @@
         <td><h2>When?</h2></td>
         <td><h2>Issuer</h2></td>
         <td><h2>Large?</h2></td>
-        <td><h2>FIP</h2></td>
+        <td><h2> FIP </h2></td>
         <td><h2>Pump</h2></td>
         <td><h2>Access Details</h2></td>
         <td><h2>Key?</h2></td>
