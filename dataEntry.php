@@ -66,10 +66,10 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
-        <td><input type="number" id="keyID"></input> </td>
-        <td><input type="text" id="address"></input> </td>
-        <td><input type="text" id="who"></input> </td>
-        <td><input type="date" id="when"></input> </td>
+        <td><input type="number" id="keyID"></td>
+        <td><input type="text" id="address"></td>
+        <td><input type="text" id="who"></td>
+        <td><input type="date" id="when"></td>
         <td><input type="text" id="issuer"></td>
         <td><input type="number" id="large"></td>
         <td><input type="checkbox" id="fip"></td>
