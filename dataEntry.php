@@ -58,7 +58,7 @@
         <th><h2>Key?</h2></th>
     </tr>
     <tr>
-        <td><textarea</td>
+        <td><textarea id="keyNumber"></textarea></td>
 
 
 
