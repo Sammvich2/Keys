@@ -61,7 +61,7 @@
 <pre>
     <?php
         if ($_POST['submit'] == "Submit") {
-            print_r($_POST);
+            $query = "INSERT INTO keys ()"
         }
 
 
