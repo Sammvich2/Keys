@@ -64,16 +64,16 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
-        <td><textarea id="keyNumber"></textarea></td>
-        <td><textarea id="address"></textarea></td>
-        <td><textarea id="who">Keybox</textarea></td>
-        <td><textarea id="when"></textarea></td>
-        <td><textarea id="issuer"></textarea></td>
-        <td><textarea id="large">0</textarea></td>
-        <td><textarea id="fip">0</textarea></td>
-        <td><textarea id="pump">0</textarea></td>
-        <td><textarea id="access"></textarea></td>
-        <td><textarea id="is_key"></textarea></td>
+        <td><textarea id="keyNumber" cols="10" rows="1"></textarea></td>
+        <td><textarea id="address" cols="10" rows="1"></textarea></td>
+        <td><textarea id="who" cols="10" rows="1">Keybox</textarea></td>
+        <td><textarea id="when" cols="10" rows="1"></textarea></td>
+        <td><textarea id="issuer" cols="10" rows="1"></textarea></td>
+        <td><textarea id="large" cols="10" rows="1">0</textarea></td>
+        <td><textarea id="fip" cols="10" rows="1">0</textarea></td>
+        <td><textarea id="pump" cols="10" rows="1">0</textarea></td>
+        <td><textarea id="access" cols="10" rows="1"></textarea></td>
+        <td><textarea id="is_key" cols="10" rows="1"></textarea></td>
     </tr>
 
 </table>
