@@ -47,6 +47,10 @@
             width: 100%;
 
         }
+
+        input.check {
+            width 
+        }
     </style>
 </head>
 <body>
