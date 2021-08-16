@@ -44,7 +44,7 @@
             font-size: 30px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            width: 50px;
+            width: 100px;
 
         }
     </style>
