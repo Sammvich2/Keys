@@ -73,7 +73,7 @@
         <td><h2>Access Details</h2></td>
         <td><h2>Key?</h2></td>
     </tr>
-        <form action"submit.php"></form>
+        <form action="dataEntry.php" method="post"></form>
             <tr>
                 <td><input type="number" id="keyID"></td>
                 <td><input type="text" id="address"></td>
