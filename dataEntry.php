@@ -49,3 +49,29 @@
 
 <?php
 
+
+$pdo = new PDO('sqlite:keys.db');
+$statement = $pdo->query("SELECT * from keys");
+$keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+echo "<table>";
+
+echo "<tr>";
+echo "<td><h2>Key Number</h2></td>";
+echo "<td><h2>Address</h2></td>";
+echo "<td><h2>Who Has It?</h2></td>";
+echo "</tr>";
+
+
+foreach ($keys as $row => $key) {
+    echo "<tr><h3>";
+    echo "<td>" . $key['id_number'] . "</td>";
+    echo "<td>" . $key['site_address'] . "</td>";
+    echo "<td>" . $key['key_holder'] . "</td>";
+    echo "</h3></tr>";
+}
+
+echo "</table>";
+?>
+</body>
+</html>
