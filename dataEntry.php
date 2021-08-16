@@ -64,7 +64,7 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
-        <td><textarea id="keyNumber" cols="15" rows="1"><b></b></textarea></td>
+        <td><textarea id="keyNumber" cols="15" rows="1"></textarea></td>
         <td><textarea id="address" cols="15" rows="1"></textarea></td>
         <td><textarea id="who" cols="15" rows="1">Keybox</textarea></td>
         <td><textarea id="when" cols="15" rows="1"></textarea></td>
