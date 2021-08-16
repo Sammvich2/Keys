@@ -46,16 +46,16 @@
 <table>
 
     <tr>
-        <th><h2>Key Number</h2></th>
-        <th><h2>Address</h2></th>
-        <th><h2>Who Has It?</h2></th>
-        <th><h2>When?</h2></th>
-        <th><h2>Issuer</h2></th>
-        <th><h2>Large?</h2></th>
-        <th><h2>FIP Monthly</h2></th>
-        <th><h2>Pump Monthly</h2></th>
-        <th><h2>Access Details</h2></th>
-        <th><h2>Key?</h2></th>
+        <td><h2>Key Number</h2></td>
+        <td><h2>Address</h2></td>
+        <td><h2>Who Has It?</h2></td>
+        <td><h2>When?</h2></td>
+        <td><h2>Issuer</h2></td>
+        <td><h2>Large?</h2></td>
+        <td><h2>FIP Monthly</h2></td>
+        <td><h2>Pump Monthly</h2></td>
+        <td><h2>Access Details</h2></td>
+        <td><h2>Key?</h2></td>
     </tr>
     <tr>
         <td><textarea id="keyNumber"></textarea></td>
