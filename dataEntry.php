@@ -29,7 +29,7 @@
         }
 
         td.fip {
-            width: 50px;
+            width: 100px;
         }
 
         h1 {
