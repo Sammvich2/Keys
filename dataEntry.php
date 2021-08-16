@@ -60,7 +60,7 @@
 
 <pre>
     <?php
-        if ($_POST['submit'] == "submit") {
+        if ($_POST['submit'] == "Submit") {
             print_r($_POST);
         }
 
@@ -98,7 +98,7 @@
                 <td><input type="checkbox" class="check" name="pump"></td>
                 <td><input type="text" name="access"></td>
                 <td><input type="checkbox" class="check" name="is_key"></td>
-                <td><input type="submit" value="Submit" name="submit">Submit</td>
+                <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
         </form>
 </table>
