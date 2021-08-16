@@ -57,6 +57,17 @@
         }
     </style>
 </head>
+
+<pre>
+    <?php
+        if ($_POST['submit'])
+
+
+
+    ?>
+</pre>
+
+
 <body>
 
 <table>
@@ -73,21 +84,21 @@
         <td><h2>Access Details</h2></td>
         <td><h2>Key?</h2></td>
     </tr>
-        <form action="dataEntry.php" method="post"></form>
+        <form action="dataEntry.php" method="post">
             <tr>
                 <td><input type="number" name="keyID"></td>
-                <td><input type="text" id="address"></td>
-                <td><input type="text" id="who"></td>
-                <td><input type="date" id="when"></td>
-                <td><input type="text" id="issuer"></td>
-                <td><input type="checkbox"  class="check" id="large"></td>
-                <td><input type="checkbox" class="check" id="fip"></td>
-                <td><input type="checkbox" class="check" id="pump"></td>
-                <td><input type="text" id="access"></td>
-                <td><input type="checkbox" class="check" id="is_key"></td>
-                <td><input type="submit" value="Submit"></td>
+                <td><input type="text" name="address"></td>
+                <td><input type="text" name="who"></td>
+                <td><input type="date" name="when"></td>
+                <td><input type="text" name="issuer"></td>
+                <td><input type="checkbox"  class="check" name="large"></td>
+                <td><input type="checkbox" class="check" name="fip"></td>
+                <td><input type="checkbox" class="check" name="pump"></td>
+                <td><input type="text" name="access"></td>
+                <td><input type="checkbox" class="check" name="is_key"></td>
+                <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
-
+        </form>
 </table>
 
 <?php
