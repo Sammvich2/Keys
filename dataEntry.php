@@ -64,6 +64,7 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
+        <b>
         <td><textarea id="keyNumber" cols="15" rows="1"></textarea></td>
         <td><textarea id="address" cols="15" rows="1"></textarea></td>
         <td><textarea id="who" cols="15" rows="1">Keybox</textarea></td>
@@ -74,6 +75,7 @@
         <td><textarea id="pump" cols="15" rows="1">0</textarea></td>
         <td><textarea id="access" cols="15" rows="1"></textarea></td>
         <td><textarea id="is_key" cols="15" rows="1"></textarea></td>
+        </b>
     </tr>
 
 </table>
