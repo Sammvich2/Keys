@@ -60,7 +60,7 @@
 
 <pre>
     <?php
-        if ($_POST['submit'] == 'submit') {
+        if ($_POST['submit'] == "submit") {
             print_r($_POST);
         }
 
