@@ -41,6 +41,8 @@
         }
         textarea {
             font-size: 20px;
+            rows: 1;
+            cols: 10;
 
         }
     </style>
