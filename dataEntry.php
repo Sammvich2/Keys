@@ -74,7 +74,7 @@
         <td><h2>Key?</h2></td>
     </tr>
     <tr>
-        <td><input type="number" id="keyID"></td>
+        <td><input type="number" maxlength="4" id="keyID"></td>
         <td><input type="text" id="address"></td>
         <td><input type="text" id="who"></td>
         <td><input type="date" id="when"></td>
