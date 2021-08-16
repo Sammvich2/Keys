@@ -65,12 +65,12 @@
     </tr>
     <tr>
         <td><input type="number" id="keyID"></input> </td>
-        <td><input type="text" id="address">Address</input> </td>
-        <td><input type="text" id="who">Who Has It?</input> </td>
-        <td><input type="date" id="when">When?</input> </td>
-        <td><input type="text" id="issuer">Issuer</input> </td>
-        <td><input type="number" id="large">Large?</input> </td>
-        <td><input type="checkbox" id="fip">FIP Monthly</input> </td>
+        <td><input type="text" id="address"></input> </td>
+        <td><input type="text" id="who"></input> </td>
+        <td><input type="date" id="when"></input> </td>
+        <td><input type="text" id="issuer"></input> </td>
+        <td><input type="number" id="large"></input> </td>
+        <td><input type="checkbox" id="fip"></input> </td>
         <td><input type="checkbox" id="pump">Pump Monthly</input> </td>
         <td><input type="text" id="access">Access Details</input> </td>
         <td><input type="checkbox" id="is_key">Has Key?</input> </td>
