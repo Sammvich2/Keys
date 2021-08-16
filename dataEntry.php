@@ -65,7 +65,7 @@
                   large, fip, pump, access, is_key) values ('$_POST[keyID]', '$_POST[address]','$_POST[who]', 
                         '$_POST[when]', '$_POST[issuer]', '$_POST[large]', '$_POST[fip]', '$_POST[pump]', 
                                 '$_POST[access]', '$_POST[is_key]',)";
-            $result = 
+            $db = 
             print_r($_POST);
         }
 
