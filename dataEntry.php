@@ -59,9 +59,15 @@
     </tr>
     <tr>
         <td><textarea id="keyNumber"></textarea></td>
-
-
-
+        <td><textarea id="address"></textarea></td>
+        <td><textarea id="who">Keybox</textarea></td>
+        <td><textarea id="when"></textarea></td>
+        <td><textarea id="issuer"></textarea></td>
+        <td><textarea id="large">0</textarea></td>
+        <td><textarea id="fip">0</textarea></td>
+        <td><textarea id="pump">0</textarea></td>
+        <td><textarea id="access"></textarea></td>
+        <td><textarea id="is_key"></textarea></td>
     </tr>
 
 </table>
