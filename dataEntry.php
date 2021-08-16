@@ -76,7 +76,7 @@
         <td><input type="checkbox" id="pump"></input> </td>
         <td><input type="text" id="access"></input> </td>
         <td><input type="checkbox" id="is_key"></input> </td>
-        <td><input type="button" id="submit">Submit</input> </td>
+        <td><input type="button" id="submit" label="Submit"></input> </td>
     </tr>
 
 </table>
