@@ -89,19 +89,19 @@
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
 
                 $large = filter_input(INPUT_POST, 'large');
-                $stmt->bindValue(':large', $large, PDO::PARAM_STR);
+                $stmt->bindValue(':large', $large, PDO::PARAM_INT);
 
                 $fip = filter_input(INPUT_POST, 'fip');
-                $stmt->bindValue(':fip', $fip, PDO::PARAM_STR);
+                $stmt->bindValue(':fip', $fip, PDO::PARAM_INT);
 
                 $pump = filter_input(INPUT_POST, 'pump');
-                $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
+                $stmt->bindValue(':pump', $pump, PDO::PARAM_INT);
 
                 $access = filter_input(INPUT_POST, 'access');
                 $stmt->bindValue(':access', $access, PDO::PARAM_STR);
 
                 $is_key = filter_input(INPUT_POST, 'is_key');
-                $stmt->bindValue(':is_key', $is_key, PDO::PARAM_STR);
+                $stmt->bindValue(':is_key', $is_key, PDO::PARAM_INT);
 
                 $success = $stmt->execute();
                 if($success){
