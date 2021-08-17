@@ -86,8 +86,11 @@
                     }
                 $db=null;
 
+            } catch (PDOException $e){
+                print "Error: " . $e->getMessage() . "br/>";
             }
-            else
+
+
         }
 
 
