@@ -83,6 +83,8 @@
                     echo "Something Went Wrong";
                 }
 
+                $db = null;
+
 
             } catch (PDOException $e){
                 print "Error: " . $e->getMessage() . "br/>";
