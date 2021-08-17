@@ -76,6 +76,33 @@
                 $id_number = filter_input(INPUT_POST, 'id_number');
                 $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
 
+                $address = filter_input(INPUT_POST, 'address');
+                $stmt->bindValue(':address', $address, PDO::PARAM_STR);
+
+                $key_holder = filter_input(INPUT_POST, 'key_holder');
+                $stmt->bindValue(':key_holder', $key_holder, PDO::PARAM_STR);
+
+                $date_of_issue = filter_input(INPUT_POST, 'date_of_issue');
+                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_STR);
+
+                $key_provider = filter_input(INPUT_POST, 'key_provider');
+                $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
+
+                $large = filter_input(INPUT_POST, 'large');
+                $stmt->bindValue(':large', $large, PDO::PARAM_STR);
+
+                $fip = filter_input(INPUT_POST, 'fip');
+                $stmt->bindValue(':fip', $fip, PDO::PARAM_STR);
+
+                $pump = filter_input(INPUT_POST, 'pump');
+                $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
+
+                $access = filter_input(INPUT_POST, 'access');
+                $stmt->bindValue(':access', $id_number, PDO::PARAM_STR);
+
+                $is_key = filter_input(INPUT_POST, 'id_number');
+                $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
+
                 $success = $stmt->execute();
                 if($success){
                     echo "Key Added To Database";
