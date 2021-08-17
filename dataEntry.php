@@ -71,7 +71,7 @@
             print_r($_POST);
 
             $db = new PDO('sqlite:keys.db');
-            $sql = "INSERT INTO keys ()"
+            $sql = "INSERT INTO keys (id_number, )"
         }
 
 
