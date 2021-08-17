@@ -40,7 +40,7 @@ logger("system running")
 
 
 
-# Create database, this is how the data base was created
+# Create database, this is how the data base was created (NOT ANYMORE)
 '''
 conn = sqlite3.connect('keys.db')
 c = conn.cursor()
