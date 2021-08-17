@@ -72,12 +72,12 @@
 
             $db = new PDO('sqlite:keys.db');
             $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider,
-                  # large, fip, pump, access, is_key) VALUES (:keyID, :address, :who, :when, :issuer, :large, :fip, :pump,
+                  # large, fip, pump, access, is_key) VALUES (:id_number, :address, :who, :when, :issuer, :large, :fip, :pump,
                         :access, :is_key)";
             $stmt = $db->prepare($sql);
 
             $id_number = filter_input(INPUT_POST, 'id_number');
-            $stmt->bindValue(':keyID', $id_number, PDO::PARAM_STR);
+            $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
         }
 
 
@@ -104,7 +104,7 @@
     </tr>
         <form action="dataEntry.php" method="post">
             <tr>
-                <td><input type="number" name="keyID"></td>
+                <td><input type="number" name="id_number"></td>
                 <td><input type="text" name="address"></td>
                 <td><input type="text" name="who"></td>
                 <td><input type="date" name="when"></td>
