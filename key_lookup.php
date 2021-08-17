@@ -28,7 +28,7 @@
         }
 
         h1 {
-            font-size: 300px;
+            font-size: 100px;
             text-align: center;
             color: #ff0033
         }
@@ -43,7 +43,7 @@
 </head>
 <body>
 <h1>
-    Da Keys
+    Site Lookup
 </h1>
 
 <?php
