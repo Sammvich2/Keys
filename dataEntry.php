@@ -74,7 +74,10 @@
                 $stmt = $db->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
-                $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
+                if ($id_number) {
+                    
+                }
+                $stmt->bindValue(':id_number', $id_number, PDO::PARAM_INT);
 
                 $address = filter_input(INPUT_POST, 'address');
                 $stmt->bindValue(':address', $address, PDO::PARAM_STR);
@@ -144,7 +147,7 @@
     </tr>
         <form action="dataEntry.php" method="post">
             <tr>
-                <td><input type="text" name="id_number"></td>
+                <td><input type="number" name="id_number"></td>
                 <td><input type="text" name="address"></td>
                 <td><input type="text" name="key_holder"></td>
                 <td><input type="date" name="date_of_issue"></td>
