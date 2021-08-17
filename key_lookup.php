@@ -49,7 +49,7 @@
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from keys");
+    $statement = $pdo->query("SELECT * from keys WHERE is_key ");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     echo "<table>";
@@ -67,6 +67,8 @@
             echo "<td>" .  $key['id_number']  .  "</td>";
             echo "<td>" .  $key['site_address']  .  "</td>";
             echo "<td>" .  $key['key_holder']  .  "</td>";
+            echo "<td>" .  $key['date_of_issue']  .  "</td>";
+            echo "<td>" .  $key['access']  .  "</td>";
         echo "</h3></tr>";
     }
 
