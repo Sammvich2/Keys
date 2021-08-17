@@ -157,7 +157,7 @@
                 <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
         </form>
-</table>
+
 
 <?php
 
