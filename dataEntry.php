@@ -66,7 +66,7 @@
                   # large, fip, pump, access, is_key) values ('$_POST[keyID]', '$_POST[address]','$_POST[who]',
                         # '$_POST[when]', '$_POST[issuer]', '$_POST[large]', '$_POST[fip]', '$_POST[pump]',
                                 # '$_POST[access]', '$_POST[is_key]',)";
-            # print_r($_POST);
+            print_r($_POST);
 
             try {
                 $db = new PDO('sqlite:keys.db');
@@ -75,7 +75,7 @@
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
                 if ($id_number) {
-                    
+
                 }
                 $stmt->bindValue(':id_number', $id_number, PDO::PARAM_INT);
 
