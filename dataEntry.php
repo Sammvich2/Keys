@@ -79,9 +79,13 @@
                 $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
 
                     $success = $stmt->execute();
-                    if($success)[
-                            
-                    ]
+                    if($success){
+                        echo "Key Added To Database";
+                    } ekse{
+                        echo "Something Went Wrong";
+                    }
+                $db=null;
+
             }
             else
         }
