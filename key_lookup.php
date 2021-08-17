@@ -58,6 +58,8 @@
         echo "<td><h2>Key Number</h2></td>";
         echo "<td><h2>Address</h2></td>";
         echo "<td><h2>Who Has It?</h2></td>";
+        echo "<td><h2>When Did They Get It?</h2></td>";
+        echo "<td><h2>Access Details</h2></td>";
     echo "</tr>";
 
 
