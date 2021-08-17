@@ -81,7 +81,7 @@
                     $success = $stmt->execute();
                     if($success){
                         echo "Key Added To Database";
-                    } ekse{
+                    } else{
                         echo "Something Went Wrong";
                     }
                 $db=null;
