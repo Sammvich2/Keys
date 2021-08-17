@@ -13,6 +13,10 @@
             border-collapse: collapse;
 
         }
+        tr:nth-child(even) {
+            background-color: #5c5c5c;
+        }
+
         table {
             width: 90%;
             margin: 100px auto;
