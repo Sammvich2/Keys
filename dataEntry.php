@@ -83,7 +83,7 @@
                 $stmt->bindValue(':key_holder', $key_holder, PDO::PARAM_STR);
 
                 $date_of_issue = filter_input(INPUT_POST, 'date_of_issue');
-                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_STR);
+                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_BOOL);
 
                 $key_provider = filter_input(INPUT_POST, 'key_provider');
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
@@ -144,7 +144,7 @@
     </tr>
         <form action="dataEntry.php" method="post">
             <tr>
-                <td><input type="number" name="id_number"></td>
+                <td><input type="text" name="id_number"></td>
                 <td><input type="text" name="address"></td>
                 <td><input type="text" name="key_holder"></td>
                 <td><input type="date" name="date_of_issue"></td>
