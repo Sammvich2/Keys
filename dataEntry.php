@@ -149,11 +149,11 @@
                 <td><input type="text" name="key_holder"></td>
                 <td><input type="date" name="date_of_issue"></td>
                 <td><input type="text" name="key_provider"></td>
-                <td><input type="number"  class="check" name="large"></td>
-                <td><input type="number" class="check" name="fip"></td>
-                <td><input type="number" class="check" name="pump"></td>
+                <td><input type="number" name="large"></td>
+                <td><input type="number" name="fip"></td>
+                <td><input type="number" name="pump"></td>
                 <td><input type="text" name="access"></td>
-                <td><input type="number" class="check" name="is_key"></td>
+                <td><input type="number" name="is_key"></td>
                 <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
         </form>
