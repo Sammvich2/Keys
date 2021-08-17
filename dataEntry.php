@@ -70,7 +70,7 @@
 
             try {
                 $db = new PDO('sqlite:keys.db');
-                $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :who, :when, :issuer, :large, :fip, :pump, :access, :is_key)";
+                $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :key_holder, :date_of_issue, :key_provider, :large, :fip, :pump, :access, :is_key)";
                 $stmt = $db->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
@@ -98,10 +98,10 @@
                 $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
 
                 $access = filter_input(INPUT_POST, 'access');
-                $stmt->bindValue(':access', $id_number, PDO::PARAM_STR);
+                $stmt->bindValue(':access', $access, PDO::PARAM_STR);
 
-                $is_key = filter_input(INPUT_POST, 'id_number');
-                $stmt->bindValue(':id_number', $id_number, PDO::PARAM_STR);
+                $is_key = filter_input(INPUT_POST, 'is_key');
+                $stmt->bindValue(':is_key', $is_key, PDO::PARAM_STR);
 
                 $success = $stmt->execute();
                 if($success){
@@ -146,9 +146,9 @@
             <tr>
                 <td><input type="number" name="id_number"></td>
                 <td><input type="text" name="address"></td>
-                <td><input type="text" name="who"></td>
-                <td><input type="date" name="when"></td>
-                <td><input type="text" name="issuer"></td>
+                <td><input type="text" name="key_holder"></td>
+                <td><input type="date" name="date_of_issue"></td>
+                <td><input type="text" name="key_provider"></td>
                 <td><input type="checkbox"  class="check" name="large"></td>
                 <td><input type="checkbox" class="check" name="fip"></td>
                 <td><input type="checkbox" class="check" name="pump"></td>
