@@ -74,9 +74,6 @@
                 $stmt = $db->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
-                if ($id_number) {
-
-                }
                 $stmt->bindValue(':id_number', $id_number, PDO::PARAM_INT);
 
                 $address = filter_input(INPUT_POST, 'address');
@@ -86,7 +83,7 @@
                 $stmt->bindValue(':key_holder', $key_holder, PDO::PARAM_STR);
 
                 $date_of_issue = filter_input(INPUT_POST, 'date_of_issue');
-                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_BOOL);
+                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_STR);
 
                 $key_provider = filter_input(INPUT_POST, 'key_provider');
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
@@ -152,11 +149,11 @@
                 <td><input type="text" name="key_holder"></td>
                 <td><input type="date" name="date_of_issue"></td>
                 <td><input type="text" name="key_provider"></td>
-                <td><input type="checkbox"  class="check" name="large"></td>
-                <td><input type="checkbox" class="check" name="fip"></td>
-                <td><input type="checkbox" class="check" name="pump"></td>
+                <td><input type="number"  class="check" name="large"></td>
+                <td><input type="number" class="check" name="fip"></td>
+                <td><input type="number" class="check" name="pump"></td>
                 <td><input type="text" name="access"></td>
-                <td><input type="checkbox" class="check" name="is_key"></td>
+                <td><input type="number" class="check" name="is_key"></td>
                 <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
         </form>
