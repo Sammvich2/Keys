@@ -132,6 +132,34 @@
         </form>
 </table>
 
+<?php
+
+
+$pdo = new PDO('sqlite:keys.db');
+$statement = $pdo->query("SELECT * from keys");
+$keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+
+foreach ($keys as $row => $key) {
+    echo "<tr><h3>";
+    echo "<td>" . $key['id_number'] . "</td>";
+    echo "<td>" . $key['address'] . "</td>";
+    echo "<td>" . $key['key_holder'] . "</td>";
+    echo "<td>" . $key['date_of_issue'] . "</td>";
+    echo "<td>" . $key['key_provider'] . "</td>";
+    echo "<td>" . $key['large'] . "</td>";
+    echo "<td>" . $key['fip'] . "</td>";
+    echo "<td>" . $key['pump'] . "</td>";
+    echo "<td>" . $key['access'] . "</td>";
+    echo "<td>" . $key['is_key'] . "</td>";
+    echo "</h3></tr>";
+}
+
+echo "</table>";
+?>
+
 
 </body>
 </html>
