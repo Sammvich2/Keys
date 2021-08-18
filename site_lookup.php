@@ -17,7 +17,7 @@
         tr:nth-child(even) {
             background-color: #5c5c5c;
         }
-        
+
         table {
             width: 95%;
             margin: 100px auto;
