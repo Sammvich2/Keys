@@ -77,6 +77,8 @@
             # print_r($_POST);
 
             try {
+                if ($_POST[''])
+
                 $db = new PDO('sqlite:keys.db');
                 $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :key_holder, :date_of_issue, :key_provider, :large, :fip, :pump, :access, :is_key)";
                 $stmt = $db->prepare($sql);
@@ -157,11 +159,11 @@
                 <td><input type="text" name="key_holder"></td>
                 <td><input type="date" name="date_of_issue"></td>
                 <td><input type="text" name="key_provider"></td>
-                <td><input type="number" name="large"></td>
-                <td><input type="number" name="fip"></td>
-                <td><input type="number" name="pump"></td>
+                <td><input type="checkbox" class="check" name="large"></td>
+                <td><input type="checkbox" class="check" name="fip"></td>
+                <td><input type=checkbox" class="check" name="pump"></td>
                 <td><input type="text" name="access"></td>
-                <td><input type="number" name="is_key"></td>
+                <td><input type="checkbox" class="check" name="is_key"></td>
                 <td><input type="submit" value="Submit" name="submit"></td>
             </tr>
         </form>
