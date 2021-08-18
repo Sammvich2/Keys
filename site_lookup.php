@@ -14,7 +14,7 @@
 
         }
         table {
-            width: 75%;
+            width: 95%;
             margin: 100px auto;
         }
 
