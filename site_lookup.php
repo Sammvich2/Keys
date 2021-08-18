@@ -9,10 +9,15 @@
         }
 
         table, tr, td {
-            border: 2px solid black;
+            border: none;
             border-collapse: collapse;
 
         }
+
+        tr:nth-child(even) {
+            background-color: #5c5c5c;
+        }
+        
         table {
             width: 95%;
             margin: 100px auto;
