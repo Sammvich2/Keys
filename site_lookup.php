@@ -65,7 +65,7 @@
 
     foreach($keys as $row => $key){
         echo "<tr><h3>";
-            echo "<td>" .  $key['site_address']  .  "</td>";
+            echo "<td>" .  $key['address']  .  "</td>";
             echo "<td>" .  $key['id_number']  .  "</td>";
             echo "<td>" .  $key['key_holder']  .  "</td>";
             echo "<td>" .  $key['access']  .  "</td>";
