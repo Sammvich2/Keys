@@ -104,7 +104,7 @@
                     } else {
                         $large = "No";
                     }
-                $stmt->bindValue(':large', $large, PDO::PARAM_INT);
+                $stmt->bindValue(':large', $large, PDO::PARAM_STR);
 
                 $fip = filter_input(INPUT_POST, 'fip');
                 $stmt->bindValue(':fip', $fip, PDO::PARAM_INT);
