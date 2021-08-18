@@ -99,14 +99,19 @@
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
 
                 #$large = filter_input(INPUT_POST, 'large');
-                    if ($_POST['large'] == "on"){
+                if ($_POST['large'] == "on"){
                         $large = "Yes";
                     } else {
                         $large = "No";
-                    }
+                }
                 $stmt->bindValue(':large', $large, PDO::PARAM_STR);
 
-                $fip = filter_input(INPUT_POST, 'fip');
+                #$fip = filter_input(INPUT_POST, 'fip');
+                if ($_POST['large'] == "on"){
+                    $fip = "Yes";
+                } else {
+                    $fip = "No";
+                }
                 $stmt->bindValue(':fip', $fip, PDO::PARAM_INT);
 
                 $pump = filter_input(INPUT_POST, 'pump');
