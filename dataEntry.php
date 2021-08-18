@@ -99,7 +99,6 @@
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
 
                 #$large = filter_input(INPUT_POST, 'large');
-                try {
                     if ($_POST['large'] == "on"){
                         $large = "Yes";
                     } else {
