@@ -77,7 +77,7 @@
             # print_r($_POST);
 
             try {
-                if ($_POST[''])
+
 
                 $db = new PDO('sqlite:keys.db');
                 $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :key_holder, :date_of_issue, :key_provider, :large, :fip, :pump, :access, :is_key)";
@@ -98,7 +98,13 @@
                 $key_provider = filter_input(INPUT_POST, 'key_provider');
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
 
-                $large = filter_input(INPUT_POST, 'large');
+                #$large = filter_input(INPUT_POST, 'large');
+                try {
+                    if ($_POST['large'] == "on"){
+                        $large = "Yes";
+                    } else {
+                        $large = "No";
+                    }
                 $stmt->bindValue(':large', $large, PDO::PARAM_INT);
 
                 $fip = filter_input(INPUT_POST, 'fip');
