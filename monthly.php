@@ -73,7 +73,7 @@
 <body>
 
 <table>
-    <form action="dataEntry.php" method="post">
+    <form action="monthly.php" method="post">
     <tr>
         <td><h4><input style="width: %" type="submit" value="Hide Completed Monthlies" name="hide"></h4></td>
     </tr>
