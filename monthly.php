@@ -50,7 +50,7 @@
         }
 
         h4 {
-            font-size: 15px;
+            font-size: 35px;
         }
         input {
             font-size: 20px;
