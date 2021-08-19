@@ -71,7 +71,7 @@
 <table>
     <tr>
         <td style="width: 5%"><h2>Monthly Done?</h2></td>
-        <td><h2>Address</h2></td>
+        <td style="text-align: left"><h2>Address</h2></td>
         <td><h2>Access Details</h2></td>
         <td><h2>Is There A Key?</h2></td>
     </tr>
