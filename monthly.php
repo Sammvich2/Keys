@@ -94,6 +94,22 @@
             }
 
             echo "</table>";
+        } else {
+            $pdo = new PDO('sqlite:keys.db');
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
+            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
+            foreach($keys as $row => $key){
+                echo "<tr><h3>";
+                echo "<td>" .  $key['fip']  .  "</td>";
+                echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
+                echo "<td>" .  $key['access']  .  "</td>";
+                echo "<td>" .  $key['is_key']  .  "</td>";
+                echo "</h3></tr>";
+            }
+
+            echo "</table>";
         }
     ?>
 </pre>
