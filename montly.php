@@ -54,7 +54,7 @@
             font-size: 15px;
         }
         input {
-            font-size: 15px;
+            font-size: 20px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             width: 100%;
