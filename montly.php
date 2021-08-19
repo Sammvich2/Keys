@@ -64,7 +64,7 @@
 </head>
 
 <h1>
-    Montlies
+    Monthlies
 </h1>
 <body>
 
