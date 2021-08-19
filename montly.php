@@ -65,21 +65,22 @@
 <h1>
     Montlies
 </h1>
+<body>
+
+<table>
+    <tr>
+        <td style="width: 15%"><h2>Monthly Done?</h2></td>
+        <td><h2>Address</h2></td>
+        <td><h2>Access Details</h2></td>
+        <td><h2>Is There A Key?</h2></td>
+    </tr>
+</table>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+</body>
 
 </html>
 
@@ -89,16 +90,9 @@ $pdo = new PDO('sqlite:keys.db');
 $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
 $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+
+
 echo "<table>";
-
-echo "<tr>";
-echo "<td><h2>Monthly Done?</h2></td>";
-echo "<td><h2>Address</h2></td>";
-echo "<td><h2>Access Details</h2></td>";
-echo "<td><h2>Is There A Key?</h2></td>";
-echo "</tr>";
-
-
 
 foreach($keys as $row => $key){
     echo "<tr><h3>";
