@@ -75,7 +75,7 @@
 <pre>
     <?php
         if ($_POST['hide'] == "Hide Yes") {
-            print_r();
+            print_r($_POST);
         }
 
 
