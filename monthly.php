@@ -88,7 +88,7 @@
 
     <tr>
 
-        <td><h4><input formaction="monthly.php" formmethod="post"  type="submit" value="Hide Yes" name="hide"></h4></td>
+        <td><h4><form action="monthly.php" method="post"><input type="submit" value="Hide Yes" name="hide"></form></h4></td>
 
     </tr>
 
