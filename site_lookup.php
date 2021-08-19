@@ -54,7 +54,7 @@
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from keys WHERE is_key = 1");
+    $statement = $pdo->query("SELECT * from keys WHERE is_key = 'Yes'");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     echo "<table>";
@@ -71,7 +71,7 @@
     foreach($keys as $row => $key){
         echo "<tr><h3>";
             echo "<td>" .  $key['address']  .  "</td>";
-            echo "<td>" .  $key['id_number']  .  "</td>";
+            echo "<td>" .  $key['is_key']  .  "</td>";
             echo "<td>" .  $key['key_holder']  .  "</td>";
             echo "<td>" .  $key['access']  .  "</td>";
         echo "</h3></tr>";
