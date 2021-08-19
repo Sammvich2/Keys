@@ -76,7 +76,7 @@
 
     <tr>
 
-        <td><h4><input style="width: %" type="submit" value="Hide Completed Monthlies" name="hide"></h4></td>
+        <td><h4><input style="width: %" type="submit" value="Hide Yes" name="hide"></h4></td>
 
     </tr>
 
