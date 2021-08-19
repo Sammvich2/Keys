@@ -15,17 +15,16 @@
         }
 
         tr:nth-child(even) {
-            background-color: #5c5c5c;
+            background-color: #454545;
         }
 
         table {
-            width: 95%;
+            width: 100%;
             margin: 100px auto;
         }
 
         tr {
             height: 30px;
-            font-size: 23px;
         }
 
         td {
@@ -38,11 +37,11 @@
             color: #ff0033
         }
         h2 {
-            font-size: 30px;
+            font-size: 45px;
         }
 
         h3 {
-            font-size: 20px;
+            font-size: 45px;
         }
     </style>
 </head>
