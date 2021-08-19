@@ -54,7 +54,7 @@
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from keys WHERE is_key = 'Yes'");
+    $statement = $pdo->query("SELECT * from keys");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     echo "<table>";
