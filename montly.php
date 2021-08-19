@@ -49,6 +49,10 @@
         h3 {
             font-size: 20px;
         }
+
+        h4 {
+            font-size: 15px;
+        }
         input {
             font-size: 30px;
             resize: none;
@@ -70,7 +74,7 @@
 
 <table>
     <tr>
-        <td>Hide Complete Monthlies</td>
+        <td>Hide Completed Monthlies</td>
     </tr>
     <tr>
         <td style="width: 10%"><h2>Monthly Done?</h2></td>
