@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Monthlies </title>
+    <title>Monthlies</title>
     <style>
         body {
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
