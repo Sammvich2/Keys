@@ -122,7 +122,7 @@
             echo "<tr><h3>";
             echo "<td>" .  $key['fip']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
-            echo "<td style='text-align: left;'>" .  $key['access']  .  "</td>";
+            echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
             echo "<td>" .  $key['is_key']  .  "</td>";
             echo "</h3></tr>";
         }
