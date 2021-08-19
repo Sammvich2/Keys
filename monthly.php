@@ -25,7 +25,7 @@
 
         tr {
             height: 30px;
-            font-size: 23px;
+            font-size: 35px;
         }
 
         td {
@@ -37,16 +37,16 @@
         }
 
         h1 {
-            font-size: 100px;
+            font-size: 150px;
             text-align: center;
             color: #ff0033
         }
         h2 {
-            font-size: 30px;
+            font-size: 5px;
         }
 
         h3 {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         h4 {
