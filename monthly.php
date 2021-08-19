@@ -42,7 +42,7 @@
             color: #ff0033
         }
         h2 {
-            font-size: 5px;
+            font-size: 35px;
         }
 
         h3 {
