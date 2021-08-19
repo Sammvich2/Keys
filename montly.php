@@ -83,7 +83,31 @@
 
 </html>
 
-
-
-
 <?php
+
+$pdo = new PDO('sqlite:keys.db');
+$statement = $pdo->query("SELECT * from keys WHERE is_key = 1");
+$keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+echo "<table>";
+
+echo "<tr>";
+echo "<td><h2>Monthly Done?</h2></td>";
+echo "<td><h2>Address</h2></td>";
+echo "<td><h2>Access Details</h2></td>";
+echo "<td><h2>Is There A Key?</h2></td>";
+echo "</tr>";
+
+
+
+foreach($keys as $row => $key){
+    echo "<tr><h3>";
+    echo "<td>" .  $key['fip']  .  "</td>";
+    echo "<td>" .  $key['address']  .  "</td>";
+    echo "<td>" .  $key['access']  .  "</td>";
+    echo "<td>" .  $key['is_key']  .  "</td>";
+    echo "</h3></tr>";
+}
+
+echo "</table>";
+?>
