@@ -13,7 +13,7 @@
             border-collapse: collapse;
 
         }
-        tr:nth-child(even) {
+        tr:nth-child(odd) {
             background-color: #454545;
         }
 
