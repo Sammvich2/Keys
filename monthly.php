@@ -49,11 +49,8 @@
             font-size: 45px;
         }
 
-        h4 {
-            font-size: 35px;
-        }
         input {
-            font-size: 20px;
+            font-size: 35px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             width: 100%;
