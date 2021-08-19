@@ -72,6 +72,13 @@
     The Clock Is Ticking
 </h1>
 
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
+
 <table>
     <tr>
         <td><h4><form action="monthly.php" method="post"><input type="submit" value="Hide Yes" name="hide"></form></h4></td>
