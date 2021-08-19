@@ -74,7 +74,7 @@
 
 <table>
     <tr>
-        <td>Hide Completed Monthlies</td>
+        <td><h4>Hide Completed Monthlies</h4></td>
     </tr>
     <tr>
         <td style="width: 10%"><h2>Monthly Done?</h2></td>
