@@ -110,7 +110,7 @@
                 if ($_POST['fip'] == "on"){
                     $fip = "Yes";
                 } else {
-                    $fip = "No";
+                    $fip = null;
                 }
                 $stmt->bindValue(':fip', $fip, PDO::PARAM_STR);
 
@@ -118,7 +118,7 @@
                 if ($_POST['pump'] == "on"){
                     $pump = "Yes";
                 } else {
-                    $pump = "No";
+                    $pump = null;
                 }
                 $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
 
