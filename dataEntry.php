@@ -125,7 +125,12 @@
                 $access = filter_input(INPUT_POST, 'access');
                 $stmt->bindValue(':access', $access, PDO::PARAM_STR);
 
-                $is_key = filter_input(INPUT_POST, 'is_key');
+                #$is_key = filter_input(INPUT_POST, 'is_key');
+                if ($_POST['is_key'] == "on"){
+                    $is_key = "Yes";
+                } else {
+                    $is_key = "No";
+                }
                 $stmt->bindValue(':is_key', $is_key, PDO::PARAM_INT);
 
                 $success = $stmt->execute();
