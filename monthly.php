@@ -72,48 +72,6 @@
     The Clock Is Ticking
 </h1>
 
-
-
-<pre>
-    <?php
-        if ($_POST['hide'] == "Hide Yes") {
-            #print_r($_POST);
-
-            $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No'");
-            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-
-            foreach($keys as $row => $key){
-                echo "<tr><h3>";
-                echo "<td>" .  $key['fip']  .  "</td>";
-                echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
-                echo "<td>" .  $key['access']  .  "</td>";
-                echo "<td>" .  $key['is_key']  .  "</td>";
-                echo "</h3></tr>";
-            }
-
-            echo "</table>";
-        } else {
-            $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
-            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-
-            foreach($keys as $row => $key){
-                echo "<tr><h3>";
-                echo "<td>" .  $key['fip']  .  "</td>";
-                echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
-                echo "<td>" .  $key['access']  .  "</td>";
-                echo "<td>" .  $key['is_key']  .  "</td>";
-                echo "</h3></tr>";
-            }
-
-            echo "</table>";
-        }
-    ?>
-</pre>
-
 <table>
     <tr>
         <td><h4><form action="monthly.php" method="post"><input type="submit" value="Hide Yes" name="hide"></form></h4></td>
@@ -125,7 +83,47 @@
         <td><h2>Access Details</h2></td>
         <td style="width: 10%"><h2>Is There A Key?</h2></td>
     </tr>
-</table>
+
+
+
+    <?php
+    if ($_POST['hide'] == "Hide Yes") {
+        #print_r($_POST);
+
+        $pdo = new PDO('sqlite:keys.db');
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No'");
+        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
+        foreach($keys as $row => $key){
+            echo "<tr><h3>";
+            echo "<td>" .  $key['fip']  .  "</td>";
+            echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
+            echo "<td>" .  $key['access']  .  "</td>";
+            echo "<td>" .  $key['is_key']  .  "</td>";
+            echo "</h3></tr>";
+        }
+
+        echo "</table>";
+    } else {
+        $pdo = new PDO('sqlite:keys.db');
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
+        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
+        foreach($keys as $row => $key){
+            echo "<tr><h3>";
+            echo "<td>" .  $key['fip']  .  "</td>";
+            echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
+            echo "<td>" .  $key['access']  .  "</td>";
+            echo "<td>" .  $key['is_key']  .  "</td>";
+            echo "</h3></tr>";
+        }
+
+        echo "</table>";
+    }
+    ?>
+
 
 </body>
 
