@@ -66,6 +66,12 @@
     Key Admin
 </h1>
 
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
 <pre>
     <?php
         if ($_POST['submit'] == "Submit") {
