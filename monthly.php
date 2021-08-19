@@ -46,7 +46,7 @@
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 40px;
         }
 
         h4 {
