@@ -10,6 +10,7 @@
 
         table, tr, td {
             border-color: white;
+            border-width: 3px;
             border-collapse: collapse;
 
         }
