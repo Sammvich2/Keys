@@ -112,7 +112,7 @@
                 } else {
                     $fip = "No";
                 }
-                $stmt->bindValue(':fip', $fip, PDO::PARAM_INT);
+                $stmt->bindValue(':fip', $fip, PDO::PARAM_STR);
 
                 #$pump = filter_input(INPUT_POST, 'pump');
                 if ($_POST['pump'] == "on"){
@@ -120,7 +120,7 @@
                 } else {
                     $pump = "No";
                 }
-                $stmt->bindValue(':pump', $pump, PDO::PARAM_INT);
+                $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
 
                 $access = filter_input(INPUT_POST, 'access');
                 $stmt->bindValue(':access', $access, PDO::PARAM_STR);
@@ -131,7 +131,7 @@
                 } else {
                     $is_key = "No";
                 }
-                $stmt->bindValue(':is_key', $is_key, PDO::PARAM_INT);
+                $stmt->bindValue(':is_key', $is_key, PDO::PARAM_STR);
 
                 $success = $stmt->execute();
                 if($success){
