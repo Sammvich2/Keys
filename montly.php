@@ -1,5 +1,4 @@
 <html>
-<html>
 <head>
     <title>Key Entry</title>
     <style>
