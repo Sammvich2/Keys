@@ -86,7 +86,7 @@
 <?php
 
 $pdo = new PDO('sqlite:keys.db');
-$statement = $pdo->query("SELECT * from keys WHERE fip != null");
+$statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
 $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 echo "<table>";
