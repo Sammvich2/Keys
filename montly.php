@@ -73,9 +73,12 @@
 <body>
 
 <table>
+    <form action="dataEntry.php" method="post">
     <tr>
-        <td><h4>Hide Completed Monthlies</h4></td>
+        <td><h4><input Hide Completed Monthlies</h4></td>
     </tr>
+    </form>
+
     <tr>
         <td style="width: 10%"><h2>Monthly Done?</h2></td>
         <td style="padding-left: 5%; text-align: left"><h2>Address</h2></td>
