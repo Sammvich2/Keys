@@ -80,7 +80,7 @@
     </tr>
 
     <tr>
-        <td style="width: 10%"><h2>Monthly Done?</h2></td>
+        <td style="width: 10%"><h2>Done?</h2></td>
         <td style="padding-left: 5%; text-align: left"><h2>Address</h2></td>
         <td style="text-align: left; padding-left: 5%"><h2>Access Details</h2></td>
         <td style="width: 10%"><h2>Key?</h2></td>
