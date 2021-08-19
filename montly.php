@@ -85,12 +85,7 @@
 
     foreach($keys as $row => $key){
         echo "<tr><h3>";
-        #echo "<td>" .  $key['fip']  .  "</td>";
-        if ($key['fip'] == ["Yes"]) {
-            echo "<td style='background-color: #54c563'>" .  $key['fip']  .  "</td>";
-        } else {
-            echo "<td style='background-color: #9f0030'>" .  $key['fip']  .  "</td>";
-        }
+        echo "<td>" .  $key['fip']  .  "</td>";
         echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
         echo "<td>" .  $key['access']  .  "</td>";
         echo "<td>" .  $key['is_key']  .  "</td>";
