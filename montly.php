@@ -9,7 +9,7 @@
         }
 
         table, tr, td {
-            border: white;
+            border-color: white;
             border-collapse: collapse;
 
         }
