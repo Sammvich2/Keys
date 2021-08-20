@@ -40,7 +40,8 @@
         h1 {
             font-size: 150px;
             text-align: center;
-            color: #ff0033
+            color: #ff0033;
+            padding-bottom: -10%;
         }
         h2 {
             font-size: 45px;
