@@ -48,6 +48,15 @@
 <body>
 <h1>
     Site Lookup
+    <br>
+    <button style="font-size: 25px; text-align: center" name="myButton">Go To Monthlies</button>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "monthly.php";
+        };
+    </script>
+
 </h1>
 
 <?php
