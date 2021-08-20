@@ -126,7 +126,7 @@
             print_r($_POST['done']);
             $pdo = new PDO('sqlite:keys.db');
             $statement = $pdo->query("SELECT * from keys WHERE id_number IS " + $_POST['done']);
-            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $done = $statement->fetch(PDO::FETCH_ASSOC);
 
         }
 
