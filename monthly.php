@@ -124,6 +124,10 @@
 
         if ($_POST['done']) {
             print_r($_POST['done']);
+            $pdo = new PDO('sqlite:keys.db');
+            $statement = $pdo->query("SELECT * from keys WHERE id_number IS " );
+            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+
         }
 
         foreach($keys as $row => $key){
