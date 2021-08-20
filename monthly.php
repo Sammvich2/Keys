@@ -124,7 +124,7 @@
 
         foreach($keys as $row => $key){
             echo "<tr><h3>";
-            echo "<td style='padding-top: 2%'>" .  $key['fip']  .  "</td>";
+            echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
             echo "<td style='padding-top: 0%'>" .  $key['is_key']  .  "</td>";
