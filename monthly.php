@@ -86,7 +86,14 @@
         <td style="background-color: #1f1f1f">
             <h4>
 
-                <input type="button" onclick="window.location.href='site_lookup.php" value="Go To Site Lookup">
+                #
+                <button id="myButton"  >Home</button>
+
+                <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                        location.href = "site_lookup.php";
+                    };
+                </script>
 
             </h4>
         </td>
