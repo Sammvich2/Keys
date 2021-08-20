@@ -50,8 +50,11 @@
             font-size: 45px;
         }
 
-        h4 {
+        button {
             font-size: 25px;
+            resize: none;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
         }
 
         input {
