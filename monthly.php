@@ -83,7 +83,7 @@
 
 <table>
     <tr>
-        <td style="background-color: #1f1f1f">
+        <td style="background-color: #1f1f1f; padding-top: 1%">
                 <form action="monthly.php" method="post">
                     <input type="submit" value="Hide Yes" name="hide">
                 </form>
