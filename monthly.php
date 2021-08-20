@@ -76,7 +76,7 @@
 
     <br>
     <h4>
-    <button style="padding-top: -5%">Go To Site Lookup</button>
+    <button>Go To Site Lookup</button>
 
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
