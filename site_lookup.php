@@ -53,7 +53,7 @@
 <?php
 
     $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from keys");
+    $statement = $pdo->query("SELECT * from keys ORDER BY address ASC");
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     echo "<table>";
