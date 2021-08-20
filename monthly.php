@@ -113,7 +113,7 @@
             #print_r($_POST);
 
             $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No'");
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' SORT");
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         } else {
             $pdo = new PDO('sqlite:keys.db');
@@ -131,7 +131,7 @@
         }
 
         echo "</table>";
-    
+
     ?>
 
 
