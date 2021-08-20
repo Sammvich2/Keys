@@ -86,7 +86,7 @@
         <td style="background-color: #1f1f1f">
             <h4>
                 <form action="site_lookup.php">
-                    <button type="button">Go To Sitelookup</button>
+                    <input type="button" value="Go To Sitelookup">
                 </form>
             </h4>
         </td>
