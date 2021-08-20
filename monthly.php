@@ -77,7 +77,7 @@
 <table>
     <tr>
         <td style="background-color: #1f1f1f"><h4><form action="monthly.php" method="post"><input type="submit" value="Hide Yes" name="hide"></form></h4></td>
-        <td style="background-color: #1f1f1f"><h4><button value="" type="button"></button>Go To Sitelookup</h4></td>
+        <td style="background-color: #1f1f1f"><h4><button value="" type="button">Go To Sitelookup</button></h4></td>
     </tr>
 
     <tr>
