@@ -127,8 +127,12 @@
             echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
-            echo "<td style='padding-top: 0%'>" .  $key['is_key']  .  "</td>";
-            echo "<td style='padding-top: 0%'> Done </td>";
+            echo "<td>" .  $key['is_key']  .  "</td>";
+
+
+            echo "<td> </td>";
+
+
             echo "</h3></tr>";
         }
 
