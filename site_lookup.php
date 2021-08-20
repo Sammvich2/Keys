@@ -60,7 +60,7 @@
 
     echo "<tr>";
         echo "<td><h2>Address</h2></td>";
-        echo "<td><h2>Is There A Key?</h2></td>";
+        echo "<td><h2>Key?</h2></td>";
         echo "<td><h2>Who Has It?</h2></td>";
         echo "<td><h2>Access Details</h2></td>";
     echo "</tr>";
