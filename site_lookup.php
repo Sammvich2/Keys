@@ -61,7 +61,7 @@
     echo "<tr>";
         echo "<td><h2>Address</h2></td>";
         echo "<td style='text-align: center'><h2>Key?</h2></td>";
-        echo "<td><h2>Who Has It?</h2></td>";
+        echo "<td style='text-align: center'><h2>Who Has It?</h2></td>";
         echo "<td><h2>Access Details</h2></td>";
     echo "</tr>";
 
@@ -71,7 +71,7 @@
         echo "<tr><h3>";
             echo "<td>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: center'>" .  $key['is_key']  .  "</td>";
-            echo "<td>" .  $key['key_holder']  .  "</td>";
+            echo "<td style='text-align: center'>" .  $key['key_holder']  .  "</td>";
             echo "<td>" .  $key['access']  .  "</td>";
         echo "</h3></tr>";
     }
