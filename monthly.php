@@ -50,9 +50,10 @@
             font-size: 45px;
         }
 
-        button {
+        h4 {
             font-size: 25px;
             resize: none;
+            text-align: center;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
         }
@@ -72,14 +73,17 @@
     <h1>
         The Clock Is Ticking
     </h1>
+
     <br>
+    <h4>
     <button style="font-size: 25px; text-align: center">Go To Site Lookup</button>
 
-    <script type="text/javascript">
-        document.getElementById("myButton").onclick = function () {
-            location.href = "site_lookup.php";
-        };
-    </script>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "site_lookup.php";
+            };
+        </script>
+    </h4>
 
 
 <script>
