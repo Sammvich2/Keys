@@ -123,7 +123,7 @@
         }
 
         foreach($keys as $row => $key){
-            echo "<tr><h3>";
+            echo "<tr style='padding-top: 2%'><h3>";
             echo "<td>" .  $key['fip']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
