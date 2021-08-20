@@ -88,7 +88,8 @@
                     <input type="submit" value="Hide Yes" name="hide">
                 </form>
         </td>
-        <td style="background-color: #1f1f1f; text-align: left; padding-left: 5%" id="myButton"">
+
+        <td style="background-color: #1f1f1f; text-align: left; padding-left: 5%; padding-bottom: 2%" id="myButton"">
                 <button style="font-size: 25px">Go To Site Lookup</button>
 
                 <script type="text/javascript">
