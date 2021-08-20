@@ -72,6 +72,14 @@
     <h1>
         The Clock Is Ticking
     </h1>
+    <br>
+    <button style="font-size: 25px">Go To Site Lookup</button>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "site_lookup.php";
+        };
+    </script>
 
 
 <script>
@@ -89,15 +97,6 @@
                 </form>
         </td>
 
-        <td style="background-color: #1f1f1f; padding-left: 5%; text-align: left" id="myButton">
-                <button style="font-size: 25px">Go To Site Lookup</button>
-
-                <script type="text/javascript">
-                    document.getElementById("myButton").onclick = function () {
-                        location.href = "site_lookup.php";
-                    };
-                </script>
-        </td>
     </tr>
 
     <tr>
