@@ -128,6 +128,10 @@
             $statement = $pdo->query("SELECT * from keys WHERE id_number IS " + $_POST['done']);
             $done = $statement->fetch(PDO::FETCH_ASSOC);
 
+            if ($done['']) {
+
+            }
+
         }
 
         foreach($keys as $row => $key){
