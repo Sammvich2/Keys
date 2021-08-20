@@ -86,8 +86,8 @@
         <td style="background-color: #1f1f1f">
             <h4>
 
-                
-                <button id="myButton"  >Home</button>
+
+                <button id="myButton"  ><h4>Home</h4></button>
 
                 <script type="text/javascript">
                     document.getElementById("myButton").onclick = function () {
