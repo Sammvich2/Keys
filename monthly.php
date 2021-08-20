@@ -128,8 +128,8 @@
             $statement = $pdo->query("SELECT * from keys WHERE id_number IS " + $_POST['done']);
             $done = $statement->fetch(PDO::FETCH_ASSOC);
 
-            if ($done['']) {
-
+            if ($done['fip'] == "Yes") {
+                $change = $pdo->query("UPDATE")
             }
 
         }
