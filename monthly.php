@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Monthlies</title>
+
     <style>
         body {
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -55,17 +56,16 @@
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
         }
-
-        input.check {
-            height: 85%;
-        }
     </style>
 </head>
+
+
 <body>
 
-<h1>
-    The Clock Is Ticking
-</h1>
+    <h1>
+        The Clock Is Ticking
+    </h1>
+
 
 <script>
     if ( window.history.replaceState ) {
@@ -92,7 +92,6 @@
                         location.href = "site_lookup.php";
                     };
                 </script>
-
             </h4>
         </td>
     </tr>
