@@ -81,14 +81,11 @@
 <table>
     <tr>
         <td style="background-color: #1f1f1f">
-            <h4>
                 <form action="monthly.php" method="post">
                     <input type="submit" value="Hide Yes" name="hide">
                 </form>
-            </h4>
         </td>
         <td style="background-color: #1f1f1f; text-align: left; padding-left: 5%" id="myButton"">
-            <h4>
                 <button style="font-size: 25px">Go To Site Lookup</button>
 
                 <script type="text/javascript">
@@ -96,7 +93,6 @@
                         location.href = "site_lookup.php";
                     };
                 </script>
-            </h4>
         </td>
     </tr>
 
