@@ -89,8 +89,8 @@
                 </form>
         </td>
 
-        <td style="background-color: #1f1f1f; padding-left: 5%" id="myButton">
-                <button style="font-size: 25px; text-align: left">Go To Site Lookup</button>
+        <td style="background-color: #1f1f1f; padding-left: 5%; text-align: left" id="myButton">
+                <button style="font-size: 25px">Go To Site Lookup</button>
 
                 <script type="text/javascript">
                     document.getElementById("myButton").onclick = function () {
