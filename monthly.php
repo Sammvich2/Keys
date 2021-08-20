@@ -50,6 +50,10 @@
             font-size: 45px;
         }
 
+        h4 {
+            font-size: 25px;
+        }
+
         input {
             font-size: 25px;
             resize: none;
