@@ -54,7 +54,7 @@
             font-size: 25px;
             resize: none;
             text-align: center;
-            padding-top: -5%;
+            padding-bottom: 5%;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
         }
