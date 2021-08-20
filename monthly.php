@@ -75,7 +75,7 @@
     <h1>
         The Clock Is Ticking
         <br>
-        <button style="font-size: 25px; text-align: center" name="myButton">Go To Site Lookup</button>
+        <button style="font-size: 25px; text-align: center" id="myButton">Go To Site Lookup</button>
 
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
