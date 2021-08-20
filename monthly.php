@@ -122,8 +122,8 @@
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
-        if ($_POST['name']) {
-            print_r($_POST['name']);
+        if ($_POST['done']) {
+            print_r($_POST['done']);
         }
 
         foreach($keys as $row => $key){
