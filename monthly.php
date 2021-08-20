@@ -87,9 +87,9 @@
                 </form>
             </h4>
         </td>
-        <td style="background-color: #1f1f1f">
+        <td style="background-color: #1f1f1f; text-align: left" id="myButton"">
             <h4>
-                <button style="font-size: 25px; text-align: left" id="myButton"  >Go To Site Lookup</button>
+                <button style="font-size: 25px">Go To Site Lookup</button>
 
                 <script type="text/javascript">
                     document.getElementById("myButton").onclick = function () {
