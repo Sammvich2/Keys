@@ -75,18 +75,12 @@
     <h1>
         The Clock Is Ticking
         <button style="font-size: 25px; text-align: center" name="myButton">Go To Site Lookup</button>
-
+        <br>
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
                 location.href = "site_lookup.php";
             };
         </script>
-    </h1>
-
-    <br>
-    <h4>
-
-    </h4>
 
 
 <script>
