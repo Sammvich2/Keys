@@ -128,6 +128,7 @@
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
             echo "<td>" .  $key['is_key']  .  "</td>";
+            echo "<td> Done </td>";
             echo "</h3></tr>";
         }
 
