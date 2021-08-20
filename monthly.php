@@ -82,7 +82,7 @@
                 location.href = "site_lookup.php";
             };
         </script>
-
+    </h1>
 
 <script>
     if ( window.history.replaceState ) {
