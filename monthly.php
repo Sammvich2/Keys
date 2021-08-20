@@ -85,9 +85,9 @@
         </td>
         <td style="background-color: #1f1f1f">
             <h4>
-                <form action="site_lookup.php" method="post">
-                    <input type="button" value="Go To Site Lookup">
-                </form>
+
+                <button onclick="window.location.href='site_lookup.php">Go To Site Lookup</button>
+
             </h4>
         </td>
     </tr>
