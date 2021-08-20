@@ -117,7 +117,7 @@
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         } else {
             $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL");
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
