@@ -86,7 +86,7 @@
         <td style="background-color: #1f1f1f">
             <h4>
 
-                <input onclick="window.location.href='site_lookup.php" value="Go To Site Lookup">
+                <input type="button" onclick="window.location.href='site_lookup.php" value="Go To Site Lookup">
 
             </h4>
         </td>
