@@ -76,7 +76,7 @@
 
     <br>
     <h4>
-    <button>Go To Site Lookup</button>
+    <button style="font-size: 25px; text-align: center">Go To Site Lookup</button>
 
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
