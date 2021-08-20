@@ -41,6 +41,7 @@
             font-size: 150px;
             text-align: center;
             color: #ff0033
+            padd
         }
         h2 {
             font-size: 45px;
