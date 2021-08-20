@@ -132,7 +132,7 @@
             echo "<td>" .  $key['is_key']  .  "</td>";
 
 
-            echo "<td style='padding-top: 1%'><form action='monthly.php' method='post'><input  type='submit' value='Done' name=" . $key['unique'] . "></form></td>";
+            echo "<td style='padding-top: 1%'><form action='monthly.php' method='post'><input  type='submit' name='done' value=" . $key['unique'] . "></form></td>";
 
 
             echo "</h3></tr>";
