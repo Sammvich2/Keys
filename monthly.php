@@ -122,6 +122,8 @@
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
+        if ($_POST[''])
+
         foreach($keys as $row => $key){
             echo "<tr><h3>";
             echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
