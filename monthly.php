@@ -122,7 +122,9 @@
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
-        if ($_POST[''])
+        if ($_POST['name']) {
+            print_r($_POST['name']);
+        }
 
         foreach($keys as $row => $key){
             echo "<tr><h3>";
