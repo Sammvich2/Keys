@@ -130,7 +130,7 @@
             echo "<td>" .  $key['is_key']  .  "</td>";
 
 
-            echo "<td><form action='monthly.php' method='post'><input type='submit' value=" . $key['id'] . "> </form></td>";
+            echo "<td><form action='monthly.php' method='post'><input type='submit' value=" . $key['unique'] . "> </form></td>";
 
 
             echo "</h3></tr>";
