@@ -113,7 +113,7 @@
             #print_r($_POST);
 
             $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY ");
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
             $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         } else {
             $pdo = new PDO('sqlite:keys.db');
