@@ -82,12 +82,16 @@
     if ($_POST['login'] == "Login") {
         print_r("Login started");
 
-        $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
-        print_r("Query done");
+        try {
+            $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
+            print_r("Query done");
 
-        $users = $statement->fetchall(PDO::FETCH_ASSOC);
-        print_r("Fetch Done");
-        print_r($users['username']);
+            $users = $statement->fetchall(PDO::FETCH_ASSOC);
+            print_r("Fetch Done");
+            print_r($users['username']);
+
+
+        } catch
 
         if ($users['pass'] == $_POST['pass']) {
             print_r("Login Successful");
