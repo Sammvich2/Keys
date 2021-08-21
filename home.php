@@ -83,10 +83,11 @@
         print_r("Login started");
 
 
-        $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
+        $userQ = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
         print_r("Query done");
 
-        $users = $statement->fetchall(PDO::FETCH_ASSOC);
+        $users = $userQ->fetchall(PDO::FETCH_ASSOC);
+        print_r($users);
 
         if ($users) {
             if ($users['pass'] == $_POST['pass']) {
