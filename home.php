@@ -82,25 +82,21 @@
     if ($_POST['login'] == "Login") {
         print_r("Login started");
 
-        try {
-            $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
-            print_r("Query done");
 
-            $users = $statement->fetchall(PDO::FETCH_ASSOC);
-            print_r("Fetch Done");
-            print_r($users['username']);
-            throw new Exception("Failed");
+        $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST['user']);
+        print_r("Query done");
 
-        } catch (Exception $e) {
-            echo $e->getMessage();
-        }
+        $users = $statement->fetchall(PDO::FETCH_ASSOC);
 
-        if ($users['pass'] == $_POST['pass']) {
-            print_r("Login Successful");
+        if ($users) {
+            if ($users['pass'] == $_POST['pass']) {
+                print_r("Login Successful");
+            } else {
+                print_r("Login Failed");
+            }
         } else {
-            print_r("Login Failed");
+            print_r("Users was empty ;(");
         }
-
     } else {
         die("Ass");
     }
