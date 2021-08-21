@@ -67,6 +67,21 @@
 
         }
     </style>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "site_lookup.php";
+        };
+
+        document.getElementById("done").onclick = finction () {
+            
+        }
+
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+
 </head>
 
 
@@ -76,20 +91,7 @@
         The Clock Is Ticking
         <br>
         <button style="font-size: 25px; text-align: center" id="myButton">Go To Site Lookup</button>
-
-        <script type="text/javascript">
-            document.getElementById("myButton").onclick = function () {
-                location.href = "site_lookup.php";
-            };
-        </script>
     </h1>
-
-<script>
-    if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
-    }
-</script>
-
 
 <table>
     <tr>
