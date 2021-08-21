@@ -89,6 +89,7 @@ error_reporting(E_ALL);
 
 
         $userQ = $pdo->query("SELECT * from users WHERE pass IS " . $_POST['user']);
+                $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
         print_r("Query done");
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
