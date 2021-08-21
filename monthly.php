@@ -73,9 +73,6 @@
             location.href = "site_lookup.php";
         };
 
-        document.getElementById("done").onclick = function () {
-            window.location.reload(true);
-        };
 
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
@@ -158,6 +155,13 @@
 
 </table>
 </body>
+
+<script>
+    document.getElementById("done").onclick = function () {
+        window.location.reload(true);
+    };
+
+</script>
 
 </html>
 
