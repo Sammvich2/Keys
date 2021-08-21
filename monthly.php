@@ -73,9 +73,9 @@
             location.href = "site_lookup.php";
         };
 
-        document.getElementById("done").onclick = finction () {
-            
-        }
+        document.getElementById("done").onclick = function () {
+            window.location.reload(true);
+        };
 
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
