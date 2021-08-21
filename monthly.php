@@ -110,34 +110,33 @@
 
 
     <?php
-        if ($_POST['hide'] == "Hide Yes") {
+    $pdo = new PDO('sqlite:keys.db');
+    if ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
 
-            $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
-            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-        } else {
-            $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
-            $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-        }
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
+    } else {
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
+    }
 
-        if ($_POST['done']) {
+
+    if ($_POST['done']) {
             #print_r($_POST['done']);
-            $pdo = new PDO('sqlite:keys.db');
-            $statement = $pdo->query("SELECT * from keys WHERE id_number IS " + $_POST['done']);
-            $done = $statement->fetch(PDO::FETCH_ASSOC);
+            #$pdo = new PDO('sqlite:keys.db');
+            $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
+            $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
 
             if ($done['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " + $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
             } elseif ($done['fip'] == "No") {
-                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " + $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
             } else {
                 print_r("Update Failed!");
             }
 
         }
 
+    $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         foreach($keys as $row => $key){
             echo "<tr><h3>";
             echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
