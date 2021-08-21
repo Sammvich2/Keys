@@ -49,6 +49,9 @@
                 text-align: center;
                 font-size: 45px;
             }
+            input {
+                font-size: 45px;
+            }
         </style>
 
     </head>
