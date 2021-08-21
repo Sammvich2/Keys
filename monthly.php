@@ -135,7 +135,7 @@
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
             echo "<td>" .  $key['is_key']  .  "</td>";
-            echo "<td style='padding-top: 1%'><form action='monthly.php' id='done' method='post'><input onclick='timeFunction()' name='done' type='button' value=" . $key['id_number'] . "></form></td>";
+            echo "<td style='padding-top: 1%'><form action='monthly.php' id='done' method='post'><input onclick='timeFunction()' name='done' type='submit' value=" . $key['id_number'] . "></form></td>";
             echo "</h3></tr>";
         }
 
