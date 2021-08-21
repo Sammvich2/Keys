@@ -78,7 +78,7 @@
             window.history.replaceState( null, null, window.location.href );
         }
         function timeFunction () {
-            setTimeout( function(), 5000)
+            setTimeout( function() {window.location.reload(true)}, 5000)
         }
         };
 
