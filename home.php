@@ -76,14 +76,14 @@
 
 <?php
     $pdo = new PDO('sqlite:users.db');
-    print_r($_POST);
+    print_r($_POST['user']);
 
 
     if ($_POST['login'] == "Login") {
         print_r("Login started");
 
 
-        $userQ = $pdo->query("SELECT * FROM users WHERE username IS 'sam'");
+        $userQ = $pdo->query("SELECT * FROM users WHERE username IS " . $_POST['user']);
         print_r("Query done");
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
