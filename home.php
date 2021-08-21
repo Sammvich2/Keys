@@ -83,7 +83,7 @@
         print_r("Login started");
 
 
-        $userQ = $pdo->query("SELECT * FROM users WHERE username IS " . $_POST['user']);
+        $userQ = $pdo->query("SELECT * FROM users WHERE username IS 'sam'");
         print_r("Query done");
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
