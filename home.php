@@ -87,6 +87,7 @@
 
         $users = $statement->fetchall(PDO::FETCH_ASSOC);
         print_r("Fetch Done");
+        print_r($users['username']);
 
         if ($users['pass'] == $_POST['pass']) {
             print_r("Login Successful");
