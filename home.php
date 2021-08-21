@@ -79,14 +79,14 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-    $pdo = new PDO('sqlite:users.db');
-    $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     print_r($_POST['user']);
 
 
     if ($_POST['login'] == "Login") {
         print_r("Login started");
 
+        $pdo = new PDO('sqlite:users.db');
+        $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
         $userQ = $pdo->query("SELECT * from users WHERE username IS " . $_POST['user']);
         print_r("Query done");
