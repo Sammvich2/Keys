@@ -83,7 +83,6 @@
         print_r("Login started");
 
         $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST["user"]);
-        print_r("query started");
 
         $users = $statement->fetchall(PDO::FETCH_ASSOC);
         print_r("Fetch Done");
