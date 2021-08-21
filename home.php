@@ -59,7 +59,7 @@
     <body>
         <h1>Login</h1>
         <form method="post" action="home.php">
-            <input type="text" name="user" placeholder="Username"><br>
+            <input type="text" name="user" placeholder="Username"><br><br>
             <input type="password" name="pass" placeholder="Password"><br>
             <input type="submit" value="Login">
 
