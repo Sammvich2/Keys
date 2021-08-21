@@ -89,9 +89,11 @@
             $users = $statement->fetchall(PDO::FETCH_ASSOC);
             print_r("Fetch Done");
             print_r($users['username']);
+            throw new Exception("Failed");
 
-
-        } catch
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
 
         if ($users['pass'] == $_POST['pass']) {
             print_r("Login Successful");
