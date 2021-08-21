@@ -101,7 +101,7 @@ error_reporting(E_ALL);
                 print_r("Login Failed");
             }
         } else {
-            print_r("Users was empty ;(");
+            print_r($users);
         }
     } else {
         die("Ass");
