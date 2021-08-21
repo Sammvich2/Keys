@@ -129,7 +129,11 @@
             $done = $statement->fetch(PDO::FETCH_ASSOC);
 
             if ($done['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " + $_POST['']);
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " + $_POST['done']);
+            } elseif ($done['fip'] == "No") {
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " + $_POST['done']);
+            } else {
+                print_r("Update Failed!");
             }
 
         }
