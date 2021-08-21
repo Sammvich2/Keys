@@ -86,7 +86,7 @@
         $userQ = $pdo->query("SELECT * FROM users WHERE username IS " . $_POST['user']);
         print_r("Query done");
 
-        $users = $userQ->fetchall(PDO::FETCH_ASSOC);
+        $users = $userQ->fetch(PDO::FETCH_ASSOC);
         print_r($users);
 
         if ($users) {
