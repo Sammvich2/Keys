@@ -51,6 +51,7 @@
             }
             input {
                 font-size: 35px;
+                padding-top: 1%;
             }
         </style>
 
