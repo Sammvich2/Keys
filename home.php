@@ -89,7 +89,7 @@
         }
 
     } else {
-        die();
+        die("Ass");
     }
 
 
