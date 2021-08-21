@@ -73,6 +73,9 @@
             window.location.href = "site_lookup.php";
         };
 
+        siteLook(function() {
+            window.location.href = "site_lookup.php";
+        });
 
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
@@ -87,7 +90,7 @@
     <h1>
         The Clock Is Ticking
         <br>
-        <button style="font-size: 25px; text-align: center" id="myButton">Go To Site Lookup</button>
+        <button style="font-size: 25px; text-align: center" onclick="siteLook()">Go To Site Lookup</button>
     </h1>
 
 <table>
