@@ -88,11 +88,10 @@ error_reporting(E_ALL);
         print_r("Login started");
 
 
-        $userQ = $pdo->query("SELECT * from users WHERE pass IS " . $_POST['user']);
-                $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
+        $userQ = $pdo->query("SELECT * from users WHERE username IS " . $_POST['user']);
         print_r("Query done");
 
-        $users = $userQ->fetch(PDO::FETCH_ASSOC);
+        $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
         print_r("fetch done");
 
         if ($users) {
