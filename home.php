@@ -88,7 +88,7 @@ error_reporting(E_ALL);
         print_r("Login started");
 
 
-        $userQ = $pdo->query("SELECT ALL FROM users WHERE username IS " . $_POST['user']);
+        $userQ = $pdo->query("SELECT * from users WHERE username IS " . $_POST['user']);
         print_r("Query done");
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
