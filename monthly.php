@@ -142,7 +142,7 @@
             $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
             $_POST == null;
             echo "<script> setTimeout(function() {
-                window.location.reload(true)
+                window.location.href = window.location.monthly.php;
             }, 5000);</script>";
         } elseif ($done['fip'] == "No") {
             $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
