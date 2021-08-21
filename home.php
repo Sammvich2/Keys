@@ -76,7 +76,7 @@
 
 <?php
     $pdo = new PDO('sqlite:keys.db');
-
+    print_r("hello");
 
 
     if ($_POST['login'] == "Login") {
