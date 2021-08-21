@@ -137,7 +137,9 @@
                 print_r("Update Failed!");
             }
 
-        }
+        } else {
+        print_r("Update Failed!");
+    }
 
     $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         foreach($keys as $row => $key){
