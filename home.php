@@ -51,8 +51,8 @@
     <body>
         <h1>Login</h1>
         <form method="post" action="home.php">
-            <input type="text" name="user">
-            <input type="password" name="pass">
+            <input type="text" name="user"><br>
+            <input type="password" name="pass"><br>
             <input type="submit" value="Login">
 
         </form>
