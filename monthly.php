@@ -82,7 +82,7 @@
         function timeFunction () {
             setTimeout(function() { window.location.reload(true) }, 5000);
         }
-        
+
 
 
     </script>
@@ -133,7 +133,7 @@
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
             echo "<td style='text-align: left; padding-left: 5%'>" .  $key['access']  .  "</td>";
             echo "<td>" .  $key['is_key']  .  "</td>";
-            echo "<td style='padding-top: 1%'><form action='monthly.php' id='done' method='post'><input onclick='timeFunction' type='submit' name='done' value=" . $key['id_number'] . "></form></td>";
+            echo "<td style='padding-top: 1%'><form action='monthly.php' id='done' method='post'><input onclick='timeFunction()' type='submit' name='done' value=" . $key['id_number'] . "></form></td>";
             echo "</h3></tr>";
         }
 
