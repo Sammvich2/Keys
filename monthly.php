@@ -143,13 +143,13 @@
             $_POST == null;
             echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
-            }, 5000);</script>";
+            }, 1000);</script>";
         } elseif ($done['fip'] == "No") {
             $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
             $_POST == null;
             echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
-            }, 5000);</script>";
+            }, 1000);</script>";
         } else {
             print_r("Update Failed!");
         }
