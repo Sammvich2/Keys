@@ -50,7 +50,12 @@
 
     <body>
         <h1>Login</h1>
-    
+        <form method="post" action="home.php">
+            <input type="text" name="user">
+            <input type="password" name="pass">
+            <input type="submit" value="Login">
+
+        </form>
 
 
     </body>
