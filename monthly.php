@@ -77,8 +77,9 @@
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
         }
-        document.getElementById("done").onclick = function () {
-            window.location.reload(true);
+        function timeRefresh(time) {
+            setTimeout("location.reload(true);", time);
+        }
         };
 
 
