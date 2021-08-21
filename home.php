@@ -88,7 +88,7 @@ error_reporting(E_ALL);
         $pdo = new PDO('sqlite:users.db');
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
-        $userQ = $pdo->query("SELECT * from users WHERE username = " .$_POST['user']);
+        $userQ = $pdo->query("SELECT * from users WHERE username = " .$_POST["user"]);
         print_r("Query done");
 
         $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
