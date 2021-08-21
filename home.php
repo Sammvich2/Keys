@@ -80,7 +80,7 @@
 
 
     if ($_POST['login'] == "Login") {
-        $statement = $pdo->query("SELECT * FROM user WHERE username == " . $_POST["user"]);
+        $statement = $pdo->query("SELECT * FROM users WHERE username == " . $_POST["user"]);
         $users = $statement->fetch(PDO::FETCH_ASSOC);
         print_r($users);
         if ($users['pass'] == $_POST['pass']) {
