@@ -87,7 +87,7 @@
         print_r("Query done");
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
-        print_r($users);
+        print_r("fetch done");
 
         if ($users) {
             if ($users['pass'] == $_POST['pass']) {
