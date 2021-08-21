@@ -130,7 +130,6 @@
             echo "<td>" .  $key['is_key']  .  "</td>";
             echo "<td style='padding-top: 1%'><form action='monthly.php' id='done' method='post'><input  type='submit' name='done' value=" . $key['id_number'] . "></form></td>";
             echo "</h3></tr>";
-            echo "</table>";
         }
 
 
@@ -155,7 +154,7 @@
 
     ?>
 
-
+</table>
 </body>
 
 </html>
