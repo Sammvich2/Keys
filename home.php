@@ -61,7 +61,7 @@
         <form method="post" action="home.php">
             <input type="text" name="user" placeholder="Username"><br><br>
             <input type="password" name="pass" placeholder="Password"><br><br>
-            <input type="submit" value="Login">
+            <input type="submit" name="login" value="Login">
 
         </form>
 
