@@ -69,14 +69,6 @@
     </style>
 
     <script type="text/javascript">
-        document.getElementById("myButton").onclick = function () {
-            window.location.href = "site_lookup.php";
-        };
-
-        siteLook(function() {
-            window.location.href = "site_lookup.php";
-        });
-
         if ( window.history.replaceState ) {
             window.history.replaceState( null, null, window.location.href );
         }
