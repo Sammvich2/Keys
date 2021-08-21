@@ -70,7 +70,7 @@
 
     <script type="text/javascript">
         document.getElementById("myButton").onclick = function () {
-            location.href = "site_lookup.php";
+            window.location.href = "site_lookup.php";
         };
 
 
