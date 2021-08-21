@@ -143,8 +143,10 @@
 
         if ($done['fip'] == "Yes") {
             $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
+            $_POST == null;
         } elseif ($done['fip'] == "No") {
             $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
+            $_POST == null;
         } else {
             print_r("Update Failed!");
         }
