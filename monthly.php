@@ -125,6 +125,7 @@
             #$pdo = new PDO('sqlite:keys.db');
             $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
             $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
+            print_r($done['address']);
 
             if ($done['fip'] == "Yes") {
                 $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
