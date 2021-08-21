@@ -44,6 +44,11 @@
             h3 {
             font-size: 45px;
             }
+
+            form {
+                text-align: center;
+                font-size: 45px;
+            }
         </style>
 
     </head>
