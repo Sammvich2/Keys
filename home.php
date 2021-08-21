@@ -50,7 +50,7 @@
                 font-size: 45px;
             }
             input {
-                font-size: 35px;
+                font-size: 45px;
             }
         </style>
 
