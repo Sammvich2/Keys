@@ -158,7 +158,7 @@
             }, 500);</script>";
             } elseif ($done['fip'] == "No") {
                 $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
-                $change = $pdo->query("UPDATE keys SET monthly = 'Yes' WHERE id_number IS " . $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_POST['done']);
                 $_POST == null;
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
