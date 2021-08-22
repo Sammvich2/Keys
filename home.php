@@ -25,7 +25,7 @@
                 print_r("Login Successful");
                 $cookie_name = "user";
                 $cookie_value = $users['username'];
-                setcookie($cookie_name, $cookie_value, ['SameSite' => 'Lax'], time() + (86400 * 30), "/"); // 86400 = 1 day
+                setcookie($cookie_name, $cookie_value, ['SameSite' => 'Lax'], time() + (86400 * 30), '/'); // 86400 = 1 day
                 print_r("Incorrect Password");
             }
         } else {
