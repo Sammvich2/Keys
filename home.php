@@ -85,10 +85,10 @@ error_reporting(E_ALL);
     if ($_POST['login'] == "Login") {
         print_r("Login started");
 
-        $pdo = new PDO('sqlite:users.db');
-        #$pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        $inputUser = 1;
-        $userQ = $pdo->query("SELECT * from users WHERE pass IS '". $inputUser . "'");
+        $pdo = new PDO('sqlite:keys.db');
+        $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $inputUser = "Yes";
+        $userQ = $pdo->query("SELECT * from keys WHERE fip IS '". $inputUser . "'");
         print_r("SELECT * from users WHERE unique IS " . $inputUser);
 
         $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
