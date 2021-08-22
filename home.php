@@ -98,6 +98,9 @@
         if ($users) {
             if ($users['password'] == $_POST['pass']) {
                 print_r("Login Successful");
+                $cookie_name = "user";
+                $cookie_value = $users['username';
+                setcookie($cookie_name, $cookie_value, "/"); // 86400 = 1 day
             } else {
                 print_r("Incorrect Password");
             }
