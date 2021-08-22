@@ -27,13 +27,13 @@
                 $cookie_value = $users['username'];
                 #setcookie($cookie_name, $cookie_value, ['SameSite' => 'None'], time() + (86400 * 30), "/"); // 86400 = 1 day
                 setcookie(
-                    string $name,
-                    string $value = "",
-                    int $expires = 0,
-                    string $path = "",
-                    string $domain = "",
-                    bool $secure = false,
-                    bool $httponly = false
+                    $name,
+                    $value = "",
+                    $expires = 0,
+                    $path = "",
+                    $domain = "",
+                    $secure = false,
+                    $httponly = false
                 ): bool;
             } else {
                 print_r("Incorrect Password");
