@@ -96,7 +96,7 @@ error_reporting(E_ALL);
         print_r($users);
 
         if ($users) {
-            if ($users['pass'] == $_POST['pass']) {
+            if ($users['password'] == $_POST['pass']) {
                 print_r("Login Successful");
             } else {
                 print_r("Login Failed");
