@@ -89,7 +89,7 @@ error_reporting(E_ALL);
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         $inputUser = "pass";
         $userQ = $pdo->query("SELECT * from users WHERE pass IS '". $inputUser . "'");
-        print_r("SELECT * from users WHERE username IS '" . $inputUser . "'");
+        print_r("SELECT * from users WHERE pass IS '" . $inputUser . "'");
 
         $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
         print_r("fetch done");
