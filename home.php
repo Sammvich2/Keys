@@ -26,7 +26,6 @@
                 $cookie_name = "sessionID";
                 $cookie_value = $users['unique'];
                 setcookie($cookie_name, $cookie_value, ['SameSite' => 'Lax'], '/'); // 86400 = 1 day
-                print_r("Incorrect Password");
             }
         } else {
             print_r("Incorrect Username");
