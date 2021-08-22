@@ -105,9 +105,11 @@
 
     <?php
     if(!isset($_COOKIE['sessionID'])) {
-        print_r($_COOKIE['sessionID']);
+        print_r("Wire function to return to login");
     } else {
-        print_r("Write function to return to login");
+        
+
+
     }
 
 
