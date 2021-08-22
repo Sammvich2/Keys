@@ -89,9 +89,9 @@ error_reporting(E_ALL);
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         $inputUser = "same";
         $userQ = $pdo->query("SELECT * from people WHERE account IS '". $inputUser . "'");
-        print_r("SELECT * from users WHERE unique IS " . $inputUser);
+        #print_r("SELECT * from users WHERE unique IS " . $inputUser);
 
-        $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
+        $users = $userQ->fetch(PDO::FETCH_ASSOC);
         print_r("fetch done");
         print_r($users);
 
