@@ -32,8 +32,6 @@
         } else {
             print_r("Incorrect Username");
         }
-    } else {
-        die();
     }
 
 
