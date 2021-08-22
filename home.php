@@ -87,8 +87,8 @@ error_reporting(E_ALL);
 
         $pdo = new PDO('sqlite:keys.db');
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        $inputUser = "Yes";
-        $userQ = $pdo->query("SELECT * from users WHERE fip IS '". $inputUser . "'");
+        $inputUser = "Same";
+        $userQ = $pdo->query("SELECT * from users WHERE username IS '". $inputUser . "'");
         print_r("SELECT * from users WHERE unique IS " . $inputUser);
 
         $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
