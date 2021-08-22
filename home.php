@@ -99,10 +99,10 @@ error_reporting(E_ALL);
             if ($users['password'] == $_POST['pass']) {
                 print_r("Login Successful");
             } else {
-                print_r("Login Failed");
+                print_r("Incorrect Password");
             }
         } else {
-            print_r("Fetch was empty");
+            print_r("Incorrect Username");
         }
     } else {
         die("Ass");
