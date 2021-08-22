@@ -107,7 +107,7 @@
     if(!isset($_COOKIE['sessionID'])) {
         print_r($_COOKIE['sessionID']);
     } else {
-        print_r("Cookie is set!<br>");
+        print_r($_COOKIE['sessionID']);
     }
 
 
