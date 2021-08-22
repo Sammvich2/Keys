@@ -61,31 +61,40 @@
 
 <?php
 
-    $pdo = new PDO('sqlite:keys.db');
-    $statement = $pdo->query("SELECT * from keys ORDER BY address ASC");
-    $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+    if(!isset($_COOKIE['sessionID'])) {
+        print_r("Write function to return to login");
+        echo "<script> setTimeout(function() {
+                    window.location.href = 'home.php';
+                }, 500);</script>";
+    } else {
+        $pdo = new PDO('sqlite:keys.db');
+        $statement = $pdo->query("SELECT * from keys ORDER BY address ASC");
+        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<table>";
+        echo "<table>";
 
-    echo "<tr>";
+        echo "<tr>";
         echo "<td><h2>Address</h2></td>";
         echo "<td style='text-align: center'><h2>Key?</h2></td>";
         echo "<td style='text-align: center'><h2>Who Has It?</h2></td>";
         echo "<td><h2>Access Details</h2></td>";
-    echo "</tr>";
+        echo "</tr>";
 
 
+        foreach ($keys as $row => $key) {
+            echo "<tr><h3>";
+            echo "<td>" . $key['address'] . "</td>";
+            echo "<td style='text-align: center'>" . $key['is_key'] . "</td>";
+            echo "<td style='text-align: center'>" . $key['key_holder'] . "</td>";
+            echo "<td>" . $key['access'] . "</td>";
+            echo "</h3></tr>";
+        }
 
-    foreach($keys as $row => $key){
-        echo "<tr><h3>";
-            echo "<td>" .  $key['address']  .  "</td>";
-            echo "<td style='text-align: center'>" .  $key['is_key']  .  "</td>";
-            echo "<td style='text-align: center'>" .  $key['key_holder']  .  "</td>";
-            echo "<td>" .  $key['access']  .  "</td>";
-        echo "</h3></tr>";
+        echo "</table>";
     }
 
-    echo "</table>";
+
+
 ?>
 </body>
 </html>
