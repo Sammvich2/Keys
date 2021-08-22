@@ -26,6 +26,7 @@
                 $cookie_name = "sessionID";
                 $cookie_value = $users['unique'];
                 setcookie($cookie_name, $cookie_value,  '/'); // 86400 = 1 day
+
             }
         } else {
             print_r("Incorrect Username");
