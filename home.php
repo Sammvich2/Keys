@@ -105,7 +105,7 @@
             print_r("Incorrect Username");
         }
     } else {
-        die("Ass");
+        die();
     }
 
 
