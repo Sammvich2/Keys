@@ -87,9 +87,9 @@ error_reporting(E_ALL);
 
         $pdo = new PDO('sqlite:users.db');
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        $inputUser = "pass";
+        $inputUser = 1;
         $userQ = $pdo->query("SELECT * from users WHERE pass IS '". $inputUser . "'");
-        print_r("SELECT * from users WHERE pass IS '" . $inputUser . "'");
+        print_r("SELECT * from users WHERE unique IS " . $inputUser);
 
         $users = $userQ->fetchAll(PDO::FETCH_ASSOC);
         print_r("fetch done");
