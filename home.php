@@ -88,7 +88,7 @@ error_reporting(E_ALL);
         $pdo = new PDO('sqlite:keys.db');
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         $inputUser = "same";
-        $userQ = $pdo->query("SELECT * from people WHERE account IS '". $inputUser . "'");
+        $userQ = $pdo->query("SELECT * from people WHERE account IS '". $_POST['user'] . "'");
         #print_r("SELECT * from users WHERE unique IS " . $inputUser);
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
