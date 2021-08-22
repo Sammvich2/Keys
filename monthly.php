@@ -117,7 +117,7 @@
     } else {
         $pdo = new PDO('sqlite:keys.db');
 
-        $sessionState = $pdo->query("SELECT * from people WHERE unique IS " . $_COOKIE['sessionID']);
+        $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
         $session = $sessionState->fetch(PDO::FETCH_ASSOC);
         $user = $session['account'];
         print_r($user);
