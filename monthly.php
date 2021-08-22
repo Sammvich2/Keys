@@ -104,6 +104,13 @@
 
 
     <?php
+    if(!isset($_COOKIE['sessionID'])) {
+        print_r("Cookie is not set!");
+    } else {
+    echo "Cookie is set!<br>";
+
+
+
     $pdo = new PDO('sqlite:keys.db');
     if ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
