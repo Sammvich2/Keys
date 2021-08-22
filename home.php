@@ -102,7 +102,7 @@ error_reporting(E_ALL);
                 print_r("Login Failed");
             }
         } else {
-            print_r("Fetch was empty";
+            print_r("Fetch was empty");
         }
     } else {
         die("Ass");
