@@ -106,23 +106,21 @@
     <?php
     if(!isset($_COOKIE['sessionID'])) {
         print_r("Wire function to return to login");
+        echo "<script> setTimeout(function() {
+                window.location.href = 'home.php';
+            }, 500);</script>";
+
     } else {
-        
-
-
-    }
-
-
-    $pdo = new PDO('sqlite:keys.db');
-    if ($_POST['hide'] == "Hide Yes") {
+        $pdo = new PDO('sqlite:keys.db');
+        if ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
 
-        $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
-    } else {
-        $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
-    }
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
+        } else {
+            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
+        }
 
-    $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         foreach($keys as $row => $key){
             echo "<tr><h3>";
             echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
@@ -135,31 +133,32 @@
 
 
 
-    if ($_POST['done']) {
-        #print_r($_POST['done']);
-        #$pdo = new PDO('sqlite:keys.db');
-        $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
-        $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
-        #print_r($done['address']);
+        if ($_POST['done']) {
+            #print_r($_POST['done']);
+            #$pdo = new PDO('sqlite:keys.db');
+            $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
+            $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
+            #print_r($done['address']);
 
-        if ($done['fip'] == "Yes") {
-            $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
-            $_POST == null;
-            echo "<script> setTimeout(function() {
+            if ($done['fip'] == "Yes") {
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
+                $_POST == null;
+                echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
             }, 500);</script>";
-        } elseif ($done['fip'] == "No") {
-            $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
-            $_POST == null;
-            echo "<script> setTimeout(function() {
+            } elseif ($done['fip'] == "No") {
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
+                $_POST == null;
+                echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
-        } else {
-            print_r("Update Failed!");
+            } else {
+                print_r("Update Failed!");
+            }
         }
-
-
     }
+
+
 
     ?>
 
