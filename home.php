@@ -18,7 +18,7 @@ error_reporting(E_ALL);
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
         #print_r("fetch done");
-        #print_r($users);
+        print_r($users);
 
         if ($users) {
             if ($users['password'] == $_POST['pass']) {
