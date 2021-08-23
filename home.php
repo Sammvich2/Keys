@@ -25,7 +25,7 @@
                 print_r("Login Successful");
                 $cookie_name = "sessionID";
                 $cookie_value = $users['unique'];
-                setcookie($cookie_name, $cookie_value,  '/'); // 86400 = 1 day
+                setcookie($cookie_name, $cookie_value, time() + 3600, '/'); // 86400 = 1 day
                 # echo "<script> setTimeout(function() {
                 #window.location.href = 'monthly.php';
             #}, 500);</script>";
