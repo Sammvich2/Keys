@@ -29,7 +29,7 @@
                 setcookie($cookie_name, $cookie_value, [
                     'expires' => time() + 86400,
                     'path' => '/',
-                    'domain' => 'localhost',
+                    'domain' => '12.0.0.7',
                     'secure' => true,
                     'httponly' => true,
                     'samesite' => 'None',
