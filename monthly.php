@@ -108,8 +108,8 @@
     #ini_set('display_startup_errors', 1);
     #error_reporting(E_ALL);
 
-    if(!isset($_COOKIE['sessionID'])) {
-        print_r("Wire function to return to login");
+    if(!isset($_SESSION['sessionID'])) {
+        print_r("Write function to return to login");
         echo "<script> setTimeout(function() {
                 window.location.href = 'home.php';
             }, 500);</script>";
