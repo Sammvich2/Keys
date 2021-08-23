@@ -92,7 +92,7 @@
                     <input style="padding-top: 1%" type="submit" value="Hide Yes" name="hide">
                 </form>
         </td>
-        <td>
+        <td style="background-color: #1f1f1f">
             <?php
                 if ($_COOKIE['sessionID'] == 1) {
                     echo "<form action='monthly.php' method='post'>";
