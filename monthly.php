@@ -120,7 +120,7 @@
         $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
         $session = $sessionState->fetch(PDO::FETCH_ASSOC);
         $user = $session['account'];
-        print_r($user);
+        #print_r($user);
 
         if ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
