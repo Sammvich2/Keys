@@ -34,9 +34,7 @@ error_reporting(E_ALL);
                     'httponly' => true,
                     'samesite' => 'None',
                 ]);
-                # echo "<script> setTimeout(function() {
-                #window.location.href = 'monthly.php';
-            #}, 500);</script>";
+                 echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 500)</script>";
             }
         } else {
             print_r("Incorrect Username");
