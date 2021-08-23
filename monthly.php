@@ -92,6 +92,15 @@
                     <input style="padding-top: 1%" type="submit" value="Hide Yes" name="hide">
                 </form>
         </td>
+        <td>
+            <?php
+                if($_COOKIE['sessionID'])) {
+                print_r("Write function to return to login");
+                echo "<script> setTimeout(function() {
+                    window.location.href = 'home.php';
+                }, 500);</script>";
+            ?>
+        </td>
 
     </tr>
 
