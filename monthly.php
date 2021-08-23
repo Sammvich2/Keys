@@ -94,11 +94,11 @@
         </td>
         <td>
             <?php
-                if($_COOKIE['sessionID'])) {
-                print_r("Write function to return to login");
-                echo "<script> setTimeout(function() {
-                    window.location.href = 'home.php';
-                }, 500);</script>";
+                if ($_COOKIE['sessionID'] == 1) {
+                    echo "<form action='monthly.php' method='post'>";
+                        echo "<input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>";
+                    echo "</form>";
+                };
             ?>
         </td>
 
