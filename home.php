@@ -24,7 +24,7 @@ error_reporting(E_ALL);
             if ($users['password'] == $_POST['pass']) {
                 print_r("Login Successful");
                 $cookie_name = "sessionID";
-                $cookie_value = $users['unique'];
+                $cookie_value = $users['id'];
                 #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
                 setcookie($cookie_name, $cookie_value, [
                     'expires' => time() + 86400,
