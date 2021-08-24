@@ -114,20 +114,20 @@ if(!isset($_COOKIE['sessionID'])) {
     } elseif ($_POST['monthly']) {
             #print_r($_POST['done']);
             #$pdo = new PDO('sqlite:keys.db');
-            $monthlyStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
+            $monthlyStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $input);
             $monthly = $monthlyStatement->fetch(PDO::FETCH_ASSOC);
             #print_r($done['address']);
 
             if ($monthly['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
-                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $input);
+                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $input);
 
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
             }, 500);</script>";
             } elseif ($monthly['fip'] == "No") {
-                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
-                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $input);
+                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $input);
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
