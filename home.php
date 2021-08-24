@@ -29,7 +29,7 @@ error_reporting(E_ALL);
                 setcookie($cookie_name, $cookie_value, [
                     'expires' => time() + 86400,
                     'path' => '/',
-                    'domain' => '127.0.0.1',
+                    'domain' => '192.168.1.114',
                     'secure' => true,
                     'httponly' => true,
                     'samesite' => 'None',
