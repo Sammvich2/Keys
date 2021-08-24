@@ -38,7 +38,7 @@
         }
         h2 {
             font-size: 35px;
-            margin-top: 10%;
+            margin-top: 3%;
         }
 
         h3 {
