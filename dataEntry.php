@@ -223,7 +223,7 @@
     <td><input type="checkbox" class="check" name="pump"></td></tr>
     <br><br>
 
-    <tr class="input"><td><input style="width: 30%; height: 100%" type="submit" value="Submit" name="submit"></td></tr>
+    <tr class="input"><td><input style="width: 30%; height: 100%; text-align: right" type="submit" value="Submit" name="submit"></td></tr>
 </form>
 </table>
 
