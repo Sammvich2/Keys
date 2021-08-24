@@ -44,6 +44,10 @@
             background-color: #1f1f1f;
         }
 
+        td.label {
+            text-align: right;
+        }
+
         label {
             text-align: right;
         }
@@ -185,11 +189,11 @@
 <form action="dataEntry.php" method="post">
 
 
-    <tr class="input"><td><label for="address">Address</label></td>
+    <tr class="input"><td class="label"><label for="address">Address</label></td>
     <td><input type="text" name="address"></td></tr>
     <br><br>
 
-    <tr class="input"><td><label for="access">Access Details:</label></td>
+    <tr class="input"><td class="label"><label for="access">Access Details:</label></td>
     <td><input type="text" name="access"></td></tr>
     <br><br>
 
