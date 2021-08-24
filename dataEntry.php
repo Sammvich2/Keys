@@ -173,6 +173,10 @@
     <label for="access">Access Details:</label>
     <input type="text" name="access">
 
+    <label for="bm">Building Manager Details</label>
+    <input type="text" name="bm">
+
+
     <label for="is_key">Is there a key?</label>
     <input type="checkbox" class="check" name="is_key">
 
