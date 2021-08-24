@@ -91,9 +91,9 @@ if(!isset($_COOKIE['sessionID'])) {
             echo "</h3><h2>Key?</h2><h3>";
             echo $key['is_key'];
 
-            echo "</h3><h2>Who Has It?</h2>";
+            echo "</h3><h2>Who Has It?</h2><h3>";
             echo $key['key_holder'];
-
+            echo "<?h3>";
 
 
         }
