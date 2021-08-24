@@ -172,28 +172,28 @@
     <br><br>
     <label for="access">Access Details:</label>
     <input type="text" name="access">
-    <br>
+    <br><br>
     <label for="bm">Building Manager Details</label>
     <input type="text" name="bm">
-    <br>
+    <br><br>
     <label for="is_key">Is there a key?</label>
     <input type="checkbox" class="check" name="is_key">
-    <br>
+    <br><br>
     <label for="id_number">Key ID</label>
     <input type="number" name="id_number">
-    <br>
+    <br><br>
     <label for="key_provider"Key Provider</label>
     <input type="text" name="key_provider">
-    <br>
+    <br><br>
     <label for="large">Key Large?</label>
     <input type="checkbox" class="check" name="large">
-    <br>
+    <br><br>
     <label for="fip">FIP?</label>
     <input type="checkbox" class="check" name="fip">
-    <br>
+    <br><br>
     <label for="pump">Pump?</label>
     <input type="checkbox" class="check" name="pump">
-    <br>
+    <br><br>
     <input type="submit" value="Submit" name="submit">
 </form>
 
