@@ -189,39 +189,29 @@
 
     <tr class="input"><td class="label"><label for="address">Address</label></td>
     <td><input type="text" name="address"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="access">Access Details:</label></td>
     <td><input type="text" name="access"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="bm">Building Manager Details</label></td>
     <td><input type="text" name="bm"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="is_key">Is there a key?</label></td>
     <td><input type="checkbox" class="check" name="is_key"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="id_number">Key ID</label></td>
     <td><input type="number" name="id_number"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="key_provider">Key Provider</label></td>
     <td><input type="text" name="key_provider"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="large">Key Large?</label></td>
     <td><input type="checkbox" class="check" name="large"></td></tr>
-    <br><br>
-
     <tr class="input"><td class="label"><label for="fip">FIP?</label></td>
     <td><input type="checkbox" class="check" name="fip"></td></tr>
-    <br><br>
 
     <tr class="input"><td class="label"><label for="pump">Pump?</label></td>
     <td><input type="checkbox" class="check" name="pump"></td></tr>
-    <br><br><br>
 
     <tr class="input"><td class="label"><input style="width: 30%; height: 100%;" type="submit" value="Submit" name="submit"></td></tr>
 </form>
