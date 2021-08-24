@@ -81,7 +81,10 @@ if(!isset($_COOKIE['sessionID'])) {
 
         foreach ($keys as $row => $key) {
 
-            echo "<h2>Address</h2><h3>";
+            echo "<h2>FIP Monthly</h2><h3>";
+            echo   $key['fip'];
+
+            echo "</h3><h2>Address</h2><h3>";
             echo   $key['address'];
 
             echo "</h3><h2>Access Details</h2><h3>";
