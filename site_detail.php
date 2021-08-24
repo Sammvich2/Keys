@@ -41,7 +41,7 @@
         }
 
         h3 {
-            font-size: 45px;
+            font-size: 35px;
         }
     </style>
 </head>
@@ -74,29 +74,27 @@ if(!isset($_COOKIE['sessionID'])) {
         $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $input);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-        echo "<table>";
-
-        echo "<tr>";
-        echo "</tr>";
 
 
         foreach ($keys as $row => $key) {
-            echo "<tr><h3>";
 
-            echo "<td><h2>Address</h2></td>";
-            echo "<td>" . $key['address'] . "</td>";
+            echo "<h2>Address</h2><br><h3>";
+            echo   $key['address'];
 
-            echo "<td style='text-align: center'><h2>Key?</h2></td>";
-            echo "<td style='text-align: center'>" . $key['is_key'] . "</td>";
+            echo "</h3><h2>Access Details</h2><br><h3>";
+            echo $key['access'];
 
-            echo "<td style='text-align: center'><h2>Who Has It?</h2></td>";
-            echo "<td style='text-align: center'>" . $key['key_holder'] . "</td>";
+            echo "</h3><h2>Building Manager Details</h2><br><h3>";
+            echo $key['bm'];
 
-            echo "<td><h2>Access Details</h2></td>";
-            echo "<td>" . $key['access'] . "</td>";
+            echo "</h3><h2>Key?</h2><br><h3>";
+            echo $key['is_key'];
+
+            echo "</h3><h2>Who Has It?</h2>";
+            echo $key['key_holder'];
 
 
-            echo "</h3></tr>";
+
         }
 
         echo "</table>";
