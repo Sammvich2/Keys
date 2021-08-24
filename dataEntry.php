@@ -170,13 +170,14 @@
     <label for="address">Address</label>
     <input type="text" name="address">
 
-
-
-    <label for="id_number">Key ID</label>
-    <input type="number" name="id_number">
+    <label for="access">Access Details:</label>
+    <input type="text" name="access">
 
     <label for="is_key">Is there a key?</label>
     <input type="checkbox" class="check" name="is_key">
+
+    <label for="id_number">Key ID</label>
+    <input type="number" name="id_number">
 
     <label for="key_provider"Key Provider</label>
     <input type="text" name="key_provider">
