@@ -169,32 +169,31 @@
 
     <label for="address">Address</label>
     <input type="text" name="address">
-
+    <br>
     <label for="access">Access Details:</label>
     <input type="text" name="access">
-
+    <br>
     <label for="bm">Building Manager Details</label>
     <input type="text" name="bm">
-
-
+    <br>
     <label for="is_key">Is there a key?</label>
     <input type="checkbox" class="check" name="is_key">
-
+    <br>
     <label for="id_number">Key ID</label>
     <input type="number" name="id_number">
-
+    <br>
     <label for="key_provider"Key Provider</label>
     <input type="text" name="key_provider">
-
+    <br>
     <label for="large">Key Large?</label>
     <input type="checkbox" class="check" name="large">
-
+    <br>
     <label for="fip">FIP?</label>
     <input type="checkbox" class="check" name="fip">
-
+    <br>
     <label for="pump">Pump?</label>
     <input type="checkbox" class="check" name="pump">
-
+    <br>
     <input type="submit" value="Submit" name="submit">
 </form>
 
