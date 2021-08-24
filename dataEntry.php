@@ -172,35 +172,44 @@
 <table>
 <form action="dataEntry.php" method="post">
 
+    <tr>
+    <tr><td><label for="address">Address</label></td>
+    <td><input type="text" name="address"></td></tr>
+    <br><br>
 
-    <label for="address">Address</label>
-    <input type="text" name="address">
+    <tr><td><label for="access">Access Details:</label></td>
+    <td><input type="text" name="access"></td></tr>
     <br><br>
-    <label for="access">Access Details:</label>
-    <input type="text" name="access">
+
+    <tr><td><label for="bm">Building Manager Details</label></td>
+    <td><input type="text" name="bm"></td></tr>
     <br><br>
-    <label for="bm">Building Manager Details</label>
-    <input type="text" name="bm">
+
+    <tr><td><label for="is_key">Is there a key?</label></td>
+    <td><input type="checkbox" class="check" name="is_key"></td></tr>
     <br><br>
-    <label for="is_key">Is there a key?</label>
-    <input type="checkbox" class="check" name="is_key">
+
+    <tr><td><label for="id_number">Key ID</label></td>
+    <td><input type="number" name="id_number"></td></tr>
     <br><br>
-    <label for="id_number">Key ID</label>
-    <input type="number" name="id_number">
+
+    <tr><td><label for="key_provider"Key Provider</label></td>
+    <td><input type="text" name="key_provider"></td></tr>
     <br><br>
-    <label for="key_provider"Key Provider</label>
-    <input type="text" name="key_provider">
+
+    <tr><td><label for="large">Key Large?</label></td>
+    <td><input type="checkbox" class="check" name="large"></td></tr>
     <br><br>
-    <label for="large">Key Large?</label>
-    <input type="checkbox" class="check" name="large">
+
+    <tr><td><label for="fip">FIP?</label></td>
+    <td><input type="checkbox" class="check" name="fip"></td></tr>
     <br><br>
-    <label for="fip">FIP?</label>
-    <input type="checkbox" class="check" name="fip">
+
+    <tr><td><label for="pump">Pump?</label></td>
+    <td><input type="checkbox" class="check" name="pump"></td></tr>
     <br><br>
-    <label for="pump">Pump?</label>
-    <input type="checkbox" class="check" name="pump">
-    <br><br>
-    <input type="submit" value="Submit" name="submit">
+
+    <td><input type="submit" value="Submit" name="submit"></td></tr>
 </form>
 </table>
 
