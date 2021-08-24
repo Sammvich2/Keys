@@ -52,12 +52,12 @@
             font-size: 30px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            width: 100%;
+            width: 25%;
 
         }
 
         input.check {
-            height: 85%;
+            height: 3%;
         }
     </style>
 </head>
@@ -194,7 +194,7 @@
 
     <label for="pump">Pump?</label>
     <input type="checkbox" class="check" name="pump">
-    
+
     <input type="submit" value="Submit" name="submit">
 </form>
 
