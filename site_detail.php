@@ -73,6 +73,10 @@ if(!isset($_COOKIE['sessionID'])) {
                 }, 500);</script>";
 } else {
     $pdo = new PDO('sqlite:keys.db');
+    $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
+    $session = $sessionState->fetch(PDO::FETCH_ASSOC);
+    $user = $session['account'];
+    #print_r($user);
 
     $input = $_POST['done'];
     if ($input) {
