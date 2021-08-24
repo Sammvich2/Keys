@@ -67,7 +67,7 @@
 
 
         input {
-            font-size: 30px;
+            font-size: 25px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             width: 25%;
