@@ -134,10 +134,6 @@ if(!isset($_COOKIE['sessionID'])) {
             } else {
                 print_r("Update Failed!");
             }
-    } else {
-        echo "<script> setTimeout(function() {
-                window.location.href = 'monthly.php';
-            }, 500);</script>";
     }
 }
 
