@@ -37,7 +37,7 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            margin-top: -20%;
+            margin-top: -30%;
         }
 
         h1 {
