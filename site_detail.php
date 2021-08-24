@@ -38,6 +38,7 @@
         }
         h2 {
             font-size: 35px;
+            margin-top: 10%;
         }
 
         h3 {
