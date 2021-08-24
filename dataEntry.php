@@ -164,6 +164,24 @@
 
 <body>
 
+<form action="dataEntry.php" method="post">
+    <label for="id_number">Key ID</label>
+    <input type="number" name="id_number">
+    <label for="address">Address</label>
+    <input type="text" name="address">
+    <label for="key_provider"Key Provider</label>
+    <input type="text" name="key_provider">
+    <label for="large">Key Large?</label>
+    <input type="checkbox" class="check" name="large">
+    <label for="fip">FIP?</label>
+    <input type="checkbox" class="check" name="fip">
+    <label for="id_number">Key ID</label>
+    <input type="checkbox" class="check" name="pump">
+    <input type="text" name="access">
+    <input type="checkbox" class="check" name="is_key">
+    <input type="submit" value="Submit" name="submit">
+</form>
+
 <table>
 
     <tr>
@@ -178,21 +196,7 @@
         <td><h2>Access Details</h2></td>
         <td><h2>Key?</h2></td>
     </tr>
-        <form action="dataEntry.php" method="post">
-            <tr>
-                <td><input type="number" name="id_number"></td>
-                <td><input type="text" name="address"></td>
-                <td><input type="text" name="key_holder"></td>
-                <td><input type="date" name="date_of_issue"></td>
-                <td><input type="text" name="key_provider"></td>
-                <td><input type="checkbox" class="check" name="large"></td>
-                <td><input type="checkbox" class="check" name="fip"></td>
-                <td><input type="checkbox" class="check" name="pump"></td>
-                <td><input type="text" name="access"></td>
-                <td><input type="checkbox" class="check" name="is_key"></td>
-                <td><input type="submit" value="Submit" name="submit"></td>
-            </tr>
-        </form>
+
 
 
 <?php
