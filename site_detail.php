@@ -37,12 +37,12 @@
             color: #ff0033
         }
         h2 {
-            font-size: 50px;
+            font-size: 60px;
             margin-top: 3%;
         }
 
         h3 {
-            font-size: 35px;
+            font-size: 50px;
             color: #dfdfdf;
             margin-top: -3%;
         }
