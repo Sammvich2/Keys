@@ -44,7 +44,7 @@
         h3 {
             font-size: 35px;
             color: #dfdfdf;
-            margin-top: -5%;
+            margin-top: -3%;
         }
     </style>
 </head>
