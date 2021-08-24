@@ -52,7 +52,7 @@
         form {
             text-align: center;
         }
-        
+
         input {
             font-size: 30px;
             resize: none;
