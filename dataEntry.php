@@ -194,8 +194,7 @@
 
     <label for="pump">Pump?</label>
     <input type="checkbox" class="check" name="pump">
-
-
+    
     <input type="submit" value="Submit" name="submit">
 </form>
 
