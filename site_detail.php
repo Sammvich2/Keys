@@ -37,11 +37,11 @@
             color: #ff0033
         }
         h2 {
-            font-size: 45px;
+            font-size: 35px;
         }
 
         h3 {
-            font-size: 35px;
+            font-size: 25px;
         }
     </style>
 </head>
