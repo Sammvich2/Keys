@@ -202,7 +202,7 @@
     <br><br>
 
     <tr class="input"><td class="label"><label for="is_key">Is there a key?</label></td>
-    <td><input type="checkbox" class="check" name="is_key"></td></tr>
+    <td><input type="checkbox" name="is_key"></td></tr>
     <br><br>
 
     <tr class="input"><td class="label"><label for="id_number">Key ID</label></td>
@@ -214,15 +214,15 @@
     <br><br>
 
     <tr class="input"><td class="label"><label for="large">Key Large?</label></td>
-    <td><input type="checkbox" class="check" name="large"></td></tr>
+    <td><input type="checkbox" name="large"></td></tr>
     <br><br>
 
     <tr class="input"><td class="label"><label for="fip">FIP?</label></td>
-    <td><input type="checkbox" class="check" name="fip"></td></tr>
+    <td><input type="checkbox" name="fip"></td></tr>
     <br><br>
 
     <tr class="input"><td class="label"><label for="pump">Pump?</label></td>
-    <td><input type="checkbox" class="check" name="pump"></td></tr>
+    <td><input type="checkbox" name="pump"></td></tr>
     <br><br>
 
     <tr class="input"><td><input type="submit" value="Submit" name="submit"></td></tr>
