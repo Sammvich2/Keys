@@ -35,6 +35,7 @@
         table.input {
             width: 50%;
             text-align: center;
+            horiz-align: center;
         }
 
         h1 {
