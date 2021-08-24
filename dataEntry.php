@@ -65,9 +65,6 @@
             font-size: 20px;
         }
 
-        form {
-            text-align: center;
-        }
 
         input {
             font-size: 30px;
