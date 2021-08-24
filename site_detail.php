@@ -122,26 +122,18 @@ if(!isset($_COOKIE['sessionID'])) {
                 $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
                 $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_POST['done']);
 
-                $_POST == null;
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
             }, 500);</script>";
             } elseif ($monthly['fip'] == "No") {
                 $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
                 $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_POST['done']);
-                $_POST == null;
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
             } else {
                 print_r("Update Failed!");
             }
-        }
-
-
-
-
-
     } else {
         echo "<script> setTimeout(function() {
                 window.location.href = 'monthly.php';
