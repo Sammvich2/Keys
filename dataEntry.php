@@ -35,7 +35,7 @@
         table.input {
             width: 50%;
             text-align: center;
-            margin-left: 0%;
+            margin-left: 5%;
             margin-top: 0%;
         }
 
