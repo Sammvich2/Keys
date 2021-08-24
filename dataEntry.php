@@ -17,7 +17,7 @@
             background-color: #5c5c5c;
         }
 
-        table {
+        table.keys {
             width: 90%;
             margin: 100px auto;
             text-align: center;
@@ -32,8 +32,8 @@
             font-size: 28px;
         }
 
-        td.fip {
-            width: 75px;
+        table.input {
+            width: 50%;
         }
 
         h1 {
@@ -169,7 +169,7 @@
 
 <body>
 
-<table>
+<table class="input">
 <form action="dataEntry.php" method="post">
 
     <tr>
@@ -213,7 +213,7 @@
 </form>
 </table>
 
-<table>
+<table class="keys">
 
     <tr>
         <td><h2>Key ID</h2></td>
