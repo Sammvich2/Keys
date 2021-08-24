@@ -78,16 +78,16 @@ if(!isset($_COOKIE['sessionID'])) {
 
         foreach ($keys as $row => $key) {
 
-            echo "<h2>Address</h2><br><h3>";
+            echo "<h2>Address</h2><h3>";
             echo   $key['address'];
 
-            echo "</h3><h2>Access Details</h2><br><h3>";
+            echo "</h3><h2>Access Details</h2><h3>";
             echo $key['access'];
 
-            echo "</h3><h2>Building Manager Details</h2><br><h3>";
+            echo "</h3><h2>Building Manager Details</h2><h3>";
             echo $key['bm'];
 
-            echo "</h3><h2>Key?</h2><br><h3>";
+            echo "</h3><h2>Key?</h2><h3>";
             echo $key['is_key'];
 
             echo "</h3><h2>Who Has It?</h2>";
