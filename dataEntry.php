@@ -40,6 +40,14 @@
             margin-top: -25%;
         }
 
+        tr.input {
+            background-color: #1f1f1f;
+        }
+
+        label {
+            text-align: right;
+        }
+
         h1 {
             font-size: 100px;
             text-align: center;
@@ -176,7 +184,7 @@
 <table class="input">
 <form action="dataEntry.php" method="post">
 
-    <tr>
+
     <tr><td><label for="address">Address</label></td>
     <td><input type="text" name="address"></td></tr>
     <br><br>
@@ -197,7 +205,7 @@
     <td><input type="number" name="id_number"></td></tr>
     <br><br>
 
-    <tr><td><label for="key_provider"Key Provider</label></td>
+    <tr><td><label for="key_provider">Key Provider</label></td>
     <td><input type="text" name="key_provider"></td></tr>
     <br><br>
 
