@@ -62,7 +62,7 @@
 
 </h1>
 
-<form action="site_detail.php" method="post"><input type="submit" id="monthly" value="Toggle Monthly Status" </form>
+
 
 <?php
 
@@ -72,10 +72,10 @@ if(!isset($_COOKIE['sessionID'])) {
                     window.location.href = 'home.php';
                 }, 500);</script>";
 } else {
+    $pdo = new PDO('sqlite:keys.db');
 
     $input = $_POST['done'];
     if ($input) {
-        $pdo = new PDO('sqlite:keys.db');
         $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $input);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -83,7 +83,7 @@ if(!isset($_COOKIE['sessionID'])) {
 
         foreach ($keys as $row => $key) {
 
-            echo "< ";
+            echo "<form action='site_detail.php' method='post'><input type='submit' id='monthly' value='Toggle Monthly Status'></form>";
             echo "<h2>FIP Monthly Done?</h2><h3>";
             echo   $key['fip'];
 
@@ -107,6 +107,38 @@ if(!isset($_COOKIE['sessionID'])) {
         }
 
         echo "</table>";
+    } elseif ($_POST['monthly']) {
+        if ($_POST['done']) {
+            #print_r($_POST['done']);
+            #$pdo = new PDO('sqlite:keys.db');
+            $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
+            $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
+            #print_r($done['address']);
+
+            if ($done['fip'] == "Yes") {
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_POST['done']);
+
+                $_POST == null;
+                echo "<script> setTimeout(function() {
+                window.location.href = window.location.pathname;
+            }, 500);</script>";
+            } elseif ($done['fip'] == "No") {
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
+                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_POST['done']);
+                $_POST == null;
+                echo "<script> setTimeout(function() {
+                window.location.href = window.location.pathname
+            }, 500);</script>";
+            } else {
+                print_r("Update Failed!");
+            }
+        }
+
+
+
+
+
     } else {
         echo "<script> setTimeout(function() {
                 window.location.href = 'monthly.php';

@@ -152,32 +152,6 @@
 
 
 
-        if ($_POST['done']) {
-            #print_r($_POST['done']);
-            #$pdo = new PDO('sqlite:keys.db');
-            $doneStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $_POST['done']);
-            $done = $doneStatement->fetch(PDO::FETCH_ASSOC);
-            #print_r($done['address']);
-
-            if ($done['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_POST['done']);
-                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_POST['done']);
-
-                $_POST == null;
-                echo "<script> setTimeout(function() {
-                window.location.href = window.location.pathname;
-            }, 500);</script>";
-            } elseif ($done['fip'] == "No") {
-                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_POST['done']);
-                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_POST['done']);
-                $_POST == null;
-                echo "<script> setTimeout(function() {
-                window.location.href = window.location.pathname
-            }, 500);</script>";
-            } else {
-                print_r("Update Failed!");
-            }
-        }
     }
 
 
