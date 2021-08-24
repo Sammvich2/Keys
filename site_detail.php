@@ -94,6 +94,11 @@ if(!isset($_COOKIE['sessionID'])) {
         }
 
         echo "</table>";
+    } else {
+        echo "<script> setTimeout(function() {
+                window.location.href = 'monthly.php';
+            }, 500);</script>";
+    }
 }
 
 
