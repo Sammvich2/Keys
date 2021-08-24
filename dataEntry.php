@@ -165,20 +165,32 @@
 <body>
 
 <form action="dataEntry.php" method="post">
-    <label for="id_number">Key ID</label>
-    <input type="number" name="id_number">
+
+
     <label for="address">Address</label>
     <input type="text" name="address">
+
+
+
+    <label for="id_number">Key ID</label>
+    <input type="number" name="id_number">
+
+    <label for="is_key">Is there a key?</label>
+    <input type="checkbox" class="check" name="is_key">
+
     <label for="key_provider"Key Provider</label>
     <input type="text" name="key_provider">
+
     <label for="large">Key Large?</label>
     <input type="checkbox" class="check" name="large">
+
     <label for="fip">FIP?</label>
     <input type="checkbox" class="check" name="fip">
-    <label for="id_number">Key ID</label>
+
+    <label for="pump">Pump?</label>
     <input type="checkbox" class="check" name="pump">
-    <input type="text" name="access">
-    <input type="checkbox" class="check" name="is_key">
+
+
     <input type="submit" value="Submit" name="submit">
 </form>
 
