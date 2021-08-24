@@ -70,7 +70,8 @@
             font-size: 25px;
             resize: none;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            width: 25%;
+            width: 100%;
+            height: 80%;
 
         }
 
