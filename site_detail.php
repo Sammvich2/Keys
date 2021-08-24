@@ -62,6 +62,8 @@
 
 </h1>
 
+<form action="site_detail.php" method="post"><input type="submit" id="monthly" value="Toggle Monthly Status" </form>
+
 <?php
 
 if(!isset($_COOKIE['sessionID'])) {
@@ -81,6 +83,7 @@ if(!isset($_COOKIE['sessionID'])) {
 
         foreach ($keys as $row => $key) {
 
+            echo "< ";
             echo "<h2>FIP Monthly Done?</h2><h3>";
             echo   $key['fip'];
 
