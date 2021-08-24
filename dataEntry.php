@@ -169,6 +169,7 @@
 
 <body>
 
+<table>
 <form action="dataEntry.php" method="post">
 
 
@@ -201,6 +202,7 @@
     <br><br>
     <input type="submit" value="Submit" name="submit">
 </form>
+</table>
 
 <table>
 
