@@ -43,6 +43,7 @@
 
         h3 {
             font-size: 25px;
+            color: #dfdfdf;
         }
     </style>
 </head>
