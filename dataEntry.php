@@ -37,7 +37,7 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            margin-top: -25%;
+            margin-top: -15%;
         }
 
         tr.input {
@@ -185,43 +185,43 @@
 <form action="dataEntry.php" method="post">
 
 
-    <tr><td><label for="address">Address</label></td>
+    <tr class="input"><td><label for="address">Address</label></td>
     <td><input type="text" name="address"></td></tr>
     <br><br>
 
-    <tr><td><label for="access">Access Details:</label></td>
+    <tr class="input"><td><label for="access">Access Details:</label></td>
     <td><input type="text" name="access"></td></tr>
     <br><br>
 
-    <tr><td><label for="bm">Building Manager Details</label></td>
+    <tr class="input"><td><label for="bm">Building Manager Details</label></td>
     <td><input type="text" name="bm"></td></tr>
     <br><br>
 
-    <tr><td><label for="is_key">Is there a key?</label></td>
+    <tr class="input"><td><label for="is_key">Is there a key?</label></td>
     <td><input type="checkbox" class="check" name="is_key"></td></tr>
     <br><br>
 
-    <tr><td><label for="id_number">Key ID</label></td>
+    <tr class="input"><td><label for="id_number">Key ID</label></td>
     <td><input type="number" name="id_number"></td></tr>
     <br><br>
 
-    <tr><td><label for="key_provider">Key Provider</label></td>
+    <tr class="input"><td><label for="key_provider">Key Provider</label></td>
     <td><input type="text" name="key_provider"></td></tr>
     <br><br>
 
-    <tr><td><label for="large">Key Large?</label></td>
+    <tr class="input"><td><label for="large">Key Large?</label></td>
     <td><input type="checkbox" class="check" name="large"></td></tr>
     <br><br>
 
-    <tr><td><label for="fip">FIP?</label></td>
+    <tr class="input"><td><label for="fip">FIP?</label></td>
     <td><input type="checkbox" class="check" name="fip"></td></tr>
     <br><br>
 
-    <tr><td><label for="pump">Pump?</label></td>
+    <tr class="input"><td><label for="pump">Pump?</label></td>
     <td><input type="checkbox" class="check" name="pump"></td></tr>
     <br><br>
 
-    <td><input type="submit" value="Submit" name="submit"></td></tr>
+    <tr class="input"><td><input type="submit" value="Submit" name="submit"></td></tr>
 </form>
 </table>
 
