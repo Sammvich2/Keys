@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 try {
     ($site = $_POST['done']);
-    } 
+    }
 } catch(Exception $e) {
     echo 'Message: ' .$e->getMessage();
 }
