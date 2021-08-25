@@ -102,7 +102,7 @@ if(!isset($_COOKIE['sessionID'])) {
     $user = $session['account'];
     #print_r($user);
 
-    $input = $_COOKIE['site'];
+    $input = $_POST['done'];
     if ($input) {
         $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $input);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -143,15 +143,15 @@ if(!isset($_COOKIE['sessionID'])) {
             #print_r($done['address']);
 
             if ($monthly['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $input);
-                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $input);
+                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_COOKIE['site']);
+                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_COOKIE['site']);
 
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
             }, 500);</script>";
             } elseif ($monthly['fip'] == "No") {
-                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $input);
-                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $input);
+                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_COOKIE['site']);
+                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_COOKIE['site']);
                 echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
