@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $cookie_name = "site";
 $cookie_value = $_POST['done'];
 #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
