@@ -4,18 +4,19 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$cookie_name = "site";
-$cookie_value = $_POST['done'];
-#setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
-setcookie($cookie_name, $cookie_value, [
-    'expires' => time() + 86400,
-    'path' => '/',
-    'domain' => '127.0.0.1',
-    'secure' => true,
-    'httponly' => true,
-    'samesite' => 'None',
+if ($_POST['done']) {
+    $cookie_name = "site";
+    $cookie_value = $_POST['done'];
+    #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
+    setcookie($cookie_name, $cookie_value, [
+        'expires' => time() + 86400,
+        'path' => '/',
+        'domain' => '127.0.0.1',
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'None',
     ]);
-
+}
 
 
 
