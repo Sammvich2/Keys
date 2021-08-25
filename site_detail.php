@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<?php
+$cookie_name = "site";
+$cookie_value = $_POST['done'];
+#setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
+setcookie($cookie_name, $cookie_value, [
+    'expires' => time() + 86400,
+    'path' => '/',
+    'domain' => '127.0.0.1',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'None',
+    ]);
+
+
+
+
+?>
+
+
 <html>
 <head>
     <title>Site Details</title>
@@ -78,7 +98,7 @@ if(!isset($_COOKIE['sessionID'])) {
     $user = $session['account'];
     #print_r($user);
 
-    $input = $_POST['done'];
+    $input = $_COOKIE['site'];
     if ($input) {
         $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $input);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
