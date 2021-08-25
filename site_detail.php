@@ -6,7 +6,9 @@ error_reporting(E_ALL);
 
 try {
     ($site = $_POST['done']);
-} 
+} catch {
+    
+}
 
 if ($_POST['done']) {
     $cookie_name = "site";
