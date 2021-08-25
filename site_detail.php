@@ -4,6 +4,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+try {
+    ($site = $_POST['done']);
+} 
+
 if ($_POST['done']) {
     $cookie_name = "site";
     $cookie_value = $_POST['done'];
