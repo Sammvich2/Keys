@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 
 try {
     ($site = $_POST['done']);
+    } 
 } catch(Exception $e) {
     echo 'Message: ' .$e->getMessage();
 }
@@ -109,9 +110,8 @@ if(!isset($_COOKIE['sessionID'])) {
     $user = $session['account'];
     #print_r($user);
 
-    $input = $_POST['done'];
-    if ($input) {
-        $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $input);
+    if ($site) {
+        $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $site);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 
