@@ -138,7 +138,7 @@ if (isset($_COOKIE['site'])) {
     #error_reporting(E_ALL);
 
     if(!isset($_COOKIE['sessionID'])) {
-        print_r("Write function to return to login");
+        print_r("Bye Bye Nerd ;)");
         echo "<script> setTimeout(function() {
                 window.location.href = 'home.php';
             }, 500);</script>";
