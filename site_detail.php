@@ -4,12 +4,21 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$pdo = new PDO('sqlite:keys.db');
+
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Write function to return to login");
     echo "<script> setTimeout(function() {
                     window.location.href = 'home.php';
                 }, 500);</script>";
-} elseif(isset($_POST['site'])) {
+    } else {
+    $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
+    $session = $sessionState->fetch(PDO::FETCH_ASSOC);
+
+}
+
+
+if(isset($_POST['site'])) {
     $site = $_POST['site'];
 
     $cookie_name = "site";
@@ -21,22 +30,35 @@ if(!isset($_COOKIE['sessionID'])) {
         'httponly' => true,
         'samesite' => 'None',
     ]);
+} elseif(isset($_POST['monthly'])) {
+    $site = $_COOKIE['site'];
 
+    $monthlyStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $site);
+    $monthly = $monthlyStatement->fetch(PDO::FETCH_ASSOC);
+    #print_r($done['address']);
 
+    if ($monthly['fip'] == "Yes") {
+        $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $site);
+        $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $site);
 
-
-
-
-try {
-    ($site = $_POST['done']);
+        echo "<script> setTimeout(function() {
+                window.location.href = window.location.pathname;
+            }, 500);</script>";
+    } elseif ($monthly['fip'] == "No") {
+        $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $site);
+        $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
+        echo "<script> setTimeout(function() {
+                window.location.href = window.location.pathname
+            }, 500);</script>";
+    } else {
+        print_r("Update Failed!");
     }
-} catch(Exception $e) {
-    echo 'Message: ' .$e->getMessage();
-}
 
-if ($_POST['done']) {
 
 }
+
+
+
 
 
 
@@ -113,10 +135,6 @@ if ($_POST['done']) {
 
 
 } else {
-    $pdo = new PDO('sqlite:keys.db');
-    $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
-    $session = $sessionState->fetch(PDO::FETCH_ASSOC);
-    $user = $session['account'];
     #print_r($user);
 
     if ($site) {
@@ -154,26 +172,6 @@ if ($_POST['done']) {
     } elseif ($_POST['monthly']) {
             #print_r($_POST['done']);
             #$pdo = new PDO('sqlite:keys.db');
-            $monthlyStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $input);
-            $monthly = $monthlyStatement->fetch(PDO::FETCH_ASSOC);
-            #print_r($done['address']);
-
-            if ($monthly['fip'] == "Yes") {
-                $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE id_number IS " . $_COOKIE['site']);
-                $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE id_number IS " . $_COOKIE['site']);
-
-                echo "<script> setTimeout(function() {
-                window.location.href = window.location.pathname;
-            }, 500);</script>";
-            } elseif ($monthly['fip'] == "No") {
-                $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE id_number IS " . $_COOKIE['site']);
-                $change = $pdo->query("UPDATE keys SET monthly = '" . $user . "' WHERE id_number IS " . $_COOKIE['site']);
-                echo "<script> setTimeout(function() {
-                window.location.href = window.location.pathname
-            }, 500);</script>";
-            } else {
-                print_r("Update Failed!");
-            }
     }
 }
 
