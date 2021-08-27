@@ -54,11 +54,10 @@ if(isset($_POST['site'])) {
         echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
-    } elseif (isset($_COOKIE['site'])) {
-        $site = $_COOKIE['site'];
-    }
+} elseif (isset($_COOKIE['site'])) {
+    $site = $_COOKIE['site'];
 } else{
-    print_r("No post set");
+    print_r("If you see this, what on earth did you do to cause this error???");
 }
 
 ?>
