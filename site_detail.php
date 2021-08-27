@@ -18,6 +18,8 @@ if(!isset($_COOKIE['sessionID'])) {
 }
 
 
+
+
 if(isset($_POST['site'])) {
     $site = $_POST['site'];
 
