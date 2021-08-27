@@ -5,6 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $pdo = new PDO('sqlite:keys.db');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Write function to return to login");
@@ -12,9 +13,12 @@ if(!isset($_COOKIE['sessionID'])) {
                     window.location.href = 'home.php';
                 }, 500);</script>";
     } else {
-    $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
-    $session = $sessionState->fetch(PDO::FETCH_ASSOC);
-
+    try {
+        $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
+        $session = $sessionState->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        die("Account Error");
+    }
 }
 
 
