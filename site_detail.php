@@ -57,10 +57,8 @@ if(isset($_POST['site'])) {
     } else {
         print_r("Update Failed!");
     }
-} else {
+} elseif {
     print_r("No post set");
-    print_r($_POST['monthly']);
-    print_r($_POST['site']);
 }
 
 ?>
