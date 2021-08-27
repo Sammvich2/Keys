@@ -54,10 +54,15 @@ if(isset($_POST['site'])) {
         echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
+    }
 } elseif (isset($_COOKIE['site'])) {
-    $site = $_COOKIE['site'];
+    if ($_COOKIE['site'] == 0) {
+        print_r("Error: Don't do whatever it was that you just did, thanks");
+    } else {
+        $site = $_COOKIE['site'];
+    }
 } else{
-    print_r("If you see this, what on earth did you do to cause this error???");
+    print_r("Error: If you see this, what on earth did you do to cause this error???");
 }
 
 ?>

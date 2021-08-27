@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+
+<?php
+if (isset($_COOKIE['site'])) {
+    $cookie_name = "site";
+    $site = 0;
+    setcookie($cookie_name, $site, [
+        'expires' => time() + 86400,
+        'path' => '/',
+        'domain' => '127.0.0.1',
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'None',
+    ]);
+
+}
+?>
+
+
+
+
+
 <html>
 <head>
     <title>Site Lookup</title>
