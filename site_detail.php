@@ -22,8 +22,6 @@ if(!isset($_COOKIE['sessionID'])) {
 }
 
 
-
-
 if(isset($_POST['site'])) {
     $site = $_POST['site'];
 
@@ -59,14 +57,11 @@ if(isset($_POST['site'])) {
     } else {
         print_r("Update Failed!");
     }
-
-
+} else {
+    echo "<script> setTimeout(function() {
+                        window.location.href = 'home.php';
+                    }, 500);</script>";
 }
-
-
-
-
-
 
 ?>
 
@@ -121,68 +116,62 @@ if(isset($_POST['site'])) {
         }
     </style>
 </head>
+
 <body>
-<h1>
-    Site Details
-    <br>
-    <button style="font-size: 25px; text-align: center" id="myButton">Back To Monthlies</button>
+    <h1>
+        Site Details
+        <br>
+        <button style="font-size: 25px; text-align: center" id="myButton">Back To Monthlies</button>
 
-    <script type="text/javascript">
-        document.getElementById("myButton").onclick = function () {
-            location.href = "monthly.php";
-        };
-    </script>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "monthly.php";
+            };
+        </script>
 
-</h1>
+    </h1>
 
 
-
+<table>
 <?php
 
 
-} else {
-    #print_r($user);
-
-    if ($site) {
+if (isset($site)) {
+    try {
         $statement = $pdo->query("SELECT * from keys WHERE id_number = " . $site);
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-
-
-        foreach ($keys as $row => $key) {
-
-            echo "<form action='site_detail.php' method='post'><input type='submit' id='monthly' value='Toggle Monthly Status'></form>";
-            echo "<h2>FIP Monthly Done?</h2><h3>";
-            echo   $key['fip'];
-
-            echo "</h3><h2>Address:</h2><h3>";
-            echo   $key['address'];
-
-            echo "</h3><h2>Access Details:</h2><h3>";
-            echo $key['access'];
-
-            echo "</h3><h2>Building Manager Details:</h2><h3>";
-            echo $key['bm'];
-
-            echo "</h3><h2>Is there a key?</h2><h3>";
-            echo $key['is_key'];
-
-            echo "</h3><h2>Who Has It?</h2><h3>";
-            echo $key['key_holder'];
-            echo "</h3>";
-
-
-        }
-
-        echo "</table>";
-    } elseif ($_POST['monthly']) {
-            #print_r($_POST['done']);
-            #$pdo = new PDO('sqlite:keys.db');
+    } catch (PDOException $e) {
+        die("Site not found in database");
     }
+
+    foreach ($keys as $row => $key) {
+
+        echo "<form action='site_detail.php' method='post'><input type='submit' id='monthly' value='Toggle Monthly Status'></form>";
+        echo "<h2>FIP Monthly Done?</h2><h3>";
+        echo   $key['fip'];
+
+        echo "</h3><h2>Address:</h2><h3>";
+        echo   $key['address'];
+
+        echo "</h3><h2>Access Details:</h2><h3>";
+        echo $key['access'];
+
+        echo "</h3><h2>Building Manager Details:</h2><h3>";
+        echo $key['bm'];
+
+        echo "</h3><h2>Is there a key?</h2><h3>";
+        echo $key['is_key'];
+
+        echo "</h3><h2>Who Has It?</h2><h3>";
+        echo $key['key_holder'];
+        echo "</h3>";
+    }
+} else {
+    die("Site not found");
 }
-
-
-
 ?>
+
+
+</table>
 </body>
 </html>
