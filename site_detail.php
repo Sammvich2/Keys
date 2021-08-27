@@ -58,9 +58,7 @@ if(isset($_POST['site'])) {
         print_r("Update Failed!");
     }
 } else {
-    echo "<script> setTimeout(function() {
-                        window.location.href = 'home.php';
-                    }, 500);</script>";
+    print_r("No post set");
 }
 
 ?>
