@@ -115,9 +115,7 @@ if (isset($_COOKIE['site'])) {
         <td style="background-color: #1f1f1f">
             <?php
                 if ($_COOKIE['sessionID'] == 1) {
-                    echo "<form action='monthly.php' method='post'>";
-                        echo "<input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>";
-                    echo "</form>";
+                    echo "<button style='font-size: 25px; text-align: center' onclick='location.href = "site_lookup.php"'>Go To Site Lookup</button>";
                 };
             ?>
         </td>
