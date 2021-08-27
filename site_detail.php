@@ -54,8 +54,8 @@ if(isset($_POST['site'])) {
         echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
-    } else {
-        print_r("Update Failed!");
+    } elseif (isset($_COOKIE['site'])) {
+        $site = $_COOKIE['site'];
     }
 } else{
     print_r("No post set");
