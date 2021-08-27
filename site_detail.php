@@ -4,14 +4,14 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-try {
-    ($site = $_POST['done']);
-    }
-} catch(Exception $e) {
-    echo 'Message: ' .$e->getMessage();
-}
+if(!isset($_COOKIE['sessionID'])) {
+    print_r("Write function to return to login");
+    echo "<script> setTimeout(function() {
+                    window.location.href = 'home.php';
+                }, 500);</script>";
+} elseif(isset($_POST['site'])) {
+    
 
-if ($_POST['done']) {
     $cookie_name = "site";
     $cookie_value = $_POST['done'];
     #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
@@ -23,6 +23,21 @@ if ($_POST['done']) {
         'httponly' => true,
         'samesite' => 'None',
     ]);
+
+
+
+
+
+
+try {
+    ($site = $_POST['done']);
+    }
+} catch(Exception $e) {
+    echo 'Message: ' .$e->getMessage();
+}
+
+if ($_POST['done']) {
+
 }
 
 
@@ -98,11 +113,7 @@ if ($_POST['done']) {
 
 <?php
 
-if(!isset($_COOKIE['sessionID'])) {
-    print_r("Write function to return to login");
-    echo "<script> setTimeout(function() {
-                    window.location.href = 'home.php';
-                }, 500);</script>";
+
 } else {
     $pdo = new PDO('sqlite:keys.db');
     $sessionState = $pdo->query("SELECT * from people WHERE id IS " . $_COOKIE['sessionID']);
