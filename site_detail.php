@@ -10,12 +10,10 @@ if(!isset($_COOKIE['sessionID'])) {
                     window.location.href = 'home.php';
                 }, 500);</script>";
 } elseif(isset($_POST['site'])) {
-    
+    $site = $_POST['site'];
 
     $cookie_name = "site";
-    $cookie_value = $_POST['done'];
-    #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
-    setcookie($cookie_name, $cookie_value, [
+    setcookie($cookie_name, $site, [
         'expires' => time() + 86400,
         'path' => '/',
         'domain' => '127.0.0.1',
