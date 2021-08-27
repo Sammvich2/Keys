@@ -57,7 +57,7 @@ if(isset($_POST['site'])) {
     } else {
         print_r("Update Failed!");
     }
-} elseif {
+} else{
     print_r("No post set");
 }
 
