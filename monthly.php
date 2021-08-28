@@ -112,7 +112,7 @@ if (isset($_COOKIE['site'])) {
     <tr>
         <td style="background-color: #1f1f1f">
                 <form action="monthly.php" method="post">
-                    <input style="padding-top: 1%" type="submit" value="Hide Yes" name="hide">
+                    <input style="padding-top: 1%; font-size: 30px" type="submit" value="Hide Yes" name="hide">
                 </form>
         </td>
         <td style="background-color: #1f1f1f">
