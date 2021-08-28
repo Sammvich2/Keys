@@ -101,7 +101,7 @@ if(!isset($_COOKIE['sessionID'])) {
         <td style="background-color: #1f1f1f">
             <?php
             if ($_COOKIE['sessionID'] == 1) {
-                echo "<form action='monthly.php' method='post'>";
+                echo "<form action='monthly_admin.php' method='post'>";
                 echo "<input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>";
                 echo "</form>";
             };
