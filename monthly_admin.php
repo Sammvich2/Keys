@@ -126,8 +126,8 @@ $pdo = new PDO('sqlite:keys.db');
 
 
 if ($_POST['reset'] == "Reset All Monthlies") {
+    $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE fip = 'Yes'");
     $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE fip = 'Yes'");
-    $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE monthly = NOT NULL");
 }
 
 
