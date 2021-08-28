@@ -160,7 +160,7 @@ if (isset($site)) {
         echo   $key['address'];
 
         echo "</h3><h2>Access Details:</h2><h3>";
-        echo "<input type='text' name='access'  value='" . $key['access'] . "'>";
+        echo "<input type='text' size='100' name='access'  value='" . $key['access'] . "'>";
 
         echo "</h3><h2>Building Manager Details:</h2><h3>";
         echo $key['bm'];
