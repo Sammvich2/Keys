@@ -126,16 +126,9 @@ if(!isset($_COOKIE['sessionID'])) {
 $pdo = new PDO('sqlite:keys.db');
 
 
-if ($_POST['hide'] == "Hide Yes") {
-    #print_r($_POST);
-
-    $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
-} else {
-    $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
-}
-
-$keys = $statement->fetchAll(PDO::FETCH_ASSOC);
-foreach($keys as $row => $key){
+$done = $pdo->query("SELECT * from keys WHERE fip IS 'Yes' ORDER BY address ASC");
+$printDone = $done->fetchAll(PDO::FETCH_ASSOC);
+foreach($printDone as $row => $key){
     echo "<tr><h3>";
     echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
     echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
@@ -143,6 +136,19 @@ foreach($keys as $row => $key){
     echo "<td>" .  $key['is_key']  .  "</td>";
     echo "</h3></tr>";
 }
+
+
+$notDone = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
+$printNotDone = $notDone->fetchAll(PDO::FETCH_ASSOC);
+foreach($printNotDone as $row => $key){
+    echo "<tr><h3>";
+    echo "<td style='padding-top: 1%; padding-bottom: 1%'>" .  $key['fip']  .  "</td>";
+    echo "<td style='text-align: left; padding-left: 5%'>" .  $key['address']  .  "</td>";
+    echo "<td style='text-align: left; padding-left: 5%'>" .  $key['monthly']  .  "</td>";
+    echo "<td>" .  $key['is_key']  .  "</td>";
+    echo "</h3></tr>";
+}
+
 ?>
 
 </table>
