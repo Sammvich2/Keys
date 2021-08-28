@@ -149,6 +149,7 @@ if (isset($site)) {
     foreach ($keys as $row => $key) {
 
         echo "<form action='site_detail.php' id='monthly' method='post'><input style='font-size: 45px;' type='submit' name='monthly' value='Toggle Monthly Status'></form>";
+        echo "<form action='site_detail.php' methond='post'>";
         echo "<h2>FIP Monthly Done?</h2><h3>";
         echo   $key['fip'];
 
@@ -156,7 +157,7 @@ if (isset($site)) {
         echo   $key['address'];
 
         echo "</h3><h2>Access Details:</h2><h3>";
-        echo $key['access'];
+        echo "<input type='text' name='access  value='" . $key['access'] . "'>";
 
         echo "</h3><h2>Building Manager Details:</h2><h3>";
         echo $key['bm'];
