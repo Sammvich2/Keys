@@ -125,6 +125,16 @@ if(!isset($_COOKIE['sessionID'])) {
 $pdo = new PDO('sqlite:keys.db');
 
 
+if ($_POST['reset'] == "Reset All Monthlies") {
+    $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE fip = 'Yes'");
+    $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE monthly = NOT NULL");
+}
+
+
+
+
+
+
 $done = $pdo->query("SELECT * from keys WHERE fip IS 'Yes' ORDER BY address ASC");
 $printDone = $done->fetchAll(PDO::FETCH_ASSOC);
 foreach($printDone as $row => $key){
