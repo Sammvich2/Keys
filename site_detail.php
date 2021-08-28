@@ -123,7 +123,7 @@ if(isset($_POST['site'])) {
     <h1>
         Site Details
         <br>
-        <button style="font-size: 25px; text-align: center" id="myButton">Back To Monthlies</button>
+        <button style="font-size: 40px; text-align: center" id="myButton">Back To Monthlies</button>
 
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
