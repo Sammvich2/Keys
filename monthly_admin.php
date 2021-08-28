@@ -137,6 +137,7 @@ foreach($printDone as $row => $key){
     echo "</h3></tr>";
 }
 
+echo "<tr></tr>";
 
 $notDone = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
 $printNotDone = $notDone->fetchAll(PDO::FETCH_ASSOC);
