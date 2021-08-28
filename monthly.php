@@ -118,7 +118,7 @@ if (isset($_COOKIE['site'])) {
         <td style="background-color: #1f1f1f">
             <?php
                 if ($_COOKIE['sessionID'] == 1) {
-                    echo "<button style='font-size: 25px; text-align: center' onclick='button()'>Go To Admin</button>";
+                    echo "<button style='font-size: 30px; text-align: center' onclick='button()'>Go To Admin</button>";
                 };
             ?>
         </td>
