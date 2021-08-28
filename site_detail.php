@@ -148,7 +148,7 @@ if (isset($site)) {
 
     foreach ($keys as $row => $key) {
 
-        echo "<form action='site_detail.php' id='monthly' method='post'><input type='submit' name='monthly' value='Toggle Monthly Status'></form>";
+        echo "<form action='site_detail.php' id='monthly' method='post'><input style='font-size: 45px;' type='submit' name='monthly' value='Toggle Monthly Status'></form>";
         echo "<h2>FIP Monthly Done?</h2><h3>";
         echo   $key['fip'];
 
