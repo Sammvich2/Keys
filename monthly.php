@@ -93,7 +93,7 @@ if (isset($_COOKIE['site'])) {
             window.history.replaceState( null, null, window.location.href );
         }
         function button() {
-            location.href = 'site_lookup.php'
+            location.href = 'monthly_admin.php'
         }
     </script>
 
@@ -118,7 +118,7 @@ if (isset($_COOKIE['site'])) {
         <td style="background-color: #1f1f1f">
             <?php
                 if ($_COOKIE['sessionID'] == 1) {
-                    echo "<button style='font-size: 25px; text-align: center' onclick='button()'>Go To Site Lookup</button>";
+                    echo "<button style='font-size: 25px; text-align: center' onclick='button()'>Go To Admin</button>";
                 };
             ?>
         </td>
