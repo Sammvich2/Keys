@@ -119,6 +119,7 @@ if(isset($_POST['site'])) {
         textarea {
             font-size: 50px;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            resize: none;
         }
     </style>
 </head>
