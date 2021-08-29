@@ -116,7 +116,7 @@ if(isset($_POST['site'])) {
             color: #dfdfdf;
             margin-top: -3%;
         }
-        input {
+        textarea {
             font-size: 50px;
         }
     </style>
