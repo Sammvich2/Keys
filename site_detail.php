@@ -68,8 +68,6 @@ if(isset($_POST['site'])) {
 if ($_POST['save'] == "Save Changes") {
     $saveStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $site);
     $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
-    print_r($_POST['access']);
-    print_r($_POST['bm']);
 
     if ($_POST['access'] != $save['access']) {
     $saveAccess = $pdo->query("UPDATE keys SET access = '" . $_POST['access'] . "' WHERE id_number IS " . $site);
