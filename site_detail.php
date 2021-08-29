@@ -171,7 +171,6 @@ if (isset($site)) {
         echo "<textarea rows='2' name='bm'>";
         echo $key['bm'];
         echo "</textarea>";
-        echo "</form>";
 
         echo "</h3><h2>Is there a key?</h2><h3>";
         echo $key['is_key'];
@@ -179,6 +178,10 @@ if (isset($site)) {
         echo "</h3><h2>Who Has It?</h2><h3>";
         echo $key['key_holder'];
         echo "</h3>";
+
+        echo "<input type='button' name='"
+        echo "</form>";
+
     }
 } else {
     die("Site not found");
