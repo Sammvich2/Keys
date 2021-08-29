@@ -179,7 +179,7 @@ if (isset($site)) {
         echo $key['key_holder'];
         echo "</h3>";
 
-        echo "<input type='submit' name='"
+        echo "<input type='submit' name='save' value=Save Changes'>";
         echo "</form>";
 
     }
