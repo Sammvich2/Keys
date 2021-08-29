@@ -168,9 +168,10 @@ if (isset($site)) {
         echo "</textarea>";
 
         echo "</h3><h2>Site Contacts:</h2><h3>";
-        echo "<textarea rows='4' name='access'>";
+        echo "<textarea rows='4' name='bm'>";
         echo $key['bm'];
         echo "</textarea>";
+        echo "</form>";
 
         echo "</h3><h2>Is there a key?</h2><h3>";
         echo $key['is_key'];
