@@ -120,6 +120,7 @@ if(isset($_POST['site'])) {
             font-size: 50px;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             resize: none;
+            width: 90%;
         }
     </style>
 </head>
