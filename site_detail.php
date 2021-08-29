@@ -65,6 +65,13 @@ if(isset($_POST['site'])) {
     print_r("Error: If you see this, what on earth did you do to cause this error???");
 }
 
+if ($_POST['save'] == "Save Changes") {
+    $change = $pdo->query("UPDATE keys SET access = 'Yes' WHERE id_number IS " . $site);
+    $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
+
+}
+
+
 ?>
 
 
