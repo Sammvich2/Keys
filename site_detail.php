@@ -163,7 +163,7 @@ if (isset($site)) {
         echo   $key['address'];
 
         echo "</h3><h2>Access Details:</h2><h3>";
-        echo "<textarea cols='30' rows='4' name='access'>";
+        echo "<textarea rows='4' name='access'>";
         echo $key['access'];
         echo "</textarea>";
 
