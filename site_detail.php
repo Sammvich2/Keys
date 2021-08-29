@@ -57,15 +57,19 @@ if(isset($_POST['site'])) {
     }
 } elseif (isset($_COOKIE['site'])) {
     if ($_COOKIE['site'] == 0) {
-        print_r("Error: Don't do whatever it was that you just did, thanks");
+        die("Error: Don't do whatever it was that you just did, thanks");
     } else {
         $site = $_COOKIE['site'];
     }
 } else{
-    print_r("Error: If you see this, what on earth did you do to cause this error???");
+    die("Error: If you see this, what on earth did you do to cause this error???");
 }
 
 if ($_POST['save'] == "Save Changes") {
+    $saveStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $site);
+    $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
+
+    if ($_POST['access'] != $save['access'])
     $change = $pdo->query("UPDATE keys SET access = 'Yes' WHERE id_number IS " . $site);
     $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
 
