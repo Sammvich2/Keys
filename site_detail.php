@@ -69,10 +69,13 @@ if ($_POST['save'] == "Save Changes") {
     $saveStatement = $pdo->query("SELECT * from keys WHERE id_number IS " . $site);
     $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
 
-    if ($_POST['access'] != $save['access'])
-    $saveAccess = $pdo->query("UPDATE keys SET access = '' WHERE id_number IS " . $site);
-    $saveAccess = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
-
+    if ($_POST['access'] != $save['access']) {
+    $saveAccess = $pdo->query("UPDATE keys SET access = '" . $_POST['access'] . "' WHERE id_number IS " . $site);
+    } elseif ($_POST['bm'] != $save['bm']) {
+    $saveAccess = $pdo->query("UPDATE keys SET bm = '" . $_POST['bm'] . "' WHERE id_number IS " . $site);
+    } else {
+    print_r("No changes made ya dingus");
+    }
 }
 
 
