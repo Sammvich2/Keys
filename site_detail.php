@@ -70,8 +70,8 @@ if ($_POST['save'] == "Save Changes") {
     $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
 
     if ($_POST['access'] != $save['access'])
-    $change = $pdo->query("UPDATE keys SET access = 'Yes' WHERE id_number IS " . $site);
-    $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
+    $saveAccess = $pdo->query("UPDATE keys SET access = '' WHERE id_number IS " . $site);
+    $saveAccess = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE id_number IS " . $site);
 
 }
 
