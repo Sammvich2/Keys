@@ -103,7 +103,7 @@ if (isset($_COOKIE['site'])) {
 <body>
 
     <h1>
-        The Clock Is Ticking
+        Bumthlies
         <br>
         <button style="font-size: 35px; text-align: center" onclick="location.href = 'site_lookup.php'">Go To Site Lookup</button>
     </h1>
