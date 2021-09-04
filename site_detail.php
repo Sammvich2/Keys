@@ -10,7 +10,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Write function to return to login");
     echo "<script> setTimeout(function() {
-                    window.location.href = 'home.php';
+                    window.location.href = 'index.php';
                 }, 500);</script>";
     } else {
     try {
@@ -29,7 +29,7 @@ if(isset($_POST['site'])) {
     setcookie($cookie_name, $site, [
         'expires' => time() + 86400,
         'path' => '/',
-        'domain' => '127.0.0.1',
+        'domain' => 'dakeys.net',
         'secure' => true,
         'httponly' => true,
         'samesite' => 'None',
