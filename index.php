@@ -107,7 +107,7 @@ error_reporting(E_ALL);
 
 <body>
 <h1>Login</h1>
-<form method="post" action="home.php">
+<form method="post" action="index.php">
     <input type="text" name="user" placeholder="Username"><br><br>
     <input type="password" name="pass" placeholder="Password"><br><br>
     <input type="submit" name="login" value="Login">
