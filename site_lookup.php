@@ -64,7 +64,7 @@
     if(!isset($_COOKIE['sessionID'])) {
         print_r("Write function to return to login");
         echo "<script> setTimeout(function() {
-                    window.location.href = 'home.php';
+                    window.location.href = 'index.php';
                 }, 500);</script>";
     } else {
         $pdo = new PDO('sqlite:keys.db');
