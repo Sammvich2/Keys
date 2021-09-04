@@ -3,7 +3,7 @@
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Bye Bye Nerd ;)");
     echo "<script> setTimeout(function() {
-                window.location.href = 'home.php';
+                window.location.href = 'index.php';
             }, 500);</script>";
 }
 ?>
