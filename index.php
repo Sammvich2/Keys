@@ -39,7 +39,7 @@ error_reporting(E_ALL);
 ?>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login 1</title>
 
     <style>
         body {
