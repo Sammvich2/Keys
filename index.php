@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 #ini_set('display_errors', 1);
 #ini_set('display_startup_errors', 1);
@@ -39,7 +38,7 @@
 ?>
 <html>
 <head>
-    <title>Login 1</title>
+    <title>Login 2</title>
 
     <style>
         body {
