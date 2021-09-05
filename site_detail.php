@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -20,8 +19,6 @@ if(!isset($_COOKIE['sessionID'])) {
         die("Account Error");
     }
 }
-
-
 if(isset($_POST['site'])) {
     $site = $_POST['site'];
 

@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 if (isset($_COOKIE['site'])) {
     $cookie_name = "site";
@@ -15,9 +13,6 @@ if (isset($_COOKIE['site'])) {
 
 }
 ?>
-
-
-
 <html>
 <head>
     <title>Monthlies</title>
