@@ -3,10 +3,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
     #print_r($_POST['user']);
-
-
     if ($_POST['login'] == "Login") {
         #print_r("Login started");
 
@@ -18,11 +15,11 @@ error_reporting(E_ALL);
 
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
         #print_r("fetch done");
-        print_r($users);
+        #print_r($users);
 
         if ($users) {
             if ($users['password'] == $_POST['pass']) {
-                print_r("Login Successful");
+                #print_r("Login Successful");
                 $cookie_name = "sessionID";
                 $cookie_value = $users['id'];
                 #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
@@ -37,7 +34,8 @@ error_reporting(E_ALL);
                  echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 10000)</script>";
             }
         } else {
-            print_r("Incorrect Username");
+            #print_r("Incorrect Username");
+            echo "Login Unsuccessful";
         }
     }
 ?>
