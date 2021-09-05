@@ -31,7 +31,7 @@ error_reporting(E_ALL);
                     'path' => '/',
                     'domain' => 'dakeys.net',
                     'secure' => true,
-                    'httponly' => true,
+                    'httponly' => false,
                     'samesite' => 'None',
                 ]);
                  echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 500)</script>";
