@@ -30,8 +30,8 @@ error_reporting(E_ALL);
                     'expires' => time() + 86400,
                     'path' => '/',
                     'domain' => 'dakeys.net',
-                    'secure' => false,
-                    'httponly' => false,
+                    'secure' => true,
+                    'httponly' => true,
                     'samesite' => 'strict',
                 ]);
                  echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 2000)</script>";
