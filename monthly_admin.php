@@ -4,7 +4,7 @@ if(!isset($_COOKIE['sessionID'])) {
     echo "<script> setTimeout(function() {
                 window.location.href = 'index.php';
             }, 500);</script>";
-}
+} else
 ?>
 <html>
 <head>
