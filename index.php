@@ -40,13 +40,7 @@ error_reporting(E_ALL);
             print_r("Incorrect Username");
         }
     }
-
-
-
-
 ?>
-
-
 <html>
 <head>
     <title>Login</title>
