@@ -6,7 +6,6 @@ error_reporting(E_ALL);
     #print_r($_POST['user']);
     if ($_POST['login'] == "Login") {
         #print_r("Login started");
-
         $pdo = new PDO('sqlite:keys.db');
         $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         $inputUser = "same";
@@ -16,7 +15,6 @@ error_reporting(E_ALL);
         $users = $userQ->fetch(PDO::FETCH_ASSOC);
         #print_r("fetch done");
         #print_r($users);
-
         if ($users) {
             if ($users['password'] == $_POST['pass']) {
                 #print_r("Login Successful");
