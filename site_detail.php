@@ -156,7 +156,8 @@ if (isset($site)) {
 
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
-        die("Site not found in database");
+        print "Error: " . $e->getMessage() . "<br/>";
+        #die("Site not found in database");
     }
 
     foreach ($keys as $row => $key) {
@@ -191,9 +192,9 @@ if (isset($site)) {
 
     }
 } else {
-    print "Error: " . $e->getMessage() . "<br/>";
 
-    #die("Site not found");
+
+    die("Site not found");
 }
 ?>
 
