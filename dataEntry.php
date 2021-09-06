@@ -181,13 +181,9 @@ if(!isset($_COOKIE['sessionID'])) {
                     $is_key = "No";
                 }
                 $stmt->bindValue(':is_key', $is_key, PDO::PARAM_STR);
-                print_r($stmt);
-                try {
-                    $success = $stmt->execute();
-                } catch (PDOException $e){
-                print "Error: " . $e->getMessage() . "br/>";
-                }
 
+                $success = $stmt->execute();
+                print_r($stmt);
                 if($success){
                     echo "Key Added To Database";
                 } else{
