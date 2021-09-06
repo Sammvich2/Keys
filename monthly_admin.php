@@ -1,10 +1,19 @@
 <?php
+$pdo = new PDO('sqlite:keys.db');
+
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Bye Bye Nerd ;)");
     echo "<script> setTimeout(function() {
                 window.location.href = 'index.php';
             }, 500);</script>";
-} else
+} else {
+    $admin = $pdo->query("SELECT * from people WHERE id IS '" . $_COOKIE['sessionID'] . "'");
+    if ($admin['admin'] < 1) {
+        echo "<script> setTimeout(function() {
+                window.location.href = 'index.php';
+            }, 500);</script>";
+    }
+}
 ?>
 <html>
 <head>
@@ -96,13 +105,12 @@ if(!isset($_COOKIE['sessionID'])) {
 <table>
     <tr>
         <td style="background-color: #1f1f1f">
-            <?php
-            if ($_COOKIE['sessionID'] == 1) {
-                echo "<form action='monthly_admin.php' method='post'>";
-                echo "<input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>";
-                echo "</form>";
-            };
-            ?>
+                <form action='monthly_admin.php' method='post'>
+                <input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>
+                </form>
+        </td>
+        <td>
+            <button style="font-size: 25px; text-align: center" onclick="location.href = 'dataEntry.php'">Enter New Site</button>
         </td>
 
     </tr>
@@ -119,7 +127,6 @@ if(!isset($_COOKIE['sessionID'])) {
 #ini_set('display_startup_errors', 1);
 #error_reporting(E_ALL);
 
-$pdo = new PDO('sqlite:keys.db');
 
 
 if ($_POST['reset'] == "Reset All Monthlies") {

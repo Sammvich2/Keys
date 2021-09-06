@@ -1,3 +1,20 @@
+<?php
+$pdo = new PDO('sqlite:keys.db');
+
+if(!isset($_COOKIE['sessionID'])) {
+    print_r("Bye Bye Nerd ;)");
+    echo "<script> setTimeout(function() {
+                window.location.href = 'index.php';
+            }, 500);</script>";
+} else {
+    $admin = $pdo->query("SELECT * from people WHERE id IS '" . $_COOKIE['sessionID'] . "'");
+    if ($admin['admin'] < 1) {
+        echo "<script> setTimeout(function() {
+                window.location.href = 'index.php';
+            }, 500);</script>";
+    }
+}
+?>
 <html>
 <head>
     <title>Key Entry</title>
@@ -103,9 +120,8 @@
             try {
 
 
-                $db = new PDO('sqlite:keys.db');
-                $sql = "INSERT INTO keys (id_number, address, key_holder, date_of_issue, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :key_holder, :date_of_issue, :key_provider, :large, :fip, :pump, :access, :is_key)";
-                $stmt = $db->prepare($sql);
+                $sql = "INSERT INTO keys (id_number, address, bm, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :bm, :key_provider, :large, :fip, :pump, :access, :is_key)";
+                $stmt = $pdo->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
                 $stmt->bindValue(':id_number', $id_number, PDO::PARAM_INT);
@@ -113,8 +129,8 @@
                 $address = filter_input(INPUT_POST, 'address');
                 $stmt->bindValue(':address', $address, PDO::PARAM_STR);
 
-                $key_holder = filter_input(INPUT_POST, 'key_holder');
-                $stmt->bindValue(':key_holder', $key_holder, PDO::PARAM_STR);
+                $bm = filter_input(INPUT_POST, 'bm');
+                $stmt->bindValue(':bm', $bm, PDO::PARAM_STR);
 
                 $date_of_issue = filter_input(INPUT_POST, 'date_of_issue');
                 $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_STR);
@@ -132,7 +148,7 @@
 
                 #$fip = filter_input(INPUT_POST, 'fip');
                 if ($_POST['fip'] == "on"){
-                    $fip = "Yes";
+                    $fip = "No";
                 } else {
                     $fip = null;
                 }
@@ -140,7 +156,7 @@
 
                 #$pump = filter_input(INPUT_POST, 'pump');
                 if ($_POST['pump'] == "on"){
-                    $pump = "Yes";
+                    $pump = "No";
                 } else {
                     $pump = null;
                 }
@@ -235,7 +251,6 @@
 <?php
 
 
-$pdo = new PDO('sqlite:keys.db');
 $statement = $pdo->query("SELECT * from keys");
 $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
 
