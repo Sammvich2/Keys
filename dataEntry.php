@@ -172,7 +172,7 @@ if(!isset($_COOKIE['sessionID'])) {
                 }
                 $stmt->bindValue(':pump', $pump, PDO::PARAM_STR);
 
-                $access = filter_input(INPUT_POST, 'access');
+                $access = filter_input(TEXTAREA_POST, 'access');
                 $stmt->bindValue(':access', $access, PDO::PARAM_STR);
 
                 #$is_key = filter_input(INPUT_POST, 'is_key');
