@@ -130,7 +130,7 @@ if ($_POST['save'] == "Save Changes") {
 
 <body>
     <h1>
-        Site Details
+        Site Details1
         <br>
         <button style="font-size: 40px; text-align: center" id="myButton">Back To Monthlies</button>
 
