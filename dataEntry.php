@@ -117,7 +117,6 @@ if(!isset($_COOKIE['sessionID'])) {
     }
 </script>
 
-<pre>
     <?php
         if ($_POST['submit'] == "Submit") {
 
@@ -207,7 +206,6 @@ if(!isset($_COOKIE['sessionID'])) {
 
 
     ?>
-</pre>
 
 
 <body>
