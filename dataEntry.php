@@ -4,7 +4,6 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-/*
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Bye Bye Nerd ;)");
     echo "<script> setTimeout(function() {
@@ -18,7 +17,6 @@ if(!isset($_COOKIE['sessionID'])) {
             }, 500);</script>";
     }
 }
-*/
 ?>
 <html>
 <head>
