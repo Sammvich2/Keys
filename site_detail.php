@@ -145,11 +145,11 @@ if ($_POST['save'] == "Save Changes") {
 
 <table>
 <?php
-
+print_r($site);
 
 if (isset($site)) {
     try {
-        print_r($site);
+
         $statement = $pdo->query("SELECT * from keys WHERE unique IS '" . $site . "'");
 
         print_r($statement);
