@@ -16,10 +16,8 @@ if (isset($_COOKIE['site'])) {
         'httponly' => true,
         'samesite' => 'None',
     ]);
-
 }
 $pdo = new PDO('sqlite:keys.db');
-
 ?>
 <html>
 <head>

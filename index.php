@@ -3,38 +3,45 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
     #print_r($_POST['user']);
-    if ($_POST['login'] == "Login") {
-        #print_r("Login started");
-        $pdo = new PDO('sqlite:keys.db');
-        $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        $inputUser = "same";
-        $userQ = $pdo->query("SELECT * from people WHERE account IS '". $_POST['user'] . "'");
-        #print_r("SELECT * from users WHERE unique IS " . $inputUser);
+if(isset($_COOKIE['sessionID'])) {
+    print_r("Hello big boi ;)");
+    echo "<script> setTimeout(function() {
+                window.location.href = 'monthly.php';
+            }, 500);</script>";
+}
 
-        $users = $userQ->fetch(PDO::FETCH_ASSOC);
-        #print_r("fetch done");
-        #print_r($users);
-        if ($users) {
-            if ($users['password'] == $_POST['pass']) {
-                #print_r("Login Successful");
-                $cookie_name = "sessionID";
-                $cookie_value = $users['id'];
-                #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
-                setcookie($cookie_name, $cookie_value, [
-                    'expires' => time() + 86400,
-                    'path' => '/',
-                    'domain' => 'dakeys.net',
-                    'secure' => true,
-                    'httponly' => true,
-                    'samesite' => 'strict',
-                ]);
-                 echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 2000)</script>";
-            }
-        } else {
-            #print_r("Incorrect Username");
-            echo "Login Unsuccessful";
+if ($_POST['login'] == "Login") {
+    #print_r("Login started");
+    $pdo = new PDO('sqlite:keys.db');
+    $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    $inputUser = "same";
+    $userQ = $pdo->query("SELECT * from people WHERE account IS '". $_POST['user'] . "'");
+    #print_r("SELECT * from users WHERE unique IS " . $inputUser);
+
+    $users = $userQ->fetch(PDO::FETCH_ASSOC);
+    #print_r("fetch done");
+    #print_r($users);
+    if ($users) {
+        if ($users['password'] == $_POST['pass']) {
+            #print_r("Login Successful");
+            $cookie_name = "sessionID";
+            $cookie_value = $users['id'];
+            #setcookie($cookie_name, $cookie_value, , '/'); // 86400 = 1 day
+            setcookie($cookie_name, $cookie_value, [
+                'expires' => time() + 86400,
+                'path' => '/',
+                'domain' => 'dakeys.net',
+                'secure' => true,
+                'httponly' => true,
+                'samesite' => 'strict',
+            ]);
+             echo "<script> setTimeout(function() {window.location.href = 'monthly.php'}, 2000)</script>";
         }
+    } else {
+        #print_r("Incorrect Username");
+        echo "Login Unsuccessful";
     }
+}
 ?>
 <html>
 <head>
