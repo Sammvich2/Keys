@@ -212,7 +212,7 @@ if(!isset($_COOKIE['sessionID'])) {
     <td><input type="text" name="address"></td></tr>
 
     <tr class="input"><td class="label"><label for="access">Access Details:</label></td>
-    <td><input type="text" name="access"></td></tr>
+        <td><textarea rows="4" name="access"></textarea></td></tr>
 
     <tr class="input"><td class="label"><label for="bm">Building Manager Details</label></td>
     <td><input type="text" name="bm"></td></tr>
