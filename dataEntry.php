@@ -129,7 +129,7 @@ if(!isset($_COOKIE['sessionID'])) {
             try {
 
 
-                $sql = "INSERT INTO keys (id_number, address, key_provider, large, fip, pump, access, is_key, bm) VALUES ( $id_number, $address, $key_provider, $large, $fip, $pump, $access, $is_key, $bm)";
+                $sql = "INSERT INTO keys (id_number, address, key_provider, large, fip, pump, access, is_key, bm) VALUES ( :id_number, :address, :key_provider, :large, :fip, :pump, :access, :s_key, :bm)";
                 $stmt = $pdo->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
@@ -182,8 +182,7 @@ if(!isset($_COOKIE['sessionID'])) {
                 }
                 $stmt->bindValue(':is_key', $is_key, PDO::PARAM_STR);
 
-                $success = $stmt->execute();
-                print_r($success);
+                $stmt->execute();
                 if($success){
                     echo "Key Added To Database";
                 } else{
