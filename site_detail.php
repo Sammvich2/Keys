@@ -150,9 +150,10 @@ if ($_POST['save'] == "Save Changes") {
 if (isset($site)) {
     try {
         $statement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
-        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         print_r($site);
         print_r($statement);
+
+        $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         die("Site not found in database");
     }
