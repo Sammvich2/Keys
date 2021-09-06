@@ -1,4 +1,10 @@
 <?php
+if(!isset($_COOKIE['sessionID'])) {
+    print_r("Bye Bye Nerd ;)");
+    echo "<script> setTimeout(function() {
+                window.location.href = 'index.php';
+            }, 500);</script>";
+}
 if (isset($_COOKIE['site'])) {
     $cookie_name = "site";
     $site = 0;
@@ -135,16 +141,6 @@ $pdo = new PDO('sqlite:keys.db');
     #ini_set('display_errors', 1);
     #ini_set('display_startup_errors', 1);
     #error_reporting(E_ALL);
-
-    if(!isset($_COOKIE['sessionID'])) {
-        print_r("Bye Bye Nerd ;)");
-        echo "<script> setTimeout(function() {
-                window.location.href = 'index.php';
-            }, 500);</script>";
-
-    } else {
-
-
         if ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
 
@@ -163,21 +159,9 @@ $pdo = new PDO('sqlite:keys.db');
             echo "<td style='padding-top: 1%'><form action='site_detail.php' id='site' method='post'><input name='site' type='submit' value=" . $key['unique'] . "></form></td>";
             echo "</h3></tr>";
         }
-
-
-
-    }
-
-
-
     ?>
 
 </table>
 </body>
-
-<script>
-
-</script>
-
 </html>
 
