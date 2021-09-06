@@ -9,7 +9,6 @@ if(isset($_COOKIE['sessionID'])) {
                 window.location.href = 'monthly.php';
             }, 500);</script>";
 }
-
 if ($_POST['login'] == "Login") {
     #print_r("Login started");
     $pdo = new PDO('sqlite:keys.db');

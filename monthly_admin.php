@@ -1,6 +1,5 @@
 <?php
 $pdo = new PDO('sqlite:keys.db');
-
 if(!isset($_COOKIE['sessionID'])) {
     print_r("Bye Bye Nerd ;)");
     echo "<script> setTimeout(function() {

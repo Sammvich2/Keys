@@ -2,7 +2,6 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
 $pdo = new PDO('sqlite:keys.db');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -33,11 +32,9 @@ if(isset($_POST['site'])) {
     ]);
 } elseif(isset($_POST['monthly'])) {
     $site = $_COOKIE['site'];
-
     $monthlyStatement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
     $monthly = $monthlyStatement->fetch(PDO::FETCH_ASSOC);
     #print_r($done['address']);
-
     if ($monthly['fip'] == "Yes") {
         $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE unique IS " . $site);
         $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE unique IS " . $site);
@@ -61,7 +58,6 @@ if(isset($_POST['site'])) {
 } else{
     die("Error: If you see this, what on earth did you do to cause this error???");
 }
-
 if ($_POST['save'] == "Save Changes") {
     $saveStatement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
     $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
