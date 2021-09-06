@@ -100,7 +100,7 @@ if(!isset($_COOKIE['sessionID'])) {
             font-size: 23px;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             resize: none;
-            width: 90%;
+            width: 85%;
 
     </style>
 </head>
