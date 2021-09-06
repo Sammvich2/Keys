@@ -12,6 +12,8 @@ if (isset($_COOKIE['site'])) {
     ]);
 
 }
+$pdo = new PDO('sqlite:keys.db');
+
 ?>
 <html>
 <head>
@@ -112,7 +114,11 @@ if (isset($_COOKIE['site'])) {
         </td>
         <td style="background-color: #1f1f1f">
             <?php
-                if ($_COOKIE['sessionID'] == 1) {
+
+            $admin = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
+            if ($admin['admin'] )
+
+            if ($_COOKIE['sessionID'] == 1) {
                     echo "<button style='font-size: 30px; text-align: center; padding-top: 1%' onclick='button()'>Go To Admin</button>";
                 };
             ?>
@@ -140,7 +146,6 @@ if (isset($_COOKIE['site'])) {
             }, 500);</script>";
 
     } else {
-        $pdo = new PDO('sqlite:keys.db');
 
 
         if ($_POST['hide'] == "Hide Yes") {
