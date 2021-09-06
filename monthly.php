@@ -124,7 +124,7 @@ $pdo = new PDO('sqlite:keys.db');
             $adminCheck = $pdo->query("SELECT * from people WHERE id IS '" . $_COOKIE['sessionID'] . "'");
             $admin = $adminCheck->fetch(PDO::FETCH_ASSOC);
             if ($admin['admin'] > 0) {
-                echo "<button style='font-size: 30px; text-align: center; padding-top: 1%' onclick='button()'>Go To Admin</button>";
+                echo "<button style='font-size: 30px; text-align: center' onclick='button()'>Go To Admin</button>";
             }
             ?>
         </td>
