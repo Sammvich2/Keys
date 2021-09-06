@@ -115,11 +115,13 @@ $pdo = new PDO('sqlite:keys.db');
         <td style="background-color: #1f1f1f">
             <?php
 
-            $admin = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
-            if ($admin['admin'] )
+            $admin = $pdo->query("SELECT * from people WHERE fip IS 'No' ORDER BY address ASC");
+            if ($admin['admin'] > 0) {
+                echo "<button style='font-size: 30px; text-align: center; padding-top: 1%' onclick='button()'>Go To Admin</button>";
+
+            }
 
             if ($_COOKIE['sessionID'] == 1) {
-                    echo "<button style='font-size: 30px; text-align: center; padding-top: 1%' onclick='button()'>Go To Admin</button>";
                 };
             ?>
         </td>
