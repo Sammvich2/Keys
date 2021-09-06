@@ -130,7 +130,7 @@ if(!isset($_COOKIE['sessionID'])) {
             try {
 
 
-                $sql = "INSERT INTO keys (id_number, address, bm, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :bm, :key_provider, :large, :fip, :pump, :access, :is_key)";
+                $sql = "INSERT INTO keys (id_number, address, key_provider, large, fip, pump, access, is_key) VALUES (:id_number, :address, :key_provider, :large, :fip, :pump, :access, :is_key)";
                 $stmt = $pdo->prepare($sql);
 
                 $id_number = filter_input(INPUT_POST, 'id_number');
