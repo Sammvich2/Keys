@@ -6,7 +6,8 @@ if(!isset($_COOKIE['sessionID'])) {
                 window.location.href = 'index.php';
             }, 500);</script>";
 } else {
-    $admin = $pdo->query("SELECT * from people WHERE id IS '" . $_COOKIE['sessionID'] . "'");
+    $adminCheck = $pdo->query("SELECT * from people WHERE id IS '" . $_COOKIE['sessionID'] . "'");
+    $admin = $adminCheck->fetch(PDO::FETCH_ASSOC);
     if ($admin['admin'] < 1) {
         echo "<script> setTimeout(function() {
                 window.location.href = 'index.php';
