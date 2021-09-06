@@ -150,7 +150,7 @@ if ($_POST['save'] == "Save Changes") {
 if (isset($site)) {
     try {
         print_r($site);
-        $statement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
+        $statement = $pdo->query("SELECT * from keys WHERE unique IS '" . $site . "'");
 
         print_r($statement);
 
@@ -194,7 +194,7 @@ if (isset($site)) {
 } else {
 
 
-    die("Site not found");
+    die("No data was received by website, one of us goofed. Let's be honest, it was you");
 }
 ?>
 
