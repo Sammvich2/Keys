@@ -108,6 +108,9 @@ if(!isset($_COOKIE['sessionID'])) {
 
 <h1>
     Key Admin
+    <br>
+    <button style="font-size: 35px; text-align: center" onclick="location.href = 'monthly.php'">Back To Monthlies</button>
+
 </h1>
 
 <script>
