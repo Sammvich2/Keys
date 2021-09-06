@@ -62,7 +62,7 @@
 <?php
 
     if(!isset($_COOKIE['sessionID'])) {
-        print_r("Write function to return to login");
+        print_r("Bye Bye nerd ;)");
         echo "<script> setTimeout(function() {
                     window.location.href = 'index.php';
                 }, 500);</script>";
