@@ -190,7 +190,6 @@ if(!isset($_COOKIE['sessionID'])) {
                     echo "Something Went Wrong";
                 }
 
-                $db = null;
 
 
             } catch (PDOException $e){
