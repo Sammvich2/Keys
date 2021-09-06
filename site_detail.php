@@ -32,19 +32,19 @@ if(isset($_POST['site'])) {
     ]);
 } elseif(isset($_POST['monthly'])) {
     $site = $_COOKIE['site'];
-    $monthlyStatement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
+    $monthlyStatement = $pdo->query("SELECT * from keys WHERE siteID IS " . $site);
     $monthly = $monthlyStatement->fetch(PDO::FETCH_ASSOC);
     #print_r($done['address']);
     if ($monthly['fip'] == "Yes") {
-        $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE unique IS " . $site);
-        $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE unique IS " . $site);
+        $change = $pdo->query("UPDATE keys SET fip = 'No' WHERE siteID IS " . $site);
+        $change = $pdo->query("UPDATE keys SET monthly = NULL WHERE siteID IS " . $site);
 
         echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname;
             }, 500);</script>";
     } elseif ($monthly['fip'] == "No") {
-        $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE unique IS " . $site);
-        $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE unique IS " . $site);
+        $change = $pdo->query("UPDATE keys SET fip = 'Yes' WHERE siteID IS " . $site);
+        $change = $pdo->query("UPDATE keys SET monthly = '" . $session['account'] . "' WHERE siteID IS " . $site);
         echo "<script> setTimeout(function() {
                 window.location.href = window.location.pathname
             }, 500);</script>";
@@ -59,13 +59,13 @@ if(isset($_POST['site'])) {
     die("Error: If you see this, what on earth did you do to cause this error???");
 }
 if ($_POST['save'] == "Save Changes") {
-    $saveStatement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
+    $saveStatement = $pdo->query("SELECT * from keys WHERE siteID IS " . $site);
     $save = $saveStatement->fetch(PDO::FETCH_ASSOC);
 
     if ($_POST['access'] != $save['access']) {
-    $saveAccess = $pdo->query("UPDATE keys SET access = '" . $_POST['access'] . "' WHERE unique IS " . $site);
+    $saveAccess = $pdo->query("UPDATE keys SET access = '" . $_POST['access'] . "' WHERE siteID IS " . $site);
     } elseif ($_POST['bm'] != $save['bm']) {
-    $saveAccess = $pdo->query("UPDATE keys SET bm = '" . $_POST['bm'] . "' WHERE unique IS " . $site);
+    $saveAccess = $pdo->query("UPDATE keys SET bm = '" . $_POST['bm'] . "' WHERE siteID IS " . $site);
     } else {
     print_r("No changes made ya dingus");
     }
@@ -150,7 +150,7 @@ print_r($site);
 if (isset($site)) {
     try {
 
-        $statement = $pdo->query("SELECT * from keys WHERE unique IS '" . $site . "'");
+        $statement = $pdo->query("SELECT * from keys WHERE siteID IS '" . $site . "'");
 
         print_r($statement);
 
