@@ -112,7 +112,7 @@ if(!isset($_COOKIE['sessionID'])) {
                 <input style='padding-top: 1%' type='submit' value='Reset All Monthlies' name='reset'>
                 </form>
         </td>
-        <td>
+        <td style="background-color: #1f1f1f">
             <button style="font-size: 25px; text-align: center" onclick="location.href = 'dataEntry.php'">Enter New Site</button>
         </td>
 
