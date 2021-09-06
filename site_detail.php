@@ -149,8 +149,9 @@ if ($_POST['save'] == "Save Changes") {
 
 if (isset($site)) {
     try {
-        $statement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
         print_r($site);
+        $statement = $pdo->query("SELECT * from keys WHERE unique IS " . $site);
+
         print_r($statement);
 
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -190,7 +191,9 @@ if (isset($site)) {
 
     }
 } else {
-    die("Site not found");
+    print "Error: " . $e->getMessage() . "<br/>";
+
+    #die("Site not found");
 }
 ?>
 
