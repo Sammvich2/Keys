@@ -142,9 +142,6 @@ if(!isset($_COOKIE['sessionID'])) {
                 $bm = filter_input(INPUT_POST, 'bm');
                 $stmt->bindValue(':bm', $bm, PDO::PARAM_STR);
 
-                $date_of_issue = filter_input(INPUT_POST, 'date_of_issue');
-                $stmt->bindValue(':date_of_issue', $date_of_issue, PDO::PARAM_STR);
-
                 $key_provider = filter_input(INPUT_POST, 'key_provider');
                 $stmt->bindValue(':key_provider', $key_provider, PDO::PARAM_STR);
 
