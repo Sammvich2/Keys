@@ -90,6 +90,12 @@ $pdo = new PDO('sqlite:keys.db');
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
         }
+        button {
+            font-size: 30px;
+            resize: none;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+        }
     </style>
 
     <script type="text/javascript">
@@ -129,7 +135,10 @@ $pdo = new PDO('sqlite:keys.db');
             ?>
         </td>
         <td>
-
+            <form action="monthly.php" method="post">
+                <input type="text" placeholder="Search Address" name="search">
+                <input type="submit" name="searchSub" value="Search">
+            </form>
         </td>
 
     </tr>
