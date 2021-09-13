@@ -20,6 +20,7 @@ if (isset($_COOKIE['site'])) {
         'samesite' => 'None',
     ]);
 }
+
 $pdo = new PDO('sqlite:keys.db');
 ?>
 <html>
@@ -155,13 +156,14 @@ $pdo = new PDO('sqlite:keys.db');
     #ini_set('display_errors', 1);
     #ini_set('display_startup_errors', 1);
     #error_reporting(E_ALL);
-        if ($_POST['hide'] == "Hide Yes") {
+    if ($_POST['searchSub'] == "Search") {
+        $statement = $pdo->query("SELECT * from keys WHERE address LIKE '" . $_POST['search'] . "'");
+    } elseif ($_POST['hide'] == "Hide Yes") {
             #print_r($_POST);
-
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
-        } else {
-            $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
-        }
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS 'No' ORDER BY address ASC");
+    } else {
+        $statement = $pdo->query("SELECT * from keys WHERE fip IS NOT NULL ORDER BY address ASC");
+    }
 
         $keys = $statement->fetchAll(PDO::FETCH_ASSOC);
         foreach($keys as $row => $key){
@@ -172,6 +174,9 @@ $pdo = new PDO('sqlite:keys.db');
             echo "<td>" .  $key['is_key']  .  "</td>";
             echo "<td style='padding-top: 1%'><form action='site_detail.php' id='site' method='post'><input name='site' type='submit' value=" . $key['siteID'] . "></form></td>";
             echo "</h3></tr>";
+        }
+        if ($_POST['searchSub'] == "Search") {
+            $statement = $pdo->query("SELECT * from keys WHERE address LIKE '" . $_POST['search'] . "'");
         }
     ?>
 
